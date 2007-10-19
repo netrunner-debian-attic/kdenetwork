@@ -1,0 +1,10 @@
+usr/include/kopete/*.h
+usr/include/kopete/ui/*.h
+usr/lib/libgadu_kopete.so
+usr/lib/libkopeteidentity.so
+usr/lib/libkopete_oscar.so
+usr/lib/libkopeteprivacy.so
+usr/lib/libkopete.so
+usr/lib/libkyahoo.so
+usr/lib/liboscar.so
+usr/lib/libpapillon_kopete.so

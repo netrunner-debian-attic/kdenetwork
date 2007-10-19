@@ -2,14 +2,13 @@ Source: kdenetwork
 Section: kde
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
-Build-Depends: cdbs, debhelper (>= 5), cmake, quilt, kdelibs5-dev (>=4:3.90.1),
- kdepimlibs5-dev (>=4:3.90.1), kdebase-dev (>=4:3.90.1), 
+Build-Depends: cdbs, debhelper (>= 5), cmake, quilt, kdebase-dev (>=4:3.94.0), 
  libxdamage-dev, libxss-dev, libslp-dev, libiw-dev, libidn11-dev
 Standards-Version: 3.7.2
 
 Package: kdenetwork
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Architecture: all
+Depends: kget (>= ${binary:Version})
 Description: network-related apps from the official KDE release
  KDE (the K Desktop Environment) is a powerful Open Source graphical
  desktop environment for Unix workstations. It combines ease of use,
@@ -19,3 +18,194 @@ Description: network-related apps from the official KDE release
  This metapackage includes a collection of network and networking related
  applications provided with the official release of KDE.
 
+Package: kdenetwork-doc-html
+Architecture: all
+Section: doc
+Suggests: konqueror | www-browser, kdebase
+Description: KDE network documentation in HTML format
+ By default the modules provided by KDE only provide their documentation
+ in KDE docbook format, which can only be read by Konqueror or KHelpCenter.
+ This package provides all of the KDE network documentation converted to
+ HTML format so it can be read with any web browser.
+ .
+ The documentation will be installed into the usual directories
+ /usr/share/doc/kde/HTML/<language>/<app>/, for instance
+ /usr/share/doc/kde/HTML/en/kdict/. Documentation is provided for most
+ KDE network packages.
+ .
+ This package is part of KDE, and a component of the KDE network module.
+ See the 'kde' and 'kdenetwork' packages for more information.
+
+Package: kdenetwork-kfile-plugins
+Section: kde
+Architecture: any
+Depends: ${shlibs:Depends}
+Enhances: konqueror
+Description: torrent metainfo plugin for KDE
+ This package provides a metainformation plugin for bittorrent files.
+ .
+ Kde uses kfile-plugins to provide metainfo tab in the files properties
+ dialog in konqueror and other file-handling applications.
+ .
+ This package is part of KDE, as a component of the KDE network module.
+ See the 'kde' and 'kdenetwork' packages for more information.
+
+Package: kdenetwork-filesharing
+Section: net
+Architecture: any
+Depends: ${shlibs:Depends}, perl-suid
+Replaces: kcontrol (<< 4:3.3.0)
+Description: network filesharing configuration module for KDE
+ This package provides a KDE Control Center module to configure
+ NFS and Samba.
+ .
+ This package is part of KDE, as a component of the KDE network module.
+ See the 'kde' and 'kdenetwork' packages for more information.
+
+Package: kdenetwork-dev
+Section: devel
+Architecture: any
+Depends: kopete (= ${binary:Version}) kdebase-dev (>= 4:3.94.0)
+Description: development files for the KDE network module
+ This is the development package which contains the headers for the KDE RSS
+ library as well as the Kopete chat client, as well as miscellaneous
+ development-related files for the KDE network module.
+ .
+ This package is part of KDE, as a component of the KDE network module.
+ See the 'kde' and 'kdenetwork' packages for more information.
+
+Package: kdnssd
+Section: net
+Architecture: any
+Depends: ${shlibs:Depends}
+Recommends: avahi-daemon
+Suggests: avahi-autoipd | zeroconf
+Description: Zeroconf support for KDE
+ A kioslave and kded module that provide Zeroconf support. Try
+ "zeroconf:/" in Konqueror.
+ .
+ This package is part of KDE, as a component of the KDE network module.
+ See the 'kde' and 'kdenetwork' packages for more information.
+
+Package: kget
+Section: net
+Architecture: any
+Depends: ${shlibs:Depends}
+Suggests: khelpcenter
+Description: download manager for KDE
+ KGet is a a download manager similar to GetRight or Go!zilla. It keeps
+ all your downloads in one dialog and you can add and remove transfers.
+ Transfers can be paused, resumed, queued or scheduled.
+ Dialogs display info about status of transfers - progress, size, speed
+ and remaining time. Program supports drag & drop from KDE
+ applications and Netscape.
+ .
+ This package is part of KDE, as a component of the KDE network module.
+ See the 'kde' and 'kdenetwork' packages for more information.
+
+Package: knewsticker
+Section: kde
+Architecture: any
+Depends: ${shlibs:Depends}, kicker
+Suggests: khelpcenter, knewsticker-scripts
+Description: news ticker applet for KDE
+ This is a news ticker applet for the KDE panel. It can scroll news from
+ your favorite news sites, such as lwn.net, /. and freshmeat.net.
+ To achieve this, KNewsTicker requires the news sites to provide a
+ RSS feed to newsitems. KNewsTicker already comes with a selection of
+ good news sources which provide such files.
+ .
+ This package is part of KDE, as a component of the KDE network module.
+ See the 'kde' and 'kdenetwork' packages for more information.
+
+Package: kopete
+Section: kde
+Architecture: any
+Depends: ${shlibs:Depends}
+Recommends: qca-tls
+Suggests: kdeartwork-emoticons, khelpcenter, imagemagick, gnupg, gnomemeeting
+Replaces: konversation (<= 0.14.0-4), sim (<= 0.9.3-2)
+Description: instant messenger for KDE
+ Kopete is an instant messenger program which can communicate with a variety
+ of IM systems, such as Yahoo, ICQ, MSN, IRC and Jabber.
+ .
+ Kopete includes the "Now Listening" plug-in that can report what music you
+ are currently listening to, in a number of different players, including
+ noatun, kscd, juk, kaffeine and amarok.
+ .
+ Support for more IM protocols can be added through a plugin system.
+ .
+ This package is part of KDE, as a component of the KDE network module.
+ See the 'kde' and 'kdenetwork' packages for more information.
+ .
+  Homepage: http://kopete.kde.org
+
+Package: kppp
+Section: net
+Architecture: any
+Depends: ${shlibs:Depends}, ppp
+Suggests: khelpcenter
+Description: modem dialer and ppp frontend for KDE
+ KPPP is a dialer and front end for pppd. It allows for interactive
+ script generation and network setup. It will automate the dialing in
+ process to your ISP while letting you conveniently monitor the entire
+ process.
+ .
+ Once connected KPPP will provide a rich set of statistics and keep
+ track of the time spent online for you.
+ .
+ This package is part of KDE, as a component of the KDE network module.
+ See the 'kde' and 'kdenetwork' packages for more information.
+
+Package: krdc
+Section: net
+Architecture: any
+Depends: ${shlibs:Depends}
+Conflicts: rdesktop (<= 1.3.1-1 )
+Suggests: rdesktop, khelpcenter
+Description: Remote Desktop Connection for KDE
+ krdc is an KDE graphical client for the rfb protocol, used by VNC,
+ and if rdesktop is installed, krdc can connect to Windows Terminal
+ Servers using RDP.
+ .
+ This package is part of KDE, as a component of the KDE network module.
+ See the 'kde' and 'kdenetwork' packages for more information.
+
+Package: krfb
+Section: net
+Architecture: any
+Depends: ${shlibs:Depends}
+Suggests: khelpcenter
+Description: Desktop Sharing for KDE
+ Desktop Sharing (krfb) is a server application that allows you to share
+ your current session with a user on another machine, who can use a
+ VNC client like krdc to view or even control the desktop. It doesn't
+ require you to start a new X session - it can share the current session.
+ This makes it very useful when you want someone to help you perform a
+ task.
+ .
+ This package is part of KDE, as a component of the KDE network module.
+ See the 'kde' and 'kdenetwork' packages for more information.
+
+Package: lisa
+Section: net
+Architecture: any
+Depends: ${shlibs:Depends}
+Suggests: khelpcenter, samba-common
+Description: LAN information server for KDE
+ LISa is intended to provide KDE with a kind of "network neighborhood"
+ but relying only on the TCP/IP protocol.
+ .
+ This package is part of KDE, as a component of the KDE network module.
+ See the 'kde' and 'kdenetwork' packages for more information.
+
+
+Package: kdenetwork-dbg
+Section: libdevel
+Architecture: any
+Priority: extra
+Depends: kdebase-dbg
+Description: debugging symbols for kdenetwork
+ This package contains the debugging symbols associated with kdenetwork.
+ They will automatically be used by gdb for debugging kdenetwork-related
+ issues.
