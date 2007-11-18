@@ -3,6 +3,7 @@ kdenetwork (4:3.96.0-1) experimental; urgency=low
   * New upstream release. 
   * Update build-depends, add libvncserver-dev (>=0.9.3), 
     libqca2-dev, libplasma-dev, libsqlite3-dev.
+  * Update *.install files.
 
  -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Fri, 16 Nov 2007 15:48:37 +0100
 

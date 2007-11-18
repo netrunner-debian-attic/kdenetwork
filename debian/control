@@ -2,6 +2,7 @@ Source: kdenetwork
 Section: kde
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Ana Beatriz Guerrero Lopez <ana@debian.org>, Sune Vuorela <debian@pusling.com>, Fathi Boudra <fboudra@free.fr>, Armin Berres <trigger+debian@space-based.de>
 Build-Depends: cdbs, debhelper (>= 5), cmake, quilt, kdebase-dev (>=4:3.96.0), 
  libxdamage-dev, libxss-dev, libslp-dev, libiw-dev, libidn11-dev, 
  libvncserver-dev (>=0.9.3), libqca2-dev, libplasma-dev,
@@ -20,43 +21,10 @@ Description: network-related apps from the official KDE release
  This metapackage includes a collection of network and networking related
  applications provided with the official release of KDE.
 
-Package: kdenetwork-doc-html
-Architecture: all
-Section: doc
-Suggests: konqueror | www-browser, kdebase
-Description: KDE network documentation in HTML format
- By default the modules provided by KDE only provide their documentation
- in KDE docbook format, which can only be read by Konqueror or KHelpCenter.
- This package provides all of the KDE network documentation converted to
- HTML format so it can be read with any web browser.
- .
- The documentation will be installed into the usual directories
- /usr/share/doc/kde/HTML/<language>/<app>/, for instance
- /usr/share/doc/kde/HTML/en/kdict/. Documentation is provided for most
- KDE network packages.
- .
- This package is part of KDE, and a component of the KDE network module.
- See the 'kde' and 'kdenetwork' packages for more information.
-
-Package: kdenetwork-kfile-plugins
-Section: kde
-Architecture: any
-Depends: ${shlibs:Depends}
-Enhances: konqueror
-Description: torrent metainfo plugin for KDE
- This package provides a metainformation plugin for bittorrent files.
- .
- Kde uses kfile-plugins to provide metainfo tab in the files properties
- dialog in konqueror and other file-handling applications.
- .
- This package is part of KDE, as a component of the KDE network module.
- See the 'kde' and 'kdenetwork' packages for more information.
-
 Package: kdenetwork-filesharing
 Section: net
 Architecture: any
 Depends: ${shlibs:Depends}, perl-suid
-Replaces: kcontrol (<< 4:3.3.0)
 Description: network filesharing configuration module for KDE
  This package provides a KDE Control Center module to configure
  NFS and Samba.
@@ -67,24 +35,11 @@ Description: network filesharing configuration module for KDE
 Package: kdenetwork-dev
 Section: devel
 Architecture: any
-Depends: kopete (= ${binary:Version}) kdebase-dev (>= 4:3.96.0)
+Depends: kopete (= ${binary:Version}), kdebase-dev (>= 4:3.96.0)
 Description: development files for the KDE network module
  This is the development package which contains the headers for the KDE RSS
  library as well as the Kopete chat client, as well as miscellaneous
  development-related files for the KDE network module.
- .
- This package is part of KDE, as a component of the KDE network module.
- See the 'kde' and 'kdenetwork' packages for more information.
-
-Package: kdnssd
-Section: net
-Architecture: any
-Depends: ${shlibs:Depends}
-Recommends: avahi-daemon
-Suggests: avahi-autoipd | zeroconf
-Description: Zeroconf support for KDE
- A kioslave and kded module that provide Zeroconf support. Try
- "zeroconf:/" in Konqueror.
  .
  This package is part of KDE, as a component of the KDE network module.
  See the 'kde' and 'kdenetwork' packages for more information.
@@ -108,8 +63,8 @@ Description: download manager for KDE
 Package: knewsticker
 Section: kde
 Architecture: any
-Depends: ${shlibs:Depends}, kicker
-Suggests: khelpcenter, knewsticker-scripts
+Depends: ${shlibs:Depends}
+Suggests: khelpcenter
 Description: news ticker applet for KDE
  This is a news ticker applet for the KDE panel. It can scroll news from
  your favorite news sites, such as lwn.net, /. and freshmeat.net.
@@ -124,9 +79,7 @@ Package: kopete
 Section: kde
 Architecture: any
 Depends: ${shlibs:Depends}
-Recommends: qca-tls
-Suggests: kdeartwork-emoticons, khelpcenter, imagemagick, gnupg, gnomemeeting
-Replaces: konversation (<= 0.14.0-4), sim (<= 0.9.3-2)
+Suggests: khelpcenter
 Description: instant messenger for KDE
  Kopete is an instant messenger program which can communicate with a variety
  of IM systems, such as Yahoo, ICQ, MSN, IRC and Jabber.
@@ -139,8 +92,6 @@ Description: instant messenger for KDE
  .
  This package is part of KDE, as a component of the KDE network module.
  See the 'kde' and 'kdenetwork' packages for more information.
- .
-  Homepage: http://kopete.kde.org
 
 Package: kppp
 Section: net
@@ -200,7 +151,6 @@ Description: LAN information server for KDE
  .
  This package is part of KDE, as a component of the KDE network module.
  See the 'kde' and 'kdenetwork' packages for more information.
-
 
 Package: kdenetwork-dbg
 Section: libdevel

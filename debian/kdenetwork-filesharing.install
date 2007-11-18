@@ -1,7 +1,7 @@
-usr/lib/kde4/fileshare_propsdlgplugin.so
-usr/lib/kde4/kcm_fileshare.so
 usr/lib/kde4/kcm_kcmsambaconf.so
-usr/share/icons/hicolor/16x16/apps/kcmsambaconf.png
-usr/share/kde4/services/fileshare.desktop
-usr/share/kde4/services/fileshare_propsdlgplugin.desktop
 usr/share/kde4/services/kcmsambaconf.desktop
+usr/share/icons/hicolor/16x16/apps/kcmsambaconf.png
+usr/lib/kde4/fileshare_propsdlgplugin.so
+usr/share/kde4/services/fileshare_propsdlgplugin.desktop
+usr/lib/kde4/kcm_fileshare.so
+usr/share/kde4/services/fileshare.desktop
