@@ -1,6 +1,7 @@
 kdenetwork (4:3.96.0-1) experimental; urgency=low
 
   * KDE 4.0 rc1, first upload to the Debian archive.
+  * Update branch to r740225.
   * Update build-depends, add libvncserver-dev (>=0.9.3),
     libqca2-dev, libplasma-dev, libsqlite3-dev and libdecibel-dev.
   * Update *.install files.

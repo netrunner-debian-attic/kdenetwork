@@ -1,3 +1,6 @@
+usr/lib/kde4/kget_kiofactory.so
+usr/lib/kde4/kget_metalinkfactory.so
+usr/lib/kde4/kget_multisegkiofactory.so
 usr/lib/libkgetcore.so.4
 usr/lib/libkgetcore.so.4.0.0
 usr/bin/kget
@@ -6,12 +9,9 @@ usr/share/kde4/servicetypes/kget_plugin.desktop
 usr/share/kde4/apps/kget/kgetui.rc
 usr/share/kde4/apps/kget/icons/crystalsvg/32x32/actions/transfers_list.png
 usr/share/kde4/apps/kget/pics/kget_splash.png
-usr/lib/kde4/libkget_kiofactory.so
 usr/share/kde4/services/kget_kiofactory.desktop
-usr/lib/kde4/libkget_multisegkiofactory.so
 usr/share/kde4/services/kget_multisegkiofactory.desktop
 usr/share/kde4/config.kcfg/kget_multisegkiofactory.kcfg
-usr/lib/kde4/libkget_metalinkfactory.so
 usr/share/kde4/services/kget_metalinkfactory.desktop
 usr/lib/kde4/khtml_kget.so
 usr/share/kde4/apps/khtml/kpartplugins/kget_plug_in.rc
