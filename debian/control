@@ -6,12 +6,14 @@ Uploaders: Ana Beatriz Guerrero Lopez <ana@debian.org>, Sune Vuorela <debian@pus
 Build-Depends: cdbs, debhelper (>= 5), cmake, quilt, kdebase-dev (>=4:3.96.0), 
  libxdamage-dev, libxss-dev, libslp-dev, libiw-dev, libidn11-dev, 
  libvncserver-dev (>=0.9.3), libqca2-dev, libplasma-dev,
- libsqlite3-dev
+ libsqlite3-dev, libdecibel-dev
 Standards-Version: 3.7.2
 
 Package: kdenetwork
+Section: kde
 Architecture: all
-Depends: kget (>= ${binary:Version})
+Depends: kget (>= ${Source-Version}), knewsticker (>= ${Source-Version}), kopete (>= ${Source-Version}), kppp (>= ${Source-Version}), krdc (>= ${Source-Version}), krfb (>= ${Source-Version})
+Recommends: kdenetwork-filesharing (>= ${Source-Version}), lisa (>= ${Source-Version})
 Description: network-related apps from the official KDE release
  KDE (the K Desktop Environment) is a powerful Open Source graphical
  desktop environment for Unix workstations. It combines ease of use,
@@ -20,6 +22,7 @@ Description: network-related apps from the official KDE release
  .
  This metapackage includes a collection of network and networking related
  applications provided with the official release of KDE.
+
 
 Package: kdenetwork-filesharing
 Section: net
@@ -35,7 +38,7 @@ Description: network filesharing configuration module for KDE
 Package: kdenetwork-dev
 Section: devel
 Architecture: any
-Depends: kopete (= ${binary:Version}), kdebase-dev (>= 4:3.96.0)
+Depends: kopete (= ${Source-Version}), kdebase-dev (>= 4:3.96.0)
 Description: development files for the KDE network module
  This is the development package which contains the headers for the KDE RSS
  library as well as the Kopete chat client, as well as miscellaneous
@@ -114,7 +117,6 @@ Package: krdc
 Section: net
 Architecture: any
 Depends: ${shlibs:Depends}
-Conflicts: rdesktop (<= 1.3.1-1 )
 Suggests: rdesktop, khelpcenter
 Description: Remote Desktop Connection for KDE
  krdc is an KDE graphical client for the rfb protocol, used by VNC,
