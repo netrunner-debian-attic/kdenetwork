@@ -1,13 +1,13 @@
 kdenetwork (4:3.96.0-1) experimental; urgency=low
 
-  * New upstream release. 
-  * Update build-depends, add libvncserver-dev (>=0.9.3), 
+  * KDE 4.0 rc1, first upload to the Debian archive.
+  * Update build-depends, add libvncserver-dev (>=0.9.3),
     libqca2-dev, libplasma-dev, libsqlite3-dev.
   * Update *.install files.
   * Rework package descriptions.
-  * TODO: copyright \o/
+  * Write copyright file.
 
- -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Fri, 16 Nov 2007 15:48:37 +0100
+ -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Thu, 22 Nov 2007 08:08:54 +0100
 
 kdenetwork (4:3.94.0-1) experimental; urgency=low
 
@@ -16,7 +16,7 @@ kdenetwork (4:3.94.0-1) experimental; urgency=low
 
  -- Armin Berres <trigger+debian@space-based.de>  Fri, 19 Oct 2007 13:16:39 +0200
 
-kdenetwork (4:3.90.1-1) unstable; urgency=low
+kdenetwork (4:3.90.1-1) experimental; urgency=low
 
   * Initial release.
 
