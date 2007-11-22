@@ -14,37 +14,37 @@ Section: kde
 Architecture: all
 Depends: kget (>= ${Source-Version}), knewsticker (>= ${Source-Version}), kopete (>= ${Source-Version}), kppp (>= ${Source-Version}), krdc (>= ${Source-Version}), krfb (>= ${Source-Version})
 Recommends: kdenetwork-filesharing (>= ${Source-Version}), lisa (>= ${Source-Version})
-Description: network-related apps from the official KDE release
+Description: network-related apps from the official KDE4 release
  KDE (the K Desktop Environment) is a powerful Open Source graphical
  desktop environment for Unix workstations. It combines ease of use,
  contemporary functionality, and outstanding graphical design with the
  technological superiority of the Unix operating system.
  .
  This metapackage includes a collection of network and networking related
- applications provided with the official release of KDE.
+ applications provided with the official release of KDE4.
 
 
 Package: kdenetwork-filesharing
 Section: net
 Architecture: any
 Depends: ${shlibs:Depends}, perl-suid
-Description: network filesharing configuration module for KDE
+Description: network filesharing configuration module for KDE4
  This package provides a KDE Control Center module to configure
  NFS and Samba.
  .
- This package is part of KDE, as a component of the KDE network module.
+ This package is part of KDE4, as a component of the KDE4 network module.
  See the 'kde' and 'kdenetwork' packages for more information.
 
 Package: kdenetwork-dev
 Section: devel
 Architecture: any
 Depends: kopete (= ${Source-Version}), kdebase-dev (>= 4:3.96.0)
-Description: development files for the KDE network module
+Description: development files for the KDE4 network module
  This is the development package which contains the headers for the KDE RSS
  library as well as the Kopete chat client, as well as miscellaneous
- development-related files for the KDE network module.
+ development-related files for the KDE4 network module.
  .
- This package is part of KDE, as a component of the KDE network module.
+ This package is part of KDE4, as a component of the KDE4 network module.
  See the 'kde' and 'kdenetwork' packages for more information.
 
 Package: kget
@@ -52,7 +52,7 @@ Section: net
 Architecture: any
 Depends: ${shlibs:Depends}
 Suggests: khelpcenter
-Description: download manager for KDE
+Description: download manager for KDE4
  KGet is a a download manager similar to GetRight or Go!zilla. It keeps
  all your downloads in one dialog and you can add and remove transfers.
  Transfers can be paused, resumed, queued or scheduled.
@@ -60,7 +60,7 @@ Description: download manager for KDE
  and remaining time. Program supports drag & drop from KDE
  applications and Netscape.
  .
- This package is part of KDE, as a component of the KDE network module.
+ This package is part of KDE4, as a component of the KDE4 network module.
  See the 'kde' and 'kdenetwork' packages for more information.
 
 Package: knewsticker
@@ -68,14 +68,14 @@ Section: kde
 Architecture: any
 Depends: ${shlibs:Depends}
 Suggests: khelpcenter
-Description: news ticker applet for KDE
+Description: news ticker applet for KDE4
  This is a news ticker applet for the KDE panel. It can scroll news from
  your favorite news sites, such as lwn.net, /. and freshmeat.net.
  To achieve this, KNewsTicker requires the news sites to provide a
  RSS feed to newsitems. KNewsTicker already comes with a selection of
  good news sources which provide such files.
  .
- This package is part of KDE, as a component of the KDE network module.
+ This package is part of KDE4, as a component of the KDE4 network module.
  See the 'kde' and 'kdenetwork' packages for more information.
 
 Package: kopete
@@ -83,7 +83,7 @@ Section: kde
 Architecture: any
 Depends: ${shlibs:Depends}
 Suggests: khelpcenter
-Description: instant messenger for KDE
+Description: instant messenger for KDE4
  Kopete is an instant messenger program which can communicate with a variety
  of IM systems, such as Yahoo, ICQ, MSN, IRC and Jabber.
  .
@@ -93,7 +93,7 @@ Description: instant messenger for KDE
  .
  Support for more IM protocols can be added through a plugin system.
  .
- This package is part of KDE, as a component of the KDE network module.
+ This package is part of KDE4, as a component of the KDE4 network module.
  See the 'kde' and 'kdenetwork' packages for more information.
 
 Package: kppp
@@ -101,7 +101,7 @@ Section: net
 Architecture: any
 Depends: ${shlibs:Depends}, ppp
 Suggests: khelpcenter
-Description: modem dialer and ppp frontend for KDE
+Description: modem dialer and ppp frontend for KDE4
  KPPP is a dialer and front end for pppd. It allows for interactive
  script generation and network setup. It will automate the dialing in
  process to your ISP while letting you conveniently monitor the entire
@@ -110,7 +110,7 @@ Description: modem dialer and ppp frontend for KDE
  Once connected KPPP will provide a rich set of statistics and keep
  track of the time spent online for you.
  .
- This package is part of KDE, as a component of the KDE network module.
+ This package is part of KDE4, as a component of the KDE4 network module.
  See the 'kde' and 'kdenetwork' packages for more information.
 
 Package: krdc
@@ -118,12 +118,12 @@ Section: net
 Architecture: any
 Depends: ${shlibs:Depends}
 Suggests: rdesktop, khelpcenter
-Description: Remote Desktop Connection for KDE
+Description: Remote Desktop Connection for KDE4
  krdc is an KDE graphical client for the rfb protocol, used by VNC,
  and if rdesktop is installed, krdc can connect to Windows Terminal
  Servers using RDP.
  .
- This package is part of KDE, as a component of the KDE network module.
+ This package is part of KDE4, as a component of the KDE4 network module.
  See the 'kde' and 'kdenetwork' packages for more information.
 
 Package: krfb
@@ -131,7 +131,7 @@ Section: net
 Architecture: any
 Depends: ${shlibs:Depends}
 Suggests: khelpcenter
-Description: Desktop Sharing for KDE
+Description: Desktop Sharing for KDE4
  Desktop Sharing (krfb) is a server application that allows you to share
  your current session with a user on another machine, who can use a
  VNC client like krdc to view or even control the desktop. It doesn't
@@ -139,7 +139,7 @@ Description: Desktop Sharing for KDE
  This makes it very useful when you want someone to help you perform a
  task.
  .
- This package is part of KDE, as a component of the KDE network module.
+ This package is part of KDE4, as a component of the KDE4 network module.
  See the 'kde' and 'kdenetwork' packages for more information.
 
 Package: lisa
@@ -147,11 +147,11 @@ Section: net
 Architecture: any
 Depends: ${shlibs:Depends}
 Suggests: khelpcenter, samba-common
-Description: LAN information server for KDE
+Description: LAN information server for KDE4
  LISa is intended to provide KDE with a kind of "network neighborhood"
  but relying only on the TCP/IP protocol.
  .
- This package is part of KDE, as a component of the KDE network module.
+ This package is part of KDE4, as a component of the KDE4 network module.
  See the 'kde' and 'kdenetwork' packages for more information.
 
 Package: kdenetwork-dbg
