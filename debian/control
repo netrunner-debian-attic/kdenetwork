@@ -3,11 +3,11 @@ Section: kde
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Ana Beatriz Guerrero Lopez <ana@debian.org>, Sune Vuorela <debian@pusling.com>, Fathi Boudra <fabo@debian.org>, Armin Berres <trigger+debian@space-based.de>
-Build-Depends: cdbs, debhelper (>= 5), cmake, quilt, kdebase-dev (>=4:3.96.0), 
+Build-Depends: cdbs, debhelper (>= 5), cmake, quilt, kdebase-dev (>=4:3.97.0), 
  libxdamage-dev, libxss-dev, libslp-dev, libiw-dev, libidn11-dev, 
  libvncserver-dev (>=0.9.3), libqca2-dev, libplasma-dev,
  libsqlite3-dev, libdecibel-dev
-Standards-Version: 3.7.2
+Standards-Version: 3.7.3
 
 Package: kdenetwork
 Section: kde
@@ -38,7 +38,7 @@ Description: network filesharing configuration module for KDE4
 Package: kdenetwork-dev
 Section: devel
 Architecture: any
-Depends: kopete (= ${Source-Version}), kdebase-dev (>= 4:3.96.0)
+Depends: kopete (= ${Source-Version}), kdebase-dev (>= 4:3.97.0)
 Description: development files for the KDE4 network module
  This is the development package which contains the headers for the KDE RSS
  library as well as the Kopete chat client, as well as miscellaneous
