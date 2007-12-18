@@ -4,7 +4,7 @@ kdenetwork (4:3.97.0-2) experimental; urgency=low
 
   * Remove LDFLAGS+="-Wl,--as-needed". It was integrated into
     cdbs/kde.mk.
-  * Add libqca2-plugin-ossl to kopete Recommends. It's is needed
+  * Add libqca2-plugin-ossl to kopete Recommends. It's needed
     to enable SSL/TLS support for Jabber and Groupwise protocols.
   * Add myself to uploaders.
 
