@@ -1,3 +1,15 @@
+kdenetwork (4:3.97.0-2) experimental; urgency=low
+
+  +++ Changes by Modestas Vainius:
+
+  * Remove LDFLAGS+="-Wl,--as-needed". It was integrated into
+    cdbs/kde.mk.
+  * Add libqca2-plugin-ossl to kopete Recommends. It's is needed
+    to enable SSL/TLS support for Jabber and Groupwise protocols.
+  * Add myself to uploaders.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 18 Dec 2007 04:05:55 +0200
+
 kdenetwork (4:3.97.0-1) experimental; urgency=low
 
   * New upstream release.

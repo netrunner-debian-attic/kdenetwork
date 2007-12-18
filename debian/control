@@ -2,7 +2,7 @@ Source: kdenetwork
 Section: kde
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
-Uploaders: Ana Beatriz Guerrero Lopez <ana@debian.org>, Sune Vuorela <debian@pusling.com>, Fathi Boudra <fabo@debian.org>, Armin Berres <trigger+debian@space-based.de>
+Uploaders: Ana Beatriz Guerrero Lopez <ana@debian.org>, Sune Vuorela <debian@pusling.com>, Fathi Boudra <fabo@debian.org>, Armin Berres <trigger+debian@space-based.de>, Modestas Vainius <modestas@vainius.eu>
 Build-Depends: cdbs, debhelper (>= 5), cmake, quilt, kdebase-dev (>=4:3.97.0), 
  libxdamage-dev, libxss-dev, libslp-dev, libiw-dev, libidn11-dev, 
  libvncserver-dev (>=0.9.3), libqca2-dev, libplasma-dev,
@@ -82,6 +82,7 @@ Package: kopete
 Section: kde
 Architecture: any
 Depends: ${shlibs:Depends}
+Recommends: libqca2-plugin-ossl
 Suggests: khelpcenter
 Description: instant messenger for KDE4
  Kopete is an instant messenger program which can communicate with a variety
