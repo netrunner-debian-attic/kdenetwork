@@ -3,17 +3,17 @@ Section: kde
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Ana Beatriz Guerrero Lopez <ana@debian.org>, Sune Vuorela <debian@pusling.com>, Fathi Boudra <fabo@debian.org>, Armin Berres <trigger+debian@space-based.de>, Modestas Vainius <modestas@vainius.eu>
-Build-Depends: cdbs, debhelper (>= 5), cmake, quilt, kdebase-dev (>=4:3.97.0), 
+Build-Depends: cdbs, debhelper (>= 5), cmake, quilt, kdepimlibs5-dev (>=4:3.98.0~), 
  libxdamage-dev, libxss-dev, libslp-dev, libiw-dev, libidn11-dev, 
  libvncserver-dev (>=0.9.3), libqca2-dev, libplasma-dev,
- libsqlite3-dev, libdecibel-dev
+ libsqlite3-dev, libdecibel-dev, libqimageblitz-dev
 Standards-Version: 3.7.3
 
 Package: kdenetwork
 Section: kde
 Architecture: all
-Depends: kget (>= ${Source-Version}), knewsticker (>= ${Source-Version}), kopete (>= ${Source-Version}), kppp (>= ${Source-Version}), krdc (>= ${Source-Version}), krfb (>= ${Source-Version})
-Recommends: kdenetwork-filesharing (>= ${Source-Version}), lisa (>= ${Source-Version})
+Depends: kget (>= ${binary:Version}), knewsticker (>= ${binary:Version}), kopete (>= ${binary:Version}), kppp (>= ${binary:Version}), krdc (>= ${binary:Version}), krfb (>= ${binary:Version})
+Recommends: kdenetwork-filesharing (>= ${binary:Version}), lisa (>= ${binary:Version})
 Description: network-related apps from the official KDE4 release
  KDE (the K Desktop Environment) is a powerful Open Source graphical
  desktop environment for Unix workstations. It combines ease of use,
@@ -38,7 +38,7 @@ Description: network filesharing configuration module for KDE4
 Package: kdenetwork-dev
 Section: devel
 Architecture: any
-Depends: kopete (= ${Source-Version}), kdebase-dev (>= 4:3.97.0)
+Depends: kopete (= ${binary:Version}), kdebase-dev (>= ${binary:Version})
 Description: development files for the KDE4 network module
  This is the development package which contains the headers for the KDE RSS
  library as well as the Kopete chat client, as well as miscellaneous

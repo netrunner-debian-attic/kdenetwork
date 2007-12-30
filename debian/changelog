@@ -1,4 +1,6 @@
-kdenetwork (4:3.97.0-2) experimental; urgency=low
+kdenetwork (4:3.98.0~svn753247-1) experimental; urgency=low
+
+  * Svn snapshot of revision 753247.
 
   +++ Changes by Modestas Vainius:
 
@@ -8,7 +10,13 @@ kdenetwork (4:3.97.0-2) experimental; urgency=low
     to enable SSL/TLS support for Jabber and Groupwise protocols.
   * Add myself to uploaders.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 18 Dec 2007 04:05:55 +0200
+  +++ Changes by Ana Beatriz Guerrero Lopez:
+
+  * Remove b-d on kdebase-dev and add b-d on kdepimlibs5-dev and
+    libqimageblitz-dev.
+  * Update kopete.install.
+
+ -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Sun, 30 Dec 2007 01:24:52 +0100
 
 kdenetwork (4:3.97.0-1) experimental; urgency=low
 
