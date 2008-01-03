@@ -10,7 +10,7 @@ to KDE at http://www.kde.org/people/credits/
 
 Copyright:
 Unless something else is mentioned, copyright is
-(C) 1996-2007, The K Desktop Enviroment project http://www.kde.org
+(C) 1996-2008, The K Desktop Enviroment project http://www.kde.org
 
 KGet: (c) 2005 - 2007, The KGet developers
       (c) 2001 - 2002, Patrick Charbonnier
@@ -205,6 +205,6 @@ Files under lanbrowsing/
     These files are under the GPL v2.
 
 
-The Debian packaging is (C) 2007,  Debian Qt/KDE Maintainers and
+The Debian packaging is (C) 2007-2008,  Debian Qt/KDE Maintainers and
 is licensed under the GPL, see `/usr/share/common-licenses/GPL'.
 
