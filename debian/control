@@ -3,8 +3,8 @@ Section: kde
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Ana Beatriz Guerrero Lopez <ana@debian.org>, Sune Vuorela <debian@pusling.com>, Fathi Boudra <fabo@debian.org>, Armin Berres <trigger+debian@space-based.de>, Modestas Vainius <modestas@vainius.eu>
-Build-Depends: cdbs, debhelper (>= 5), cmake, quilt, kdepimlibs5-dev (>=4:3.98.0~svn755919-1), 
- libphonon-dev (>=4:3.98.0~svn755919-1), libxdamage-dev, libxss-dev, libslp-dev, libiw-dev, libidn11-dev, 
+Build-Depends: cdbs, debhelper (>= 5), cmake, quilt, kdepimlibs5-dev (>=4:4.0.0-1), 
+ libphonon-dev (>=4:4.0.0-1), libxdamage-dev, libxss-dev, libslp-dev, libiw-dev, libidn11-dev, 
  libvncserver-dev (>=0.9.3), libqca2-dev, libplasma-dev,
  libsqlite3-dev, libdecibel-dev, libqimageblitz-dev
 Standards-Version: 3.7.3
@@ -13,7 +13,7 @@ Package: kdenetwork
 Section: kde
 Architecture: all
 Depends: kget (>= ${binary:Version}), knewsticker (>= ${binary:Version}), kopete (>= ${binary:Version}), kppp (>= ${binary:Version}), krdc (>= ${binary:Version}), krfb (>= ${binary:Version})
-Recommends: kdenetwork-filesharing (>= ${binary:Version}), lisa (>= ${binary:Version})
+Recommends: kdenetwork-filesharing (>= ${binary:Version})
 Description: network-related apps from the official KDE4 release
  KDE (the K Desktop Environment) is a powerful Open Source graphical
  desktop environment for Unix workstations. It combines ease of use,
@@ -139,18 +139,6 @@ Description: Desktop Sharing for KDE4
  require you to start a new X session - it can share the current session.
  This makes it very useful when you want someone to help you perform a
  task.
- .
- This package is part of KDE4, as a component of the KDE4 network module.
- See the 'kde' and 'kdenetwork' packages for more information.
-
-Package: lisa
-Section: net
-Architecture: any
-Depends: ${shlibs:Depends}
-Suggests: khelpcenter, samba-common
-Description: LAN information server for KDE4
- LISa is intended to provide KDE with a kind of "network neighborhood"
- but relying only on the TCP/IP protocol.
  .
  This package is part of KDE4, as a component of the KDE4 network module.
  See the 'kde' and 'kdenetwork' packages for more information.

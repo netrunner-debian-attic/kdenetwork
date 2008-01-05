@@ -1,7 +1,16 @@
+kdenetwork (4:4.0.0-1) experimental; urgency=low
+
+  * New upstream release.
+  * Bump build-depends to >=4.0.0-1.
+  * Update *.install files.
+  * Remove lisa, killed upstream.
+
+ -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Sat, 05 Jan 2008 16:40:14 +0100
+
 kdenetwork (4:3.98.0~svn755919-1) experimental; urgency=low
 
   * New svn snapshot release to revision 755919. 
-  * Add libphonon-dev build-depende.
+  * Add libphonon-dev build-depends.
   * Update years in copyright.
 
  -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Thu, 03 Jan 2008 21:30:20 +0100
