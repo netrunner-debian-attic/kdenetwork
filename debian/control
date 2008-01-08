@@ -8,6 +8,7 @@ Build-Depends: cdbs, debhelper (>= 5), cmake, quilt, kdepimlibs5-dev (>=4:4.0.0-
  libvncserver-dev (>=0.9.3), libqca2-dev, libplasma-dev,
  libsqlite3-dev, libdecibel-dev, libqimageblitz-dev
 Standards-Version: 3.7.3
+Homepage: http://www.kde.org/
 
 Package: kdenetwork
 Section: kde
@@ -84,6 +85,7 @@ Architecture: any
 Depends: ${shlibs:Depends}
 Recommends: libqca2-plugin-ossl
 Suggests: khelpcenter
+Homepage: http://kopete.kde.org/
 Description: instant messenger for KDE4
  Kopete is an instant messenger program which can communicate with a variety
  of IM systems, such as Yahoo, ICQ, MSN, IRC and Jabber.
