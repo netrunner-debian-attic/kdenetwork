@@ -85,7 +85,6 @@ Architecture: any
 Depends: ${shlibs:Depends}
 Recommends: libqca2-plugin-ossl
 Suggests: khelpcenter
-Homepage: http://kopete.kde.org/
 Description: instant messenger for KDE4
  Kopete is an instant messenger program which can communicate with a variety
  of IM systems, such as Yahoo, ICQ, MSN, IRC and Jabber.
