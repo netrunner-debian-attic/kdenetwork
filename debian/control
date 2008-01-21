@@ -148,7 +148,8 @@ Package: kdenetwork-dbg
 Section: libdevel
 Architecture: any
 Priority: extra
-Depends: kdebase-dbg
+Depends: kdebase-runtime-dbg
+Recommends: kdebase-workspace-dbg
 Description: debugging symbols for kdenetwork
  This package contains the debugging symbols associated with kdenetwork.
  They will automatically be used by gdb for debugging kdenetwork-related

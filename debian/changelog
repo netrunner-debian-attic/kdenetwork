@@ -3,6 +3,8 @@ kdenetwork (4:4.0.0-2) experimental; urgency=low
   +++ Changes by Matthew Rosewarne:
 
   * Add Suggests: kdeartwork-emoticons to kopete
+  * Change kdenetwork-dbg Depends from kdebase-dbg to kdebase-runtime-dbg.
+  * Add Recommends: kdebase-workspace-dbg to kdenetwork-dbg for libplasma.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 14 Jan 2008 04:00:29 -0500
 
