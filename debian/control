@@ -2,7 +2,7 @@ Source: kdenetwork
 Section: kde
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
-Uploaders: Ana Beatriz Guerrero Lopez <ana@debian.org>, Sune Vuorela <debian@pusling.com>, Fathi Boudra <fabo@debian.org>, Armin Berres <trigger+debian@space-based.de>, Modestas Vainius <modestas@vainius.eu>
+Uploaders: Ana Beatriz Guerrero Lopez <ana@debian.org>, Sune Vuorela <debian@pusling.com>, Fathi Boudra <fabo@debian.org>, Armin Berres <trigger+debian@space-based.de>, Modestas Vainius <modestas@vainius.eu>, Matthew Rosewarne <mrosewarne@inoutbox.com>
 Build-Depends: cdbs, debhelper (>= 5), cmake, quilt, kdepimlibs5-dev (>=4:4.0.0-1), 
  libphonon-dev (>=4:4.0.0-1), libxdamage-dev, libxss-dev, libslp-dev, libiw-dev, libidn11-dev, 
  libvncserver-dev (>=0.9.3), libqca2-dev, libplasma-dev,
@@ -13,8 +13,10 @@ Homepage: http://www.kde.org/
 Package: kdenetwork
 Section: kde
 Architecture: all
-Depends: kget (>= ${binary:Version}), knewsticker (>= ${binary:Version}), kopete (>= ${binary:Version}), kppp (>= ${binary:Version}), krdc (>= ${binary:Version}), krfb (>= ${binary:Version})
-Recommends: kdenetwork-filesharing (>= ${binary:Version})
+Depends: kget (>= ${source:Version}), knewsticker (>= ${source:Version}),
+ kopete (>= ${source:Version}), kppp (>= ${source:Version}),
+ krdc (>= ${source:Version}), krfb (>= ${source:Version})
+Recommends: kdenetwork-filesharing (>= ${source:Version})
 Description: network-related apps from the official KDE 4 release
  KDE (the K Desktop Environment) is a powerful Open Source graphical
  desktop environment for Unix workstations. It combines ease of use,
@@ -38,8 +40,8 @@ Description: network filesharing configuration module for KDE 4
 
 Package: kdenetwork-dev
 Section: devel
-Architecture: any
-Depends: kopete (= ${binary:Version}), kdebase-dev (>= ${binary:Version})
+Architecture: all
+Depends: kopete (= ${source:Version}), kdebase-dev (>= 4:4.0.0-1)
 Description: development files for the KDE 4 network module
  This is the development package which contains the headers for the KDE RSS
  library as well as the Kopete chat client, as well as miscellaneous
@@ -150,6 +152,7 @@ Architecture: any
 Priority: extra
 Depends: kdebase-runtime-dbg
 Recommends: kdebase-workspace-dbg
+Suggests: kdenetwork (= ${source:Version})
 Description: debugging symbols for kdenetwork
  This package contains the debugging symbols associated with kdenetwork.
  They will automatically be used by gdb for debugging kdenetwork-related
