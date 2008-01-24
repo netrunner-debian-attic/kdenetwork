@@ -40,8 +40,8 @@ Description: network filesharing configuration module for KDE 4
 
 Package: kdenetwork-dev
 Section: devel
-Architecture: all
-Depends: kopete (= ${source:Version}), kdebase-dev (>= 4:4.0.0-1)
+Architecture: any
+Depends: kopete (= ${binary:Version}), kdebase-dev (>= 4:4.0.0-1)
 Description: development files for the KDE 4 network module
  This is the development package which contains the headers for the KDE RSS
  library as well as the Kopete chat client, as well as miscellaneous
