@@ -3,8 +3,8 @@ Section: kde
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Ana Beatriz Guerrero Lopez <ana@debian.org>, Sune Vuorela <debian@pusling.com>, Fathi Boudra <fabo@debian.org>, Armin Berres <trigger+debian@space-based.de>, Modestas Vainius <modestas@vainius.eu>, Matthew Rosewarne <mrosewarne@inoutbox.com>
-Build-Depends: cdbs, debhelper (>= 5), cmake, quilt, kdepimlibs5-dev (>=4:4.0.0-1), 
- libphonon-dev (>=4:4.0.0-1), libxdamage-dev, libxss-dev, libslp-dev, libiw-dev, libidn11-dev, 
+Build-Depends: cdbs, debhelper (>= 5), cmake, quilt, kdepimlibs5-dev (>=4:4.0.0-1),
+ libphonon-dev (>=4:4.0.0-1), libxdamage-dev, libxss-dev, libslp-dev, libiw-dev, libidn11-dev,
  libvncserver-dev (>=0.9.3), libqca2-dev, libplasma-dev,
  libsqlite3-dev, libdecibel-dev, libqimageblitz-dev
 Standards-Version: 3.7.3
@@ -17,38 +17,36 @@ Depends: kget (>= ${source:Version}), knewsticker (>= ${source:Version}),
  kopete (>= ${source:Version}), kppp (>= ${source:Version}),
  krdc (>= ${source:Version}), krfb (>= ${source:Version})
 Recommends: kdenetwork-filesharing (>= ${source:Version})
-Description: network-related apps from the official KDE 4 release
- KDE (the K Desktop Environment) is a powerful Open Source graphical
- desktop environment for Unix workstations. It combines ease of use,
- contemporary functionality, and outstanding graphical design with the
- technological superiority of the Unix operating system.
+Description: networking applications from the official KDE 4 release
+ KDE is produced by an international technology team that creates free and open
+ source software for desktop and portable computing. Among KDE's products are a
+ modern desktop system for Linux and UNIX platforms, comprehensive office
+ productivity and groupware suites and hundreds of software titles in many
+ categories including Internet and web applications, multimedia, entertainment,
+ educational, graphics and software development.
  .
- This metapackage includes a collection of network and networking related
- applications provided with the official release of KDE 4.
-
+ This metapackage includes networking applications provided with the official
+ release of KDE 4.
 
 Package: kdenetwork-filesharing
 Section: net
 Architecture: any
 Depends: ${shlibs:Depends}, perl-suid
 Description: network filesharing configuration module for KDE 4
- This package provides a KDE Control Center module to configure
- NFS and Samba.
+ This package provides a System Settings panel to configure network
+ file-sharing using NFS and Samba.
  .
- This package is part of KDE 4, as a component of the KDE 4 network module.
- See the 'kde' and 'kdenetwork' packages for more information.
+ This package is part of the KDE 4 networking module.
 
 Package: kdenetwork-dev
 Section: devel
 Architecture: any
 Depends: kopete (= ${binary:Version}), kdebase-dev (>= 4:4.0.0-1)
 Description: development files for the KDE 4 network module
- This is the development package which contains the headers for the KDE RSS
- library as well as the Kopete chat client, as well as miscellaneous
- development-related files for the KDE 4 network module.
+ This package contains development files necessary to build software that uses
+ libraries from the KDE 4 networking module.
  .
- This package is part of KDE 4, as a component of the KDE 4 network module.
- See the 'kde' and 'kdenetwork' packages for more information.
+ This package is part of the KDE 4 networking module.
 
 Package: kget
 Section: net
@@ -56,15 +54,11 @@ Architecture: any
 Depends: ${shlibs:Depends}
 Suggests: khelpcenter
 Description: download manager for KDE 4
- KGet is a a download manager similar to GetRight or Go!zilla. It keeps
- all your downloads in one dialog and you can add and remove transfers.
- Transfers can be paused, resumed, queued or scheduled.
- Dialogs display info about status of transfers - progress, size, speed
- and remaining time. Program supports drag & drop from KDE
- applications and Netscape.
+ KGet is an advanced download manager with support for Metalink and Bittorrent.
+ Downloads are added to the list, where they can be paused, queued, or
+ scheduled for later.
  .
- This package is part of KDE 4, as a component of the KDE 4 network module.
- See the 'kde' and 'kdenetwork' packages for more information.
+ This package is part of the KDE 4 networking module.
 
 Package: knewsticker
 Section: kde
@@ -72,14 +66,10 @@ Architecture: any
 Depends: ${shlibs:Depends}
 Suggests: khelpcenter
 Description: news ticker applet for KDE 4
- This is a news ticker applet for the KDE panel. It can scroll news from
- your favorite news sites, such as lwn.net, /. and freshmeat.net.
- To achieve this, KNewsTicker requires the news sites to provide a
- RSS feed to newsitems. KNewsTicker already comes with a selection of
- good news sources which provide such files.
+ This package contains the News Ticker Plasma applet, which continuously
+ scrolls through entries in a news feed.
  .
- This package is part of KDE 4, as a component of the KDE 4 network module.
- See the 'kde' and 'kdenetwork' packages for more information.
+ This package is part of the KDE 4 networking module.
 
 Package: kopete
 Section: kde
@@ -88,63 +78,51 @@ Depends: ${shlibs:Depends}
 Recommends: libqca2-plugin-ossl
 Suggests: kdeartwork-emoticons, khelpcenter
 Description: instant messenger for KDE 4
- Kopete is an instant messenger program which can communicate with a variety
- of IM systems, such as Yahoo, ICQ, MSN, IRC and Jabber.
+ Kopete is an instant messaging and chat application with support for a wide
+ variety of services, such as AIM, Yahoo, ICQ, MSN, IRC, and Jabber.  Advanced
+ features and additional protocols are available as plugins.
  .
- Kopete includes the "Now Listening" plug-in that can report what music you
- are currently listening to, in a number of different players, including
- noatun, kscd, juk, kaffeine and amarok.
- .
- Support for more IM protocols can be added through a plugin system.
- .
- This package is part of KDE 4, as a component of the KDE 4 network module.
- See the 'kde' and 'kdenetwork' packages for more information.
+ This package is part of the KDE 4 networking module.
 
 Package: kppp
 Section: net
 Architecture: any
 Depends: ${shlibs:Depends}, ppp
 Suggests: khelpcenter
-Description: modem dialer and ppp frontend for KDE 4
- KPPP is a dialer and front end for pppd. It allows for interactive
- script generation and network setup. It will automate the dialing in
- process to your ISP while letting you conveniently monitor the entire
- process.
+Description: modem dialer for KDE 4
+ KPPP is a modem dialer for connecting to a dial-up Internet Service Provider.
+ It displays statistics and accounting information to help users keep track of
+ connection costs.
  .
- Once connected KPPP will provide a rich set of statistics and keep
- track of the time spent online for you.
- .
- This package is part of KDE 4, as a component of the KDE 4 network module.
- See the 'kde' and 'kdenetwork' packages for more information.
+ This package is part of the KDE 4 networking module.
 
 Package: krdc
 Section: net
 Architecture: any
 Depends: ${shlibs:Depends}
-Suggests: rdesktop, khelpcenter
-Description: Remote Desktop Connection for KDE 4
- krdc is an KDE graphical client for the rfb protocol, used by VNC,
- and if rdesktop is installed, krdc can connect to Windows Terminal
- Servers using RDP.
+Recommends: rdesktop
+Suggests: khelpcenter, krfb
+Description: Remote Desktop Connection client for KDE 4
+ The KDE Remote Desktop Connection client can view and control a desktop
+ session running on another system.  It can connect to Windows Terminal Servers
+ using RDP and many other platforms using VNC/RFB.
  .
- This package is part of KDE 4, as a component of the KDE 4 network module.
- See the 'kde' and 'kdenetwork' packages for more information.
+ This package is part of the KDE 4 networking module.
 
 Package: krfb
 Section: net
 Architecture: any
 Depends: ${shlibs:Depends}
-Suggests: khelpcenter
+Suggests: khelpcenter, krdc
 Description: Desktop Sharing for KDE 4
- Desktop Sharing (krfb) is a server application that allows you to share
- your current session with a user on another machine, who can use a
- VNC client like krdc to view or even control the desktop. It doesn't
- require you to start a new X session - it can share the current session.
- This makes it very useful when you want someone to help you perform a
- task.
+ KDE Desktop Sharing is a manager for easily sharing a desktop session with
+ another system.  The desktop session can be viewed or controlled remotely by
+ any VNC or RFB client, such as the KDE Remote Desktop Connection client.
  .
- This package is part of KDE 4, as a component of the KDE 4 network module.
- See the 'kde' and 'kdenetwork' packages for more information.
+ KDE Desktop Sharing can restrict access to only users who are explicitly
+ invited, and will ask for confirmation when a user attempts to connect.
+ .
+ This package is part of the KDE 4 networking module.
 
 Package: kdenetwork-dbg
 Section: libdevel
