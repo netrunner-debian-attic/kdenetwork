@@ -79,6 +79,7 @@ usr/share/dbus-1/interfaces/org.kde.kopete.Client.xml
 usr/share/dbus-1/interfaces/org.kde.kopete.Statistics.xml
 usr/share/dbus-1/interfaces/org.kde.Kopete.xml
 usr/share/doc/kde4/HTML/en/kopete/chatstyle.docbook
+usr/share/doc/kde4/HTML/en/kopete/common
 usr/share/doc/kde4/HTML/en/kopete/index.cache.bz2
 usr/share/doc/kde4/HTML/en/kopete/index.docbook
 usr/share/doc/kde4/HTML/en/kopete/menus.docbook
