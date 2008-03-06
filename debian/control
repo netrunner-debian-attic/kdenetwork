@@ -3,8 +3,8 @@ Section: kde
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Ana Beatriz Guerrero Lopez <ana@debian.org>, Sune Vuorela <debian@pusling.com>, Fathi Boudra <fabo@debian.org>, Armin Berres <trigger+debian@space-based.de>, Modestas Vainius <modestas@vainius.eu>, Matthew Rosewarne <mrosewarne@inoutbox.com>
-Build-Depends: cdbs (>= 0.4.51), debhelper (>= 6), cmake, quilt, kdepimlibs5-dev (>= 4:4.0.1-1),
- libphonon-dev (>= 4:4.0.1-1), libxdamage-dev, libxss-dev, libslp-dev, libiw-dev, libidn11-dev,
+Build-Depends: cdbs (>= 0.4.51), debhelper (>= 6), cmake, quilt, kdepimlibs5-dev (>= 4:4.0.2),
+ libphonon-dev (>= 4:4.0.2), libxdamage-dev, libxss-dev, libslp-dev, libiw-dev, libidn11-dev,
  libvncserver-dev (>= 0.9.3), libqca2-dev, libplasma-dev,
  libsqlite3-dev, libdecibel-dev, libqimageblitz-dev
 Standards-Version: 3.7.3
@@ -43,7 +43,7 @@ Description: network filesharing configuration module for KDE 4
 Package: kdenetwork-dev
 Section: devel
 Architecture: any
-Depends: kopete (= ${binary:Version}), kdebase-dev (>= 4:4.0.0-1)
+Depends: kopete (= ${binary:Version}), kdebase-dev (>= 4:4.0.2)
 Description: development files for the KDE 4 networking module
  This package contains development files for building software that uses
  libraries from the KDE 4 networking module.
