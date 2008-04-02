@@ -6,12 +6,12 @@ usr/share/dbus-1/interfaces/org.kde.kppp.xml
 usr/share/doc/kde4/HTML/en/kppp/accounting.docbook
 usr/share/doc/kde4/HTML/en/kppp/callback.docbook
 usr/share/doc/kde4/HTML/en/kppp/chap.docbook
+usr/share/doc/kde4/HTML/en/kppp/common
 usr/share/doc/kde4/HTML/en/kppp/costsgraphs.png
 usr/share/doc/kde4/HTML/en/kppp/dialog-setup.docbook
 usr/share/doc/kde4/HTML/en/kppp/getting-online.docbook
 usr/share/doc/kde4/HTML/en/kppp/global-settings.docbook
 usr/share/doc/kde4/HTML/en/kppp/hayes.docbook
-usr/share/doc/kde4/HTML/en/kppp/common
 usr/share/doc/kde4/HTML/en/kppp/index.cache.bz2
 usr/share/doc/kde4/HTML/en/kppp/index.docbook
 usr/share/doc/kde4/HTML/en/kppp/kppp-account-accounting-tab.png

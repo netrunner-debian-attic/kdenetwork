@@ -1,3 +1,13 @@
+kdenetwork (4:4.0.66+svn791114-1) experimental; urgency=low
+
+  * First KDE 4.1 snapshot packaged.
+  * Update installed files.
+  * Add build depend on libgmp3-dev and libotr2-dev.
+  * Remove build-depend on decibel that is supposed to be integrate RSN
+    in kdenetwork.
+
+ -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Tue, 01 Apr 2008 19:39:44 +0200
+
 kdenetwork (4:4.0.2-1) experimental; urgency=low
 
   * New upstream release.
