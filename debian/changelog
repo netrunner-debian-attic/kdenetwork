@@ -1,8 +1,10 @@
 kdenetwork (4:4.0.68+svn794641-1) experimental; urgency=low
 
   * New upstream snapshot. 
+  * Update build depends, add  zlib1g-dev, libjpeg62-dev, libxml2-dev,
+    libxslt1-dev and libssl-dev.
 
- -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Sat, 05 Apr 2008 22:03:28 +0200
+ -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Thu, 24 Apr 2008 19:03:51 +0200
 
 kdenetwork (4:4.0.66+svn791114-1) experimental; urgency=low
 
