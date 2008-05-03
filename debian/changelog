@@ -1,6 +1,8 @@
-kdenetwork (4:4.0.71+svn801740-1~pre1) UNRELEASED; urgency=low
-  
-  !!! Does not build due to plasma. Needs newer -workspace !!!
+kdenetwork (4:4.0.72-1) experimental; urgency=low
+
+  +++ Changes by Sune Vuorela:
+
+  * Add zeroconf package
 
   +++ Changes by Modestas Vainius:
 
