@@ -137,3 +137,17 @@ Suggests: kdenetwork (= ${source:Version})
 Description: debugging symbols for the KDE 4 networking module
  This package contains debugging files used to investigate problems with
  binaries included in the KDE 4 networking module.
+
+Package: kde-zeroconf
+Section: kde
+Architecture: any
+Priority: extra
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: zeroconf plugins and kio slaves for kde
+ Zeroconf is an implementation of IPv4 link-local addresses (RFC3927)
+ which can be used for ad-hoc networks.  Addresses are allocated from
+ the 169.254.0.0/16 range semi-randomly.
+ .
+ Keywords: avahi, dnssd
+ . 
+ This package si part of the KDE 4 networking module
