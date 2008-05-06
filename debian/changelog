@@ -2,7 +2,7 @@ kdenetwork (4:4.0.72-1) experimental; urgency=low
 
   +++ Changes by Sune Vuorela:
 
-  * Add zeroconf package
+  * Add zeroconf package.
 
   +++ Changes by Modestas Vainius:
 
@@ -11,7 +11,7 @@ kdenetwork (4:4.0.72-1) experimental; urgency=low
   * Add 97_fix_target_link_libraries.diff to fix linking failures (not
     complete probably).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 06 Feb 2008 17:09:49 +0100
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 06 May 2008 10:05:16 +0200
 
 kdenetwork (4:4.0.68+svn794641-1) experimental; urgency=low
 

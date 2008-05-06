@@ -143,11 +143,11 @@ Section: kde
 Architecture: any
 Priority: extra
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: zeroconf plugins and kio slaves for kde
+Description: zeroconf plugins and kio slaves for KDE 4
  Zeroconf is an implementation of IPv4 link-local addresses (RFC3927)
  which can be used for ad-hoc networks.  Addresses are allocated from
  the 169.254.0.0/16 range semi-randomly.
  .
- Keywords: avahi, dnssd
+ Keywords: avahi, dnssd.
  . 
  This package is part of the KDE 4 networking module.
