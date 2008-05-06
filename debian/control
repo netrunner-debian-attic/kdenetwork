@@ -150,4 +150,4 @@ Description: zeroconf plugins and kio slaves for kde
  .
  Keywords: avahi, dnssd
  . 
- This package si part of the KDE 4 networking module
+ This package is part of the KDE 4 networking module.
