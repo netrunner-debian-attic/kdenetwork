@@ -14,8 +14,8 @@ usr/share/doc/kde4/HTML/en/krdc/vnc_host_configuration.png
 usr/share/doc/kde4/HTML/en/krdc/vnc_preferences.png
 usr/share/doc/kde4/HTML/en/krdc/windowmode_button.png
 usr/share/kde4/apps/krdc/krdcui.rc
-usr/share/kde4/apps/krdc/pics/pointcursormask.png
 usr/share/kde4/apps/krdc/pics/pointcursor.png
+usr/share/kde4/apps/krdc/pics/pointcursormask.png
 usr/share/kde4/config.kcfg/krdc.kcfg
 usr/share/kde4/services/rdp.protocol
 usr/share/kde4/services/vnc.protocol

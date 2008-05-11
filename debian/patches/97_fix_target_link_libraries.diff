@@ -1,16 +1,16 @@
---- kdenetwork-4.0.72.orig/kget/CMakeLists.txt	2008-04-23 15:51:59.000000000 +0000
-+++ kdenetwork-4.0.72/kget/CMakeLists.txt	2008-05-01 23:05:54.000000000 +0000
-@@ -65,7 +65,7 @@
+--- a/kget/CMakeLists.txt
++++ b/kget/CMakeLists.txt
+@@ -71,7 +71,7 @@
  
  kde4_add_library(kgetcore SHARED ${kgetcore_SRCS})
  
 -target_link_libraries(kgetcore ${KDE4_KIO_LIBS})
 +target_link_libraries(kgetcore ${KDE4_KIO_LIBS} ${QT_QTXML_LIBRARY})
  
- if (Nepomuk_FOUND)
+ if (HAVE_NEPOMUK)
    target_link_libraries(kgetcore ${SOPRANO_LIBRARIES} ${NEPOMUK_LIBRARIES})
---- kdenetwork-4.0.72.orig/kget/extensions/konqueror/CMakeLists.txt	2008-04-23 15:51:59.000000000 +0000
-+++ kdenetwork-4.0.72/kget/extensions/konqueror/CMakeLists.txt	2008-05-02 00:02:28.000000000 +0000
+--- a/kget/extensions/konqueror/CMakeLists.txt
++++ b/kget/extensions/konqueror/CMakeLists.txt
 @@ -22,7 +22,7 @@
  
  kde4_add_plugin(khtml_kget ${khtml_kget_SRCS})
@@ -20,8 +20,8 @@
  
  if( WEBKITKDE_FOUND)
      target_link_libraries(khtml_kget ${WEBKITKDE_LIBRARIES} ${QT_QTWEBKIT_LIBRARY})
---- kdenetwork-4.0.72.orig/kget/transfer-plugins/bittorrent/CMakeLists.txt	2008-04-02 12:19:39.000000000 +0000
-+++ kdenetwork-4.0.72/kget/transfer-plugins/bittorrent/CMakeLists.txt	2008-05-01 23:05:54.000000000 +0000
+--- a/kget/transfer-plugins/bittorrent/CMakeLists.txt
++++ b/kget/transfer-plugins/bittorrent/CMakeLists.txt
 @@ -217,7 +217,7 @@
  
  kde4_add_plugin(kget_bittorrentfactory ${kget_bittorrentfactory_PART_SRCS} ${libbtcore_SRC})
@@ -31,8 +31,8 @@
  
  install(TARGETS kget_bittorrentfactory DESTINATION  ${PLUGIN_INSTALL_DIR})
  install(FILES kget_bittorrentfactory.desktop DESTINATION ${SERVICES_INSTALL_DIR})
---- kdenetwork-4.0.72.orig/kopete/kopete/chatwindow/CMakeLists.txt	2008-03-13 08:16:01.000000000 +0000
-+++ kdenetwork-4.0.72/kopete/kopete/chatwindow/CMakeLists.txt	2008-05-01 23:05:54.000000000 +0000
+--- a/kopete/kopete/chatwindow/CMakeLists.txt
++++ b/kopete/kopete/chatwindow/CMakeLists.txt
 @@ -32,7 +32,7 @@
  kde4_add_plugin(krichtexteditpart WITH_PREFIX ${krichtexteditpart_PART_SRCS})
  
@@ -42,8 +42,8 @@
  
  install(TARGETS krichtexteditpart  DESTINATION ${PLUGIN_INSTALL_DIR})
  
---- kdenetwork-4.0.72.orig/kopete/plugins/highlight/CMakeLists.txt	2008-01-04 23:58:40.000000000 +0000
-+++ kdenetwork-4.0.72/kopete/plugins/highlight/CMakeLists.txt	2008-05-01 23:05:54.000000000 +0000
+--- a/kopete/plugins/highlight/CMakeLists.txt
++++ b/kopete/plugins/highlight/CMakeLists.txt
 @@ -28,7 +28,7 @@
  kde4_add_plugin(kcm_kopete_highlight ${kcm_kopete_highlight_PART_SRCS})
  
@@ -53,8 +53,8 @@
  
  install(TARGETS kcm_kopete_highlight  DESTINATION ${PLUGIN_INSTALL_DIR})
  
---- kdenetwork-4.0.72.orig/kopete/plugins/latex/CMakeLists.txt	2008-01-04 23:58:41.000000000 +0000
-+++ kdenetwork-4.0.72/kopete/plugins/latex/CMakeLists.txt	2008-05-01 23:05:54.000000000 +0000
+--- a/kopete/plugins/latex/CMakeLists.txt
++++ b/kopete/plugins/latex/CMakeLists.txt
 @@ -32,7 +32,7 @@
  kde4_add_plugin(kcm_kopete_latex ${kcm_kopete_latex_PART_SRCS})
  
@@ -64,8 +64,8 @@
  
  install(TARGETS kcm_kopete_latex  DESTINATION ${PLUGIN_INSTALL_DIR})
  
---- kdenetwork-4.0.72.orig/kopete/libkopete/CMakeLists.txt	2008-03-25 17:24:00.000000000 +0000
-+++ kdenetwork-4.0.72/kopete/libkopete/CMakeLists.txt	2008-05-01 23:05:54.000000000 +0000
+--- a/kopete/libkopete/CMakeLists.txt
++++ b/kopete/libkopete/CMakeLists.txt
 @@ -131,7 +131,7 @@
  
  kde4_add_library(kopete SHARED ${kopete_LIB_SRCS})
@@ -75,3 +75,25 @@
  if(Q_WS_X11 AND X11_Xss_FOUND)
     target_link_libraries(kopete ${X11_Xss_LIB})
  endif(Q_WS_X11 AND X11_Xss_FOUND)
+--- a/kdnssd/kdedmodule/CMakeLists.txt
++++ b/kdnssd/kdedmodule/CMakeLists.txt
+@@ -8,7 +8,7 @@
+ 
+ kde4_add_plugin(kded_dnssdwatcher ${kded_dnssdwatcher_PART_SRCS})
+ 
+-target_link_libraries(kded_dnssdwatcher  ${KDE4_KIO_LIBS} ${KDE4_KDNSSD_LIBS} )
++target_link_libraries(kded_dnssdwatcher  ${KDE4_KIO_LIBS} ${KDE4_KDNSSD_LIBS} ${QT_QTDBUS_LIBRARY} )
+ 
+ install(TARGETS kded_dnssdwatcher  DESTINATION ${PLUGIN_INSTALL_DIR})
+ 
+--- a/kget/plasma/engine/CMakeLists.txt
++++ b/kget/plasma/engine/CMakeLists.txt
+@@ -7,7 +7,7 @@
+ qt4_add_dbus_interface(kget_engine_SRCS ../../../kget/org.kde.kget.xml kget_interface)
+ 
+ kde4_add_plugin(plasma_engine_kget ${kget_engine_SRCS})
+-target_link_libraries(plasma_engine_kget ${KDE4_KDECORE_LIBS} ${PLASMA_LIBS})
++target_link_libraries(plasma_engine_kget ${KDE4_KDECORE_LIBS} ${PLASMA_LIBS} ${QT_QTDBUS_LIBRARY})
+ 
+ install(TARGETS plasma_engine_kget DESTINATION ${PLUGIN_INSTALL_DIR})
+ install(FILES plasma-engine-kget.desktop DESTINATION ${SERVICES_INSTALL_DIR})
