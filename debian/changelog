@@ -7,8 +7,9 @@ kdenetwork (4:4.0.73+svn806279-1~pre1) UNRELEASED; urgency=low
   +++ Changes by Modestas Vainius:
 
   * Update install files.
+  * kget works (Closes: #477332).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 11 May 2008 05:04:19 +0300
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 11 May 2008 18:59:07 +0300
 
 kdenetwork (4:4.0.72-1) experimental; urgency=low
 
