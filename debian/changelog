@@ -3,11 +3,12 @@ kdenetwork (4:4.0.73+svn806279-1~pre1) UNRELEASED; urgency=low
   * New upstream development snapshot:
     - The latest upstream commit is r806279 by jgoday
     - Date: Sun, 11 May 2008 01:54:57 -0000
+
+  * kget works (Closes: #477332).
  
   +++ Changes by Modestas Vainius:
 
   * Update install files.
-  * kget works (Closes: #477332).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 11 May 2008 18:59:07 +0300
 
