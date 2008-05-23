@@ -1,3 +1,11 @@
+kdenetwork (4:4.0.80-1) UNRELEASED; urgency=low
+
+  * New upstream snapshot.
+  * Refresh patch 97.
+  * Update install files.
+
+ -- Fathi Boudra <fabo@debian.org>  Thu, 22 May 2008 23:08:38 +0200
+
 kdenetwork (4:4.0.74-1) experimental; urgency=low
 
   * New upstream snapshot.

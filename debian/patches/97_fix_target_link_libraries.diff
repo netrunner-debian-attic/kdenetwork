@@ -20,17 +20,6 @@
  
  if( WEBKITKDE_FOUND)
      target_link_libraries(khtml_kget ${WEBKITKDE_LIBRARIES} ${QT_QTWEBKIT_LIBRARY})
---- a/kget/transfer-plugins/bittorrent/CMakeLists.txt
-+++ b/kget/transfer-plugins/bittorrent/CMakeLists.txt
-@@ -217,7 +217,7 @@
- 
- kde4_add_plugin(kget_bittorrentfactory ${kget_bittorrentfactory_PART_SRCS} ${libbtcore_SRC})
- 
--target_link_libraries(kget_bittorrentfactory ${KDE4_KDEUI_LIBS} ${GMP_LIBRARIES} ${QCA2_LIBRARIES} kgetcore)
-+target_link_libraries(kget_bittorrentfactory ${KDE4_KDEUI_LIBS} ${GMP_LIBRARIES} ${QCA2_LIBRARIES} kgetcore ${QT_QTNETWORK_LIBRARY})
- 
- install(TARGETS kget_bittorrentfactory DESTINATION  ${PLUGIN_INSTALL_DIR})
- install(FILES kget_bittorrentfactory.desktop DESTINATION ${SERVICES_INSTALL_DIR})
 --- a/kopete/kopete/chatwindow/CMakeLists.txt
 +++ b/kopete/kopete/chatwindow/CMakeLists.txt
 @@ -32,7 +32,7 @@
@@ -64,17 +53,6 @@
  
  install(TARGETS kcm_kopete_latex  DESTINATION ${PLUGIN_INSTALL_DIR})
  
---- a/kopete/libkopete/CMakeLists.txt
-+++ b/kopete/libkopete/CMakeLists.txt
-@@ -131,7 +131,7 @@
- 
- kde4_add_library(kopete SHARED ${kopete_LIB_SRCS})
- 
--target_link_libraries(kopete ${KDE4_KUTILS_LIBS} ${KDE4_KDE3SUPPORT_LIBS} ${KDE4_KABC_LIBS} )
-+target_link_libraries(kopete ${KDE4_KUTILS_LIBS} ${KDE4_KDE3SUPPORT_LIBS} ${KDE4_KABC_LIBS} ${KDE4_SOLID_LIBS} ${QT_QTDBUS_LIBRARY} ${QT_QTXML_LIBRARY} ${X11_X11_LIB} )
- if(Q_WS_X11 AND X11_Xss_FOUND)
-    target_link_libraries(kopete ${X11_Xss_LIB})
- endif(Q_WS_X11 AND X11_Xss_FOUND)
 --- a/kdnssd/kdedmodule/CMakeLists.txt
 +++ b/kdnssd/kdedmodule/CMakeLists.txt
 @@ -8,7 +8,7 @@
@@ -97,3 +75,25 @@
  
  install(TARGETS plasma_engine_kget DESTINATION ${PLUGIN_INSTALL_DIR})
  install(FILES plasma-engine-kget.desktop DESTINATION ${SERVICES_INSTALL_DIR})
+--- a/kget/transfer-plugins/bittorrent/CMakeLists.txt
++++ b/kget/transfer-plugins/bittorrent/CMakeLists.txt
+@@ -237,7 +237,7 @@
+ if (GMP_FOUND AND QCA2_FOUND AND ENABLE_EMBEDDED_TORRENT_SUPPORT)
+     kde4_add_kcfg_files(kget_bittorrentfactory_PART_SRCS bittorrentsettings.kcfgc)
+     kde4_add_plugin(kget_bittorrentfactory ${kget_bittorrentfactory_PART_SRCS} ${libbtcore_SRC})
+-    target_link_libraries(kget_bittorrentfactory ${KDE4_KDEUI_LIBS} ${GMP_LIBRARIES} ${QCA2_LIBRARIES} kgetcore)
++    target_link_libraries(kget_bittorrentfactory ${KDE4_KDEUI_LIBS} ${GMP_LIBRARIES} ${QCA2_LIBRARIES} kgetcore ${QT_QTNETWORK_LIBRARY})
+     install(TARGETS kget_bittorrentfactory DESTINATION  ${PLUGIN_INSTALL_DIR})
+     install(FILES kget_bittorrentfactory.desktop DESTINATION ${SERVICES_INSTALL_DIR})
+ else (GMP_FOUND AND QCA2_FOUND AND ENABLE_EMBEDDED_TORRENT_SUPPORT)
+--- a/kopete/libkopete/CMakeLists.txt
++++ b/kopete/libkopete/CMakeLists.txt
+@@ -131,7 +131,7 @@
+ 
+ kde4_add_library(kopete SHARED ${kopete_LIB_SRCS})
+ 
+-target_link_libraries(kopete ${KDE4_KUTILS_LIBS} ${KDE4_KDE3SUPPORT_LIBS} ${KDE4_KABC_LIBS})
++target_link_libraries(kopete ${KDE4_KUTILS_LIBS} ${KDE4_KDE3SUPPORT_LIBS} ${KDE4_KABC_LIBS} ${KDE4_SOLID_LIBS} ${QT_QTDBUS_LIBRARY} ${QT_QTXML_LIBRARY} ${X11_X11_LIB})
+ if(Q_WS_X11 AND X11_Xss_FOUND)
+    target_link_libraries(kopete ${X11_Xss_LIB})
+ endif(Q_WS_X11 AND X11_Xss_FOUND)
