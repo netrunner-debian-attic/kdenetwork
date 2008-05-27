@@ -1,4 +1,4 @@
-kdenetwork (4:4.0.80-1) UNRELEASED; urgency=low
+kdenetwork (4:4.0.80-1) experimental; urgency=low
 
   * New upstream snapshot.
   * Refresh patch 97.
