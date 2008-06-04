@@ -1,4 +1,4 @@
-etc/kde4/kopeterc
+usr/share/kde4/config/kopeterc
 usr/bin/kopete
 usr/bin/kopete_latexconvert.sh
 usr/bin/winpopup-install.sh
