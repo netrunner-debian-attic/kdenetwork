@@ -1,3 +1,9 @@
+kdenetwork (4:4.0.81+svn815974-1) UNRELEASED; urgency=low
+
+  * New upstream development snapshot.
+
+ -- Fathi Boudra <fabo@debian.org>  Wed, 04 Jun 2008 11:51:22 +0200
+
 kdenetwork (4:4.0.80-1) experimental; urgency=low
 
   * New upstream snapshot.
