@@ -1,8 +1,13 @@
-kdenetwork (4:4.0.81+svn815974-1) UNRELEASED; urgency=low
+kdenetwork (4:4.0.82+svn819278-1~pre1) UNRELEASED; urgency=low
 
   * New upstream development snapshot.
 
- -- Fathi Boudra <fabo@debian.org>  Wed, 04 Jun 2008 11:51:22 +0200
+  +++ Changes by Modestas Vainius:
+
+  * Bump build depends of kdepimlibs-dev and libplasma-dev to 4.0.82.
+  * Build depend on phonon 4.2~.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 11 Jun 2008 01:07:39 +0300
 
 kdenetwork (4:4.0.80-1) experimental; urgency=low
 
