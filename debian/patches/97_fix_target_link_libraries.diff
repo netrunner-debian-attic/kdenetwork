@@ -1,3 +1,5 @@
+Index: b/kget/CMakeLists.txt
+===================================================================
 --- a/kget/CMakeLists.txt
 +++ b/kget/CMakeLists.txt
 @@ -71,7 +71,7 @@
@@ -9,6 +11,8 @@
  
  if (HAVE_NEPOMUK)
    target_link_libraries(kgetcore ${SOPRANO_LIBRARIES} ${NEPOMUK_LIBRARIES})
+Index: b/kget/extensions/konqueror/CMakeLists.txt
+===================================================================
 --- a/kget/extensions/konqueror/CMakeLists.txt
 +++ b/kget/extensions/konqueror/CMakeLists.txt
 @@ -22,7 +22,7 @@
@@ -20,6 +24,8 @@
  
  if( WEBKITKDE_FOUND)
      target_link_libraries(khtml_kget ${WEBKITKDE_LIBRARIES} ${QT_QTWEBKIT_LIBRARY})
+Index: b/kopete/kopete/chatwindow/CMakeLists.txt
+===================================================================
 --- a/kopete/kopete/chatwindow/CMakeLists.txt
 +++ b/kopete/kopete/chatwindow/CMakeLists.txt
 @@ -32,7 +32,7 @@
@@ -31,6 +37,8 @@
  
  install(TARGETS krichtexteditpart  DESTINATION ${PLUGIN_INSTALL_DIR})
  
+Index: b/kopete/plugins/highlight/CMakeLists.txt
+===================================================================
 --- a/kopete/plugins/highlight/CMakeLists.txt
 +++ b/kopete/plugins/highlight/CMakeLists.txt
 @@ -28,7 +28,7 @@
@@ -42,6 +50,8 @@
  
  install(TARGETS kcm_kopete_highlight  DESTINATION ${PLUGIN_INSTALL_DIR})
  
+Index: b/kopete/plugins/latex/CMakeLists.txt
+===================================================================
 --- a/kopete/plugins/latex/CMakeLists.txt
 +++ b/kopete/plugins/latex/CMakeLists.txt
 @@ -32,7 +32,7 @@
@@ -53,6 +63,8 @@
  
  install(TARGETS kcm_kopete_latex  DESTINATION ${PLUGIN_INSTALL_DIR})
  
+Index: b/kdnssd/kdedmodule/CMakeLists.txt
+===================================================================
 --- a/kdnssd/kdedmodule/CMakeLists.txt
 +++ b/kdnssd/kdedmodule/CMakeLists.txt
 @@ -8,7 +8,7 @@
@@ -64,6 +76,8 @@
  
  install(TARGETS kded_dnssdwatcher  DESTINATION ${PLUGIN_INSTALL_DIR})
  
+Index: b/kget/plasma/engine/CMakeLists.txt
+===================================================================
 --- a/kget/plasma/engine/CMakeLists.txt
 +++ b/kget/plasma/engine/CMakeLists.txt
 @@ -7,7 +7,7 @@
@@ -75,9 +89,11 @@
  
  install(TARGETS plasma_engine_kget DESTINATION ${PLUGIN_INSTALL_DIR})
  install(FILES plasma-engine-kget.desktop DESTINATION ${SERVICES_INSTALL_DIR})
+Index: b/kget/transfer-plugins/bittorrent/CMakeLists.txt
+===================================================================
 --- a/kget/transfer-plugins/bittorrent/CMakeLists.txt
 +++ b/kget/transfer-plugins/bittorrent/CMakeLists.txt
-@@ -237,7 +237,7 @@
+@@ -238,7 +238,7 @@
  if (GMP_FOUND AND QCA2_FOUND AND ENABLE_EMBEDDED_TORRENT_SUPPORT)
      kde4_add_kcfg_files(kget_bittorrentfactory_PART_SRCS bittorrentsettings.kcfgc)
      kde4_add_plugin(kget_bittorrentfactory ${kget_bittorrentfactory_PART_SRCS} ${libbtcore_SRC})
@@ -86,6 +102,8 @@
      install(TARGETS kget_bittorrentfactory DESTINATION  ${PLUGIN_INSTALL_DIR})
      install(FILES kget_bittorrentfactory.desktop DESTINATION ${SERVICES_INSTALL_DIR})
  else (GMP_FOUND AND QCA2_FOUND AND ENABLE_EMBEDDED_TORRENT_SUPPORT)
+Index: b/kopete/libkopete/CMakeLists.txt
+===================================================================
 --- a/kopete/libkopete/CMakeLists.txt
 +++ b/kopete/libkopete/CMakeLists.txt
 @@ -131,7 +131,7 @@

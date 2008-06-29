@@ -37,7 +37,8 @@ usr/share/kde4/apps/kget/www/header-separator.png
 usr/share/kde4/apps/kget/www/hi64-apps-kget.png
 usr/share/kde4/apps/kget/www/iepngfix.htc
 usr/share/kde4/apps/kget/www/index.htm
-usr/share/kde4/apps/kget/www/mootools.js
+usr/share/kde4/apps/kget/www/mootools-core-yc.js
+usr/share/kde4/apps/kget/www/mootools-more.js
 usr/share/kde4/apps/kget/www/new-download-background.png
 usr/share/kde4/apps/kget/www/preferences-system.png
 usr/share/kde4/apps/kget/www/title-border-bottom-downloads.png
