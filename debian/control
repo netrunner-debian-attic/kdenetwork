@@ -9,7 +9,7 @@ Build-Depends: cdbs (>= 0.4.51), debhelper (>= 6), cmake (>= 2.6.0), quilt,
  libxdamage-dev, libxss-dev, libslp-dev, libiw-dev, libidn11-dev,
  libvncserver-dev (>= 0.9.3), libqca2-dev (>= 2.0.0),
  libsqlite3-dev, libqimageblitz-dev (>= 1:0.0.4),
- libgmp3-dev, libotr2-dev, libboost-dev, libavahi-compat-libdnssd-dev
+ libgmp3-dev, libotr2-dev, libboost-dev, libdecibel-dev, libavahi-compat-libdnssd-dev
 Standards-Version: 3.7.3
 Homepage: http://www.kde.org/
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/branches/kde4/packages/kdenetwork
