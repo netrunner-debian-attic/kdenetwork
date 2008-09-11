@@ -1,3 +1,11 @@
+kdenetwork (4:4.1.1-1~lenny+1) lenny; urgency=low
+
+  * Backport for Lenny.
+  * Changes:
+    -Remove build depend on decibel.
+
+ -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Thu, 11 Sep 2008 21:05:12 +0200
+
 kdenetwork (4:4.1.1-1) experimental; urgency=low
 
   * New upstream release.
