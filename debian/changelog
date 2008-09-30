@@ -1,8 +1,8 @@
-kdenetwork (4:4.1.2-0) UNRELEASED; urgency=low
+kdenetwork (4:4.1.2-1) experimental; urgency=low
 
   * New upstream release.
 
- -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Thu, 25 Sep 2008 23:10:51 +0200
+ -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Tue, 30 Sep 2008 21:26:13 +0200
 
 kdenetwork (4:4.1.1-1) experimental; urgency=low
 
