@@ -1,0 +1,10 @@
+--- a/cmake/modules/FindDecibel.cmake
++++ b/cmake/modules/FindDecibel.cmake
+@@ -33,6 +33,7 @@
+ 
+ FIND_LIBRARY(QT_TAPIOCA_LIBRARY NAMES QtTapioca
+   PATHS
++  ${QTTAPIOCA_LIBDIR}
+   ${QTTAPIOCA_LIBRARY_DIRS} 
+   NO_DEFAULT_PATH 
+ )

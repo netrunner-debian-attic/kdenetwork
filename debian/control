@@ -3,14 +3,16 @@ Section: kde
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Ana Beatriz Guerrero Lopez <ana@debian.org>, Sune Vuorela <debian@pusling.com>, Fathi Boudra <fabo@debian.org>, Armin Berres <trigger+debian@space-based.de>, Modestas Vainius <modestas@vainius.eu>, Matthew Rosewarne <mrosewarne@inoutbox.com>
-Build-Depends: cdbs (>= 0.4.51), debhelper (>= 6), cmake (>= 2.6.0), quilt,
- kdepimlibs5-dev (>= 4:4.1.3), libphonon-dev (>> 4:4.2.0), libplasma-dev (>= 4:4.1.3),
+Build-Depends: cdbs (>= 0.4.51), debhelper (>= 6), quilt,
+ kdelibs5-dev (>= 4:4.1.80), kdepimlibs5-dev (>= 4:4.1.80), libplasma-dev (>= 4:4.1.80),
  zlib1g-dev, libjpeg62-dev, libxml2-dev, libxslt1-dev, libssl-dev,
  libxdamage-dev, libxss-dev, libslp-dev, libiw-dev, libidn11-dev,
  libvncserver-dev (>= 0.9.3), libqca2-dev (>= 2.0.0),
  libsqlite3-dev, libqimageblitz-dev (>= 1:0.0.4),
- libgmp3-dev, libotr2-dev, libboost-dev, libdecibel-dev, libavahi-compat-libdnssd-dev
-Standards-Version: 3.7.3
+ libgmp3-dev, libotr2-dev, libboost-dev, libdecibel-dev (>= 0.7.1~),
+ libavahi-compat-libdnssd-dev, libmeanwhile-dev,
+ libortp7-dev, libspeex-dev, libasound2-dev (>= 1.0.14a) [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386]
+Standards-Version: 3.8.0
 Homepage: http://www.kde.org/
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/branches/kde4/packages/kdenetwork
 Vcs-Svn: svn://svn.debian.org/pkg-kde/branches/kde4/packages/kdenetwork
@@ -18,7 +20,7 @@ Vcs-Svn: svn://svn.debian.org/pkg-kde/branches/kde4/packages/kdenetwork
 Package: kdenetwork
 Section: kde
 Architecture: all
-Depends: kget (>= ${source:Version}), knewsticker (>= ${source:Version}),
+Depends: kget (>= ${source:Version}),
  kopete (>= ${source:Version}), kppp (>= ${source:Version}),
  krdc (>= ${source:Version}), krfb (>= ${source:Version})
 Recommends: kdenetwork-filesharing (>= ${source:Version})
@@ -60,17 +62,6 @@ Description: download manager for KDE 4
  KGet is an advanced download manager with support for Metalink and Bittorrent.
  Downloads are added to the list, where they can be paused, queued, or
  scheduled for later.
- .
- This package is part of the KDE 4 networking module.
-
-Package: knewsticker
-Section: kde
-Architecture: any
-Depends: ${shlibs:Depends}
-Suggests: khelpcenter
-Description: news ticker applet for KDE 4
- This package contains the News Ticker Plasma applet, which continuously
- scrolls through entries in a news feed.
  .
  This package is part of the KDE 4 networking module.
 

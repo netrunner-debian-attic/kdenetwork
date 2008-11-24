@@ -15,6 +15,7 @@ usr/include/kopete/kopetecontactlist.h
 usr/include/kopete/kopetecontactlistelement.h
 usr/include/kopete/kopetecontacttaskbase.h
 usr/include/kopete/kopetedeletecontacttask.h
+usr/include/kopete/kopeteemoticons.h
 usr/include/kopete/kopeteglobal.h
 usr/include/kopete/kopetegroup.h
 usr/include/kopete/kopeteidentity.h
@@ -42,6 +43,7 @@ usr/include/kopete/kopetestatussettings.h
 usr/include/kopete/kopetetask.h
 usr/include/kopete/kopetetransfermanager.h
 usr/include/kopete/kopeteuiglobal.h
+usr/include/kopete/kopeteutils.h
 usr/include/kopete/kopeteversion.h
 usr/include/kopete/ui/accountselector.h
 usr/include/kopete/ui/addcontactpage.h
@@ -49,9 +51,9 @@ usr/include/kopete/ui/addressbookselectordialog.h
 usr/include/kopete/ui/addressbookselectorwidget.h
 usr/include/kopete/ui/avatardialog.h
 usr/include/kopete/ui/avatarselectorwidget.h
+usr/include/kopete/ui/contactaddednotifydialog.h
 usr/include/kopete/ui/editaccountwidget.h
 usr/include/kopete/ui/kopetecontactaction.h
-usr/include/kopete/ui/kopetefileconfirmdialog.h
 usr/include/kopete/ui/kopeteinfodialog.h
 usr/include/kopete/ui/kopetelistview.h
 usr/include/kopete/ui/kopetelistviewitem.h
@@ -60,14 +62,12 @@ usr/include/kopete/ui/kopetepasswordwidget.h
 usr/include/kopete/ui/kopetestdaction.h
 usr/include/kopete/ui/kopeteview.h
 usr/include/kopete/ui/kopeteviewplugin.h
-usr/include/kopete/ui/ui_fileconfirmbase.h
 usr/include/kopete/ui/ui_kopeteawaydialogbase.h
 usr/include/kopete/ui/ui_kopetepasswordwidgetbase.h
 usr/lib/libgadu_kopete.so
 usr/lib/libiris_kopete.so
 usr/lib/libkgetcore.so
 usr/lib/libkopete.so
-usr/lib/libkopete_msn_shared.so
 usr/lib/libkopete_oscar.so
 usr/lib/libkopete_otr_shared.so
 usr/lib/libkopete_videodevice.so
@@ -78,3 +78,8 @@ usr/lib/libkopeteprivacy.so
 usr/lib/libkopetestatusmenu.so
 usr/lib/libkyahoo.so
 usr/lib/liboscar.so
+usr/share/dbus-1/interfaces/org.kde.Kopete.xml
+usr/share/dbus-1/interfaces/org.kde.kdnssd.xml
+usr/share/dbus-1/interfaces/org.kde.kopete.Client.xml
+usr/share/dbus-1/interfaces/org.kde.kopete.Statistics.xml
+usr/share/dbus-1/interfaces/org.kde.kppp.xml

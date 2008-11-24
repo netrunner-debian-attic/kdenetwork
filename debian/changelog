@@ -1,3 +1,26 @@
+kdenetwork (4:4.1.80+svn888472-0r1) UNRELEASED; urgency=low
+
+  * New upstream development snapshot.
+
+  TODO: wlm support in kopete: needs libmsn #505795.
+  TODO: despite being advertized, decibel is not used. remove b-d?
+
+  +++ Changes by Modestas Vainius:
+
+  * Drop cmake from build depends.
+  * Bump KDE build depends to 4:4.1.80.
+  * Drop 97_fix_target_link_libraries.diff patch. No longer needed.
+  * Bump Standards-Version to 3.8.0: add README.source.
+  * New Kopete features require new build depends:
+    - libortp7-dev, libspeex-dev, libasound2-dev for Jingle support.
+    - bump libdecibel-dev to 0.7.1 for telepathy protocol.
+    - libmeanwhile-dev for Meanwhile protocol support.
+  * Remove knewsticker, dropped upstream.
+  * Add debian/installgen.
+  * Update install files.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 24 Nov 2008 23:00:36 +0200
+
 kdenetwork (4:4.1.3-1) experimental; urgency=low
 
   * New upstream release

@@ -1,0 +1,25 @@
+[kdenetwork-filesharing]
+from:\bfilesharing/
+
+[kdenetwork-dev]
+dst:usr/include
+dst:usr/lib/lib[^/]+\.so$ link:usr/lib/lib[^/]+\.so\.
+dst:/dbus-1/interfaces/
+
+[kget]
+from:\bkget/
+
+[kopete]
+from:\bkopete/
+
+[kppp]
+from:\bkppp/
+
+[krdc]
+from:\bkrdc/
+
+[krfb]
+from:\bkrfb/
+
+[kde-zeroconf]
+from:\bkdnssd/
