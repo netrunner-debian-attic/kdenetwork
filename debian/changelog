@@ -18,7 +18,11 @@ kdenetwork (4:4.1.80+svn890150-0r1) UNRELEASED; urgency=low
   * Add debian/installgen.
   * Update install files.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 28 Nov 2008 19:31:05 +0200
+  +++ Changes by George Kiagiadakis:
+
+  * Fix permissions and owners for kppp to make it work again.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 28 Nov 2008 21:47:25 +0000
 
 kdenetwork (4:4.1.3-1) experimental; urgency=low
 
