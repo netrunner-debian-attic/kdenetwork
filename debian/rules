@@ -5,5 +5,5 @@ include debian/cdbs/kde.mk
 DEB_FIXPERMS_EXCLUDE := usr/bin/kppp
 
 binary-install/kppp::
-	chown root:dip debian/kppp/usr/bin/kppp*
+	chown root:dip debian/kppp/usr/bin/kppp
 	chmod 4754 debian/kppp/usr/bin/kppp
