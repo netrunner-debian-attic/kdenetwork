@@ -10,7 +10,7 @@ Build-Depends: cdbs (>= 0.4.51), debhelper (>= 6), quilt,
  libvncserver-dev (>= 0.9.3), libqca2-dev (>= 2.0.0),
  libsqlite3-dev, libqimageblitz-dev (>= 1:0.0.4),
  libgmp3-dev, libotr2-dev, libboost-dev,
- libavahi-compat-libdnssd-dev, libmeanwhile-dev,
+ libavahi-compat-libdnssd-dev, libmeanwhile-dev, libmsn-dev (>= 4.0~beta1),
  libortp7-dev, libspeex-dev, libasound2-dev (>= 1.0.14a) [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386]
 Standards-Version: 3.8.0
 Homepage: http://www.kde.org/
