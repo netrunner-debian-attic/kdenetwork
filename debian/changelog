@@ -2,6 +2,8 @@ kdenetwork (4:4.1.81+svn891849-0r1) UNRELEASED; urgency=low
 
   * New upstream development snapshot.
 
+  TODO: libkopete*, libkopete-dev.
+
   +++ Changes by Modestas Vainius:
 
   * Drop cmake from build depends.
