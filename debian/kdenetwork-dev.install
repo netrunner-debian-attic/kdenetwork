@@ -20,6 +20,7 @@ usr/include/kopete/kopeteglobal.h
 usr/include/kopete/kopetegroup.h
 usr/include/kopete/kopeteidentity.h
 usr/include/kopete/kopeteidentitymanager.h
+usr/include/kopete/kopeteinfoevent.h
 usr/include/kopete/kopetemessage.h
 usr/include/kopete/kopetemessageevent.h
 usr/include/kopete/kopetemessagehandler.h
