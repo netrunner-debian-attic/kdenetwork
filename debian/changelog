@@ -1,4 +1,4 @@
-kdenetwork (4:4.1.85+svn895734-0r1) UNRELEASED; urgency=low
+kdenetwork (4:4.1.85+svn897981-0r1) UNRELEASED; urgency=low
 
   * New upstream development snapshot.
 
@@ -14,7 +14,7 @@ kdenetwork (4:4.1.85+svn895734-0r1) UNRELEASED; urgency=low
     - libortp7-dev, libspeex-dev, libasound2-dev for Jingle support.
     - remove libdecibel-dev build dependency. Advertized, but unused.
     - libmeanwhile-dev for Meanwhile protocol support.
-    - libmsn (>= 4.0~beta1) for Windows Live Messenger (and MSN) support.
+    - libmsn (>= 4.0~beta1+svn079) for Windows Live Messenger (and MSN) support.
   * Remove knewsticker, dropped upstream.
   * Add debian/installgen.
   * Update install files.
@@ -24,7 +24,7 @@ kdenetwork (4:4.1.85+svn895734-0r1) UNRELEASED; urgency=low
   * Fix permissions and owners for kppp to make it work again.
   * kdenetwork-dev now depends on kdelibs5-dev instead of kdebase-dev.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 03 Dec 2008 16:12:27 +0000
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 17 Dec 2008 22:48:29 +0200
 
 kdenetwork (4:4.1.3-1) experimental; urgency=low
 
