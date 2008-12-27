@@ -4,13 +4,13 @@ Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Ana Beatriz Guerrero Lopez <ana@debian.org>, Sune Vuorela <debian@pusling.com>, Fathi Boudra <fabo@debian.org>, Armin Berres <trigger+debian@space-based.de>, Modestas Vainius <modestas@vainius.eu>, Matthew Rosewarne <mrosewarne@inoutbox.com>
 Build-Depends: cdbs (>= 0.4.51), debhelper (>= 6), quilt,
- kdelibs5-dev (>= 4:4.1.80), kdepimlibs5-dev (>= 4:4.1.80), libplasma-dev (>= 4:4.1.80),
+ kdelibs5-dev (>= 4:4.1.85), kdepimlibs5-dev (>= 4:4.1.85), libplasma-dev (>= 4:4.1.85),
  zlib1g-dev, libjpeg62-dev, libxml2-dev, libxslt1-dev, libssl-dev,
- libxdamage-dev, libxss-dev, libslp-dev, libiw-dev, libidn11-dev,
+ libxdamage-dev, libxss-dev, libslp-dev, libiw-dev, libidn11-dev, libxtst-dev,
  libvncserver-dev (>= 0.9.3), libqca2-dev (>= 2.0.0),
  libsqlite3-dev, libqimageblitz-dev (>= 1:0.0.4),
  libgmp3-dev, libotr2-dev, libboost-dev,
- libavahi-compat-libdnssd-dev, libmeanwhile-dev, libmsn-dev (>= 4.0~beta1+svn079),
+ libavahi-compat-libdnssd-dev, libmeanwhile-dev, libmsn-dev (>= 4.0~beta2),
  libortp7-dev, libspeex-dev, libasound2-dev (>= 1.0.14a) [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386]
 Standards-Version: 3.8.0
 Homepage: http://www.kde.org/
@@ -45,14 +45,6 @@ Description: network filesharing configuration module for KDE 4
  .
  This package is part of the KDE 4 networking module.
 
-Package: kdenetwork-dev
-Section: devel
-Architecture: any
-Depends: kopete (= ${binary:Version}), ${sameVersionDep:kdelibs5-dev:kopete}
-Description: development files for the KDE 4 networking module
- This package contains development files for building software that uses
- libraries from the KDE 4 networking module.
-
 Package: kget
 Section: net
 Architecture: any
@@ -62,6 +54,21 @@ Description: download manager for KDE 4
  KGet is an advanced download manager with support for Metalink and Bittorrent.
  Downloads are added to the list, where they can be paused, queued, or
  scheduled for later.
+ .
+ This package is part of the KDE 4 networking module.
+
+Package: libkopete4
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Replaces: kopete (<< 4:4.1.86)
+Description: main Kopete library
+ Kopete is an instant messaging and chat application with support for a wide
+ variety of services, such as AIM, Yahoo, ICQ, MSN, IRC, and Jabber.  Advanced
+ features and additional protocols are available as plugins.
+ .
+ This package contains main Kopete library which is used by Kopete and its
+ plugins.
  .
  This package is part of the KDE 4 networking module.
 
@@ -75,6 +82,21 @@ Description: instant messenger for KDE 4
  Kopete is an instant messaging and chat application with support for a wide
  variety of services, such as AIM, Yahoo, ICQ, MSN, IRC, and Jabber.  Advanced
  features and additional protocols are available as plugins.
+ .
+ This package is part of the KDE 4 networking module.
+
+Package: libkopete-dev
+Section: devel
+Architecture: any
+Depends: libkopete4 (= ${binary:Version}), ${sameVersionDep:kdelibs5-dev:libkopete4}
+Replaces: kdenetwork-dev (<< 4:4.1.86)
+Conflicts: kdenetwork-dev (<< 4:4.1.86)
+Description: development files for the KDE 4 networking module
+ Kopete is an instant messaging and chat application with support for a wide
+ variety of services, such as AIM, Yahoo, ICQ, MSN, IRC, and Jabber. Advanced
+ features and additional protocols are available as plugins.
+ .
+ This package contains development files needed for building Kopete plugins.
  .
  This package is part of the KDE 4 networking module.
 
@@ -94,6 +116,7 @@ Package: krdc
 Section: net
 Architecture: any
 Depends: ${shlibs:Depends}
+Replaces: kopete (<< 4:4.1.86)
 Recommends: rdesktop
 Suggests: khelpcenter, krfb
 Description: Remote Desktop Connection client for KDE 4
@@ -140,5 +163,5 @@ Description: zeroconf plugins and kio slaves for KDE 4
  the 169.254.0.0/16 range semi-randomly.
  .
  Keywords: avahi, dnssd.
- . 
+ .
  This package is part of the KDE 4 networking module.

@@ -17,5 +17,6 @@ usr/share/kde4/apps/krdc/krdcui.rc
 usr/share/kde4/apps/krdc/pics/pointcursor.png
 usr/share/kde4/apps/krdc/pics/pointcursormask.png
 usr/share/kde4/config.kcfg/krdc.kcfg
+usr/share/kde4/services/ServiceMenus/smb2rdc.desktop
 usr/share/kde4/services/rdp.protocol
 usr/share/kde4/services/vnc.protocol

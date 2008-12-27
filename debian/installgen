@@ -1,25 +1,35 @@
 [kdenetwork-filesharing]
-from:\bfilesharing/
+from:/filesharing/
 
-[kdenetwork-dev]
-dst:usr/include
-dst:usr/lib/lib[^/]+\.so$ link:usr/lib/lib[^/]+\.so\.
-dst:/dbus-1/interfaces/
+[libkopete4]
+from:/kopete/libkopete/ dst:usr/lib/libkopete\.so\.4(?:$|\.)
+
+[libkopete-dev]
+from:/kopete/libkopete/ dst:usr/include/kopete
+from:/kopete/libkopete/ dst:usr/lib/libkopete.so link:
+from:/kopete/ dst:/dbus-1/interfaces/
+from:/kopete/libkopete/ dst:\.pc$
+from:/kopete/libkopete/ dst:\.cmake$
+
+[kdenetwork-dev_virtual]
+# Useless "development" files
+missing dst:usr/lib/lib[^/]+\.so$ link:usr/lib/lib[^/]+\.so\.
+missing dst:/dbus-1/interfaces/
 
 [kget]
-from:\bkget/
+from:/kget/
 
 [kopete]
-from:\bkopete/
+from:/kopete/
 
 [kppp]
-from:\bkppp/
+from:/kppp/
 
 [krdc]
-from:\bkrdc/
+from:/krdc/
 
 [krfb]
-from:\bkrfb/
+from:/krfb/
 
 [kde-zeroconf]
-from:\bkdnssd/
+from:/kdnssd/

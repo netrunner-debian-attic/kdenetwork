@@ -59,8 +59,6 @@ usr/lib/libgadu_kopete.so.1
 usr/lib/libgadu_kopete.so.1.0.0
 usr/lib/libiris_kopete.so.1
 usr/lib/libiris_kopete.so.1.0.0
-usr/lib/libkopete.so.4
-usr/lib/libkopete.so.4.2.0
 usr/lib/libkopete_oscar.so.4
 usr/lib/libkopete_oscar.so.4.2.0
 usr/lib/libkopete_otr_shared.so.1
@@ -610,8 +608,8 @@ usr/share/kde4/config.kcfg/kopetestatussettings.kcfg
 usr/share/kde4/config.kcfg/latexconfig.kcfg
 usr/share/kde4/config.kcfg/nowlisteningconfig.kcfg
 usr/share/kde4/config.kcfg/urlpicpreview.kcfg
+usr/share/kde4/config.kcfg/webpresenceconfig.kcfg
 usr/share/kde4/config/kopeterc
-usr/share/kde4/services/ServiceMenus/smb2rdc.desktop
 usr/share/kde4/services/aim.protocol
 usr/share/kde4/services/chatwindow.desktop
 usr/share/kde4/services/emailwindow.desktop
