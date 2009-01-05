@@ -23,6 +23,8 @@ kdenetwork (4:4.1.86+svn903287-0r1) UNRELEASED; urgency=low
   * Add debian/installgen.
   * Update install files.
   * Build depend on libxtst-dev (needed for krfb).
+  * Do not build depend on libplasma-dev. Plasma headers are in kdelibs5-dev
+    for now.
 
   +++ Changes by George Kiagiadakis:
 
