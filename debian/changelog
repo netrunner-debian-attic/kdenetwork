@@ -5,7 +5,7 @@ kdenetwork (4:4.1.96+svn907282-0r1) UNRELEASED; urgency=low
   +++ Changes by Modestas Vainius:
 
   * Drop cmake from build depends.
-  * Bump KDE build depends to 4:4.1.85.
+  * Bump KDE build depends to 4:4.1.96.
   * Drop 97_fix_target_link_libraries.diff patch. No longer needed.
   * Bump Standards-Version to 3.8.0: add README.source.
   * New Kopete features require new build depends:
