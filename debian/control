@@ -86,7 +86,7 @@ Description: instant messenger for KDE 4
  This package is part of the KDE 4 networking module.
 
 Package: libkopete-dev
-Section: devel
+Section: libdevel
 Architecture: any
 Depends: libkopete4 (= ${binary:Version}), ${sameVersionDep:kdelibs5-dev:libkopete4}
 Replaces: kdenetwork-dev (<< 4:4.1.86)
