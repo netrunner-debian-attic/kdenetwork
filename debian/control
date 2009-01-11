@@ -61,6 +61,7 @@ Package: libkopete4
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: libjasper-runtime
 Replaces: kopete (<< 4:4.1.86)
 Description: main Kopete library
  Kopete is an instant messaging and chat application with support for a wide
