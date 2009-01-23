@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Ana Beatriz Guerrero Lopez <ana@debian.org>, Sune Vuorela <debian@pusling.com>, Fathi Boudra <fabo@debian.org>, Armin Berres <trigger+debian@space-based.de>, Modestas Vainius <modestas@vainius.eu>, Matthew Rosewarne <mrosewarne@inoutbox.com>
 Build-Depends: cdbs (>= 0.4.51), debhelper (>= 6), quilt,
- kdelibs5-dev (>= 4:4.1.96), kdepimlibs5-dev (>= 4:4.1.96),
+ kdelibs5-dev (>= 4:4.2.0), kdepimlibs5-dev (>= 4:4.2.0),
  zlib1g-dev, libjpeg62-dev, libxml2-dev, libxslt1-dev, libssl-dev,
  libxdamage-dev, libxss-dev, libslp-dev, libiw-dev, libidn11-dev, libxtst-dev,
  libvncserver-dev (>= 0.9.3), libqca2-dev (>= 2.0.0),

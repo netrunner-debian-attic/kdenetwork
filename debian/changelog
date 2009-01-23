@@ -1,11 +1,11 @@
-kdenetwork (4:4.1.96+svn910693-0r1) UNRELEASED; urgency=low
+kdenetwork (4:4.2.0-0r1) UNRELEASED; urgency=low
 
-  * New upstream development snapshot.
+  * New upstream release.
 
   +++ Changes by Modestas Vainius:
 
   * Drop cmake from build depends.
-  * Bump KDE build depends to 4:4.1.96.
+  * Bump KDE build depends to 4:4.2.0.
   * Drop 97_fix_target_link_libraries.diff patch. No longer needed.
   * Bump Standards-Version to 3.8.0: add README.source.
   * New Kopete features require new build depends:
