@@ -4,43 +4,15 @@ Thu, 24 May 2007 22:43:12 +0200.
 It was downloaded from http://www.kde.org/download
 
 Upstream Author: The KDE development team <kde-core-devel@kde.org>
-Numerous people, too many to count, have contributed to kdelibs as a
+Numerous people, too many to count, have contributed to kdenetwork as a
 whole. The KDE project tries to make an extensive list of people who contributed
 to KDE at http://www.kde.org/people/credits/
 
 Copyright:
 Unless something else is mentioned, copyright is
-© 1996-2008, The K Desktop Enviroment project http://www.kde.org
-
-KGet: (c) 2005 - 2007, The KGet developers
-      (c) 2001 - 2002, Patrick Charbonnier
-      (c) 2002, Carsten Pfeiffer
-      (c) 1998 - 2000, Matej Koss
-
-KNewsTicker: (c) 2000, 2001 The KNewsTicker developers
-
-Kopete: (c) 2001-2004, Duncan Mac-Vicar Prett
-        (c) 2002-2007, Kopete Development Team
-
-KPPP: (c) 1999-2002, The KPPP Developers
-
-Krdc: (c) 2007, Urs Wolfer
-      (c) 2001-2003, Tim Jansen
-      (c) 2002-2003, Arend van Beelen jr.
-      (c) 2000-2002, Const Kaplinsky
-      (c) 2000, Tridia Corporation
-      (c) 1999, AT&T Laboratories Cambridge
-      (c) 1999-2003, Matthew Chapman
-
-Krbf: (c) 2007, Alessandro Praduroux
-      (c) 2001-2003, Tim Jansen
-      (c) 2001, Johannes E. Schindelin
-      (c) 2000, heXoNet Support GmbH, D-66424 Homburg
-      (c) 2000-2001, Const Kaplinsky
-      (c) 2000, Tridia Corporation
+© 1996-2009, The K Desktop Enviroment project http://www.kde.org
 
 License:
-
 Unless something else is mentioned, the code files in this package are under
 the GNU General Public License:
 
@@ -63,7 +35,23 @@ the GNU General Public License:
 
 Files under cmake/
 
-These files are under this license:
+    Copyright: © 2006 Alessandro Praduroux <pradu@pradu.it>
+    Copyright: © 2007 Urs Wolfer <uwolfer@kde.org>
+    Copyright: © 2008 Detlev Casanova <detlev.casanova@gmail.com>
+    Copyright: © 2008 Romain CASTAN <romaincastan@gmail.com>
+    Copyright: © 2008 Matt Rogers <mattr@kde.org>
+    Copyright: © 2006 Brad Hards <bradh@frogmouth.net>
+    Copyright: © 2008 Jeremy Kerr <jk@ozlabs.org>
+    Copyright: © 2006 Will Stephenson <wstephenson@kde.org>
+    Copyright: © 2007 Joris Guisson <joris.guisson@gmail.com>
+    Copyright: © 2008 Pino Toscano <pino@kde.org>
+    Copyright: © 2008 David Gross <gdavid.devel@gmail.com>
+    Copyright: © 2008 Bertrand Demay <bertranddemay@gmail.com>
+    Copyright: © 2007 Charles Connell <charles@connells.org>
+    Copyright: © 2006 Michaël Larouche <larouche@kde.org>
+    Copyright: © 2008 Michael Zanetti <michael_zanetti@gnx.net>
+
+    These files are under this license:
 
     | Redistribution and use in source and binary forms, with or without
     | modification, are permitted provided that the following conditions
@@ -91,7 +79,7 @@ These files are under this license:
 
 Files under doc/
 
-These files are under the GNU Free Documentation License v1.2
+    These files are under the GNU Free Documentation License v1.2
 
     | Permission is granted to copy, distribute and/or modify this
     | document under the terms of the GNU Free Documentation License,
@@ -108,58 +96,110 @@ These files are under the GNU Free Documentation License v1.2
 
 Files under filesharing/
 
-    These files are under the GPL v2 or later. Except:
-    | filesharing/krichtextlabel.cpp
-    | filesharing/krichtextlabel.h
-    | that are under the LGPLv2.
+    Copyright: © 2002-2004 Schäfer <janschaefer@users.sourceforge.net> <j_schaef@informatik.uni-kl.de>
+    Copyright: © 2005 Waldo Bastian <bastian@kde.org>
+    Copyright: © 2002, 2009 Laurent Montel <montel@kde.org>
+    Copyright: © 2002 Christian Nitschkowski, <segfault_ii@web.de>
 
-    |The full text of the GNU Lesser General Public License version 2 is available 
-    | on Debian systems in /usr/share/common-licenses/LGPL-2.
+    These files are under the GPL v2 or later, except the
+    following files that are under the LGPL v2:
+
+      - filesharing/simple/krichtextlabel.cpp
+      - filesharing/simple/krichtextlabel.h
+
+    The full text of the GNU Library General Public License version 2 is available
+    on Debian systems in /usr/share/common-licenses/LGPL-2.
 
 
 Files under kdnssd/
- 
-  Files under kdnssd/ioslave/
-    These files are under the GPL v2 or later.
- 
-  Files under kdnssd/kdedmodule/
-    These files are under the LGPL v2.
+
+    Copyright: © 2004-2005 Jakub Stachowski <qbast@go2.pl>
+
+    Files under kdnssd/ioslave/
+        These files are under the GPL v2 or later.
+
+    Files under kdnssd/kdedmodule/
+        These files are under the LGPL v2.
 
 
 Files under kfile-plugins/
+
+    Copyright: © 2003-2004 Michael Pyne <michael.pyne@kdemail.net>
 
     These files are under the GPL v2 or later.
 
 
 Files under kget/
 
-    These files are under the GPL v2 or later.
+    Copyright: © 2005-2008 Joris Guisson <joris.guisson@gmail.com>
+    Copyright: © 2005-2008 Ivan Vasic <ivasic@gmail.com>
+    Copyright: © 2007-2008 Lukas Appelhans <l.appelhans@gmx.de>
+    Copyright: © 2004-2006 Dario Massarin <nekkar@libero.it>
+    Copyright: © 2007-2008 Javier Goday <jgoday@gmail.com> <me@cs.hmc.edu>
+    Copyright: © 2006-2008 Manolo Valdes <nolis71cu@gmail.com>
+    Copyright: © 2006-2008 Urs Wolfer <uwolfer@kde.org>
+    Copyright: © 2004, 2008 Ningyu Shi <shiningyu@gmail.com>
+    Copyright: © 2002 Patrick Charbonnier <pch@freeshell.org> <pch@valleeurpe.net>
+    Copyright: © 1998-2000 Matej Koss
+    Copyright: © 2002 Carsten Pfeiffer <pfeiffer@kde.org>
+    Copyright: © 2004-2007 The KGet Developers <kget@kde.org>
+    Copyright: © 2005 Enrico Ros <eros.kde@email.it>
+    Copyright: © 2006 Juliusz Chroboczek
+    Copyright: © 2004 Mark Kretschmann <markey@web.de>
+    Copyright: © 2003 Christian Muehlhaeuser <muesli@chareit.net>
+    Copyright: © 2006 Dan Kennedy
+    Copyright: © 2007 David Faure <faure@kde.org>
+    Copyright: © 2005 Maggioni Marcello <marcello.maggioni@gmail.com>
+    Copyright: © 2006-2008 Ricardo Garcia Gonzalez
+    Copyright: © 2008 Dario Freddi <drf54321@gmail.com>
+    Copyright: © 2006-2008 Valerio Proietti
+    Copyright: © 2004-2005 Angus Turnbull
 
+    These files are under the GPL v2 or later, except the
+    following files that are under the licenses specified below:
 
-Files under knewsticker/
+    Under the LGPL v2:
+      - kget/plasma/engine/kgetengine.h
+      - kget/plasma/engine/kgetengine.cpp
 
-These files are under this license:
+    Under the LGPL v2 or later:
 
-    | Redistribution and use in source and binary forms, with or without
-    | modification, are permitted provided that the following conditions
-    | are met:
+      - kget/transfer-plugins/bittorrent/libbtcore/btcore_export.h
+
+    Under the LGPL v2.1 or later:
+
+      - kget/extensions/webinterface/www/png_hack/iepngfix.htc
+
+    The full text of the GNU Lesser General Public License version 2.1 is available
+    on Debian systems in /usr/share/common-licenses/LGPL-2.1.
+
+    Under the following MIT-style license:
+
+      - kget/transfer-plugins/bittorrent/libbtcore/util/mingw.cpp
+      - kget/transfer-plugins/bittorrent/libbtcore/util/mingw.h
+      - kget/extensions/webinterface/www/mootools-core-yc.js
+      - kget/extensions/webinterface/www/mootools-more.js
+
+    | Permission is hereby granted, free of charge, to any person
+    | obtaining a copy of this software and associated documentation
+    | files (the "Software"), to deal in the Software without
+    | restriction, including without limitation the rights to use,
+    | copy, modify, merge, publish, distribute, sublicense, and/or sell
+    | copies of the Software, and to permit persons to whom the
+    | Software is furnished to do so, subject to the following
+    | conditions:
     |
-    | 1. Redistributions of source code must retain the copyright
-    |    notice, this list of conditions and the following disclaimer.
-    | 2. Redistributions in binary form must reproduce the copyright
-    |    notice, this list of conditions and the following disclaimer in the
-    |    documentation and/or other materials provided with the distribution.
+    | The above copyright notice and this permission notice shall be
+    | included in all copies or substantial portions of the Software.
     |
-    | THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
-    | IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
-    | OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
-    | IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
-    | INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
-    | NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-    | DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-    | THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-    | (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
-    | THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    | THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+    | EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+    | OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+    | NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+    | HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+    | WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+    | FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+    | OTHER DEALINGS IN THE SOFTWARE.
 
 
 Files under kopete/
@@ -180,31 +220,57 @@ Files under kopete/
 
 Files under kppp/
 
-    These files are under the LGPL v2 or later.
+    Copyright: © 2004 Simone Gotti <simone.gotti@email.it>
+    Copyright: © 1997-2002 Harri Porten <porten@kde.org>
+    Copyright: © 1997-1998 Bernd Johannes Wuebben <wuebben@math.cornell.edu> <wuebben@kde.org>
+    Copyright: © 1997-1999 Mario Weilguni <mweilguni@kde.org>
+    Copyright: © 1997 Jay Painter
+    Copyright: © 1994 perkins@cps.msu.edu
+    Copyright: © 1992 Brad Parker <brad@cayman.com>
+    Copyright: © 1989 Van Jacobson <van@helios.ee.lbl.gov>
+    Copyright: © 1989 Regents of the University of California
+
+    These files are under the LGPL v2 or later, except:
+
+      - kppp/pppstats.cpp
+
+    that is under the following BSD-style license:
+
+    | Redistribution and use in source and binary forms are permitted
+    | provided that the above copyright notice and this paragraph are
+    | duplicated in all such forms and that any documentation,
+    | advertising materials, and other materials related to such
+    | distribution and use acknowledge that the software was developed
+    | by the University of California, Berkeley.  The name of the
+    | University may not be used to endorse or promote products derived
+    | from this software without specific prior written permission.
+    | THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR
+    | IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
+    | WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
 
 Files under krdc/
+
+    Copyright: © 2007-2008 Urs Wolfer <uwolfer@kde.org>
+    Copyright: © 2008 David Gross <gdavid.devel@gmail.com>
+    Copyright: © 2001-2003 Tim Jansen <tim@tjansen.de>
+    Copyright: © 2002 Arend van Beelen <arend@auton.nl>
+    Copyright: © 2004-2005 Enrico Ros <eros.kde@email.it>
+    Copyright: © 2008 Magnus Romnes <romnes@stud.ntnu.no>
 
     These files are under the GPL v2 or later.
 
 
 Files under krfb/
 
+    Copyright: © 2007 Alessandro Praduroux <pradu@pradu.it>
+    Copyright: © 2001-2003 Tim Jansen <tim@tjansen.de>
+    Copyright: © 2004 Nadeem Hasan <nhasan@kde.org>
+    Copyright: © 2002 Stefan Taferner <taferner@kde.org>
+
     These files are under the GPL v2 or later.
 
 
-Files under lanbrowsing/
-
-  Files under lanbrowsing/kcmlisa/
-    These files are under the GPL v2 or later.
-
-  Files under lanbrowsing/kio_lan/
-    These files are under the LGPL v2 or later.
-
-  Files under lanbrowsing/lisa/
-    These files are under the GPL v2.
-
-
-The Debian packaging is (C) 2007-2008,  Debian Qt/KDE Maintainers and
+The Debian packaging is (C) 2007-2009,  Debian Qt/KDE Maintainers and
 is licensed under the GPL, see `/usr/share/common-licenses/GPL'.
 
