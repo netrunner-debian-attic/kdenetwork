@@ -37,13 +37,14 @@ kdenetwork (4:4.2.0-0r1) UNRELEASED; urgency=low
 
   * Fix permissions and owners for kppp to make it work again.
   * libkopete-dev depends on kdelibs5-dev instead of kdebase-dev.
+  * Update copyright file.
 
   +++ Changes by Sune Vuorela:
 
   * Have kopete Recommend libjasper-runtime for yahoo webcam usage. Thanks to
     Salvo Tomaselli and Pino Toscano.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 24 Jan 2009 03:41:31 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 26 Jan 2009 16:32:08 +0200
 
 kdenetwork (4:4.1.3-1) experimental; urgency=low
 
