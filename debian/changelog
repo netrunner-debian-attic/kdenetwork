@@ -1,3 +1,9 @@
+kdenetwork (4:4.2.1-2) UNRELEASED; urgency=low
+
+  * Update from libortp7-dev to libortp-dev. (Closes: #519616) 
+
+ -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Fri, 13 Mar 2009 23:42:30 +0100
+
 kdenetwork (4:4.2.1-1) experimental; urgency=low
 
   * New upstream release.
