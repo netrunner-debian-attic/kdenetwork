@@ -1,5 +1,6 @@
-kdenetwork (4:4.2.1-2) UNRELEASED; urgency=low
+kdenetwork (4:4.2.2-0r1) UNRELEASED; urgency=low
 
+  * New upstream release.
   * Update from libortp7-dev to libortp-dev. (Closes: #519616) 
 
  -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Fri, 13 Mar 2009 23:42:30 +0100
