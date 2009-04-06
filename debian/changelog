@@ -1,9 +1,16 @@
 kdenetwork (4:4.2.2-1) unstable; urgency=low
 
-  * New upstream release.
+  * New upstream release:
+    - Fix in kopete autoreplace plugin on incoming messages. (Closes: #265356)
+    - kopete/ICQ: You can add yourself to the contact list. (Closes: #398286)
+    - kget does not ignore upload limits. (Closes: #406143)
+    - kopete/jabber: allow edit or create vCard. (Closes: #408905)
+    - Fix kget crashes when pausing some files. (Closes: #410743, #440526)
+    - Fix going auto-away while typing without moving mouse in kopete. (Closes: #448009)
+    - kget allow pause/resume multiple files. (Closes: #372927) 
   * Update from libortp7-dev to libortp-dev. (Closes: #519616) 
 
- -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Fri, 13 Mar 2009 23:42:30 +0100
+ -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Mon, 06 Apr 2009 02:25:37 +0200
 
 kdenetwork (4:4.2.1-1) experimental; urgency=low
 
