@@ -1,0 +1,11 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -35,8 +35,6 @@ find_package(Alsa)
+ find_package(Speex)
+ find_package(QCA2)
+ find_package(JPEG)
+-find_package(X11VidMode)
+-find_package(Decibel)
+ find_package(IDN)
+ find_package(LibVNCServer)
+ 
