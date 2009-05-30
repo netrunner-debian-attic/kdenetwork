@@ -1,4 +1,4 @@
-kdenetwork (4:4.2.3-1) UNRELEASED; urgency=low
+kdenetwork (4:4.2.4-1) UNRELEASED; urgency=low
 
   * New upstream release.
 
@@ -10,7 +10,6 @@ kdenetwork (4:4.2.3-1) UNRELEASED; urgency=low
 
   * Bump Standards-Version from 3.8.0 to 3.8.1 (no changes needed).
   * Remove FindDecibel fix. The file doesn't exist anymore.
-  * Add 01_disable_unused_find_package.diff patch: Decibel and X11VidMode are not used.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 02 May 2009 17:33:24 +0200
 
