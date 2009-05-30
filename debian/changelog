@@ -2,6 +2,7 @@ kdenetwork (4:4.2.4-1) UNRELEASED; urgency=low
 
   * New upstream release.
     - fix kopete notifications (Closes: 525756)
+    - fix kopete custom notifications (Closes: 524353)
 
   +++ Changes by Sune Vuorela:
 
