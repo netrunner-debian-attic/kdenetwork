@@ -1,3 +1,9 @@
+kdenetwork (4:4.2.96-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Fathi Boudra <fabo@debian.org>  Thu, 16 Jul 2009 14:38:40 +0200
+
 kdenetwork (4:4.2.4-1) unstable; urgency=low
 
   * New upstream release.
