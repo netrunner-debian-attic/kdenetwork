@@ -1,6 +1,12 @@
 kdenetwork (4:4.2.96-1) experimental; urgency=low
 
   * New upstream release.
+  * Update debian/control:
+    - Bump versionned build dependencies to >= 4.2.96.
+    - Add libstreamanalyzer-dev, libgadu-dev, libknotificationitem-1-dev and
+      libv4l-dev build dependencies.
+    - Bump Standards-Version from 3.8.1 to 3.8.2 (no changes needed).
+  * Update installed files and not installed as well.
 
  -- Fathi Boudra <fabo@debian.org>  Thu, 16 Jul 2009 14:38:40 +0200
 
@@ -30,8 +36,8 @@ kdenetwork (4:4.2.2-1) unstable; urgency=low
     - kopete/jabber: allow edit or create vCard. (Closes: #408905)
     - Fix kget crashes when pausing some files. (Closes: #410743, #440526)
     - Fix going auto-away while typing without moving mouse in kopete. (Closes: #448009)
-    - kget allow pause/resume multiple files. (Closes: #372927) 
-  * Update from libortp7-dev to libortp-dev. (Closes: #519616) 
+    - kget allow pause/resume multiple files. (Closes: #372927)
+  * Update from libortp7-dev to libortp-dev. (Closes: #519616)
 
  -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Mon, 06 Apr 2009 02:25:37 +0200
 
@@ -115,7 +121,7 @@ kdenetwork (4:4.1.1-1) experimental; urgency=low
 
 kdenetwork (4:4.1.0-1) experimental; urgency=low
 
-  * New upstream release. 
+  * New upstream release.
   * Remove 97_fix_target_link_libraries.diff.
 
  -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Mon, 28 Jul 2008 15:13:08 +0200
@@ -180,7 +186,7 @@ kdenetwork (4:4.0.72-1) experimental; urgency=low
 
 kdenetwork (4:4.0.68+svn794641-1) experimental; urgency=low
 
-  * New upstream snapshot. 
+  * New upstream snapshot.
   * Update build depends, add  zlib1g-dev, libjpeg62-dev, libxml2-dev,
     libxslt1-dev and libssl-dev.
 
@@ -250,7 +256,7 @@ kdenetwork (4:4.0.0-1) experimental; urgency=low
 
 kdenetwork (4:3.98.0~svn755919-1) experimental; urgency=low
 
-  * New svn snapshot release to revision 755919. 
+  * New svn snapshot release to revision 755919.
   * Add libphonon-dev build-depends.
   * Update years in copyright.
 

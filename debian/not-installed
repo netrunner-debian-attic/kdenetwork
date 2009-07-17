@@ -1,12 +1,11 @@
 # Links to private libraries and DBus interface XMLs
-./usr/lib/libgadu_kopete.so
-./usr/lib/libiris_kopete.so
 ./usr/lib/libkgetcore.so
 ./usr/lib/libkopete_oscar.so
 ./usr/lib/libkopete_otr_shared.so
 ./usr/lib/libkopete_videodevice.so
 ./usr/lib/libkopeteaddaccountwizard.so
 ./usr/lib/libkopetechatwindow_shared.so
+./usr/lib/libkopetecontactlist.so
 ./usr/lib/libkopeteidentity.so
 ./usr/lib/libkopeteprivacy.so
 ./usr/lib/libkopetestatusmenu.so
