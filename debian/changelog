@@ -1,6 +1,6 @@
-kdenetwork (4:4.2.98-0~pre1) UNRELEASED; urgency=low
+kdenetwork (4:4.3.0-0r1) UNRELEASED; urgency=low
 
-  * New upstream release, RC3.
+  * New upstream release.
 
  -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Mon, 27 Jul 2009 17:18:20 +0200
 
