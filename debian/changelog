@@ -1,3 +1,14 @@
+kdenetwork (4:4.3.0-2) UNRELEASED; urgency=low
+
+  +++ Changes by Pino Toscano:
+
+  * debian/control:
+    - Remove unused build dependency on libiw-dev.
+    - Exclude libv4l-dev build dependency on kfreebsd and hurd, as v4l is
+      pretty Linux-specific.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 15 Aug 2009 12:08:01 +0200
+
 kdenetwork (4:4.3.0-1) unstable; urgency=low
 
   * New upstream release.
