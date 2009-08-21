@@ -1,0 +1,11 @@
+--- kdenetwork-4.3.0.orig/kppp/pppstats.cpp	
++++ kdenetwork-4.3.0/kppp/pppstats.cpp	
+@@ -92,7 +92,7 @@
+ 
+ #endif	/* STREAMS */
+ 
+-#if defined __OpenBSD__
++#if defined(__OpenBSD__) || defined(__FreeBSD__) || defined(__FreeBSD_kernel__)
+  #include <sys/socket.h>
+  #include <net/if.h>
+  #include <net/if_ppp.h>
