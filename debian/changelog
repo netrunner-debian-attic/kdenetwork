@@ -11,6 +11,7 @@ kdenetwork (4:4.3.0-2) UNRELEASED; urgency=low
 
     * Add patch to fix build in kfreebsd-* from Petr Salinger. That together
       with Pino's changes (Closes: #542620).
+    - Bump Standards-Version from 3.8.2 to 3.8.3 (no changes needed).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 15 Aug 2009 12:08:01 +0200
 

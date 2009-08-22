@@ -14,13 +14,12 @@ Build-Depends: cdbs (>= 0.4.51), debhelper (>= 7), quilt, pkg-kde-tools (>= 0.4.
  libortp-dev, libspeex-dev, libasound2-dev (>= 1.0.14a) [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386],
  libstreamanalyzer-dev, libgadu-dev, libknotificationitem-1-dev,
  libv4l-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386]
-Standards-Version: 3.8.2
+Standards-Version: 3.8.3
 Homepage: http://www.kde.org/
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/trunk/packages/kdenetwork
 Vcs-Svn: svn://svn.debian.org/pkg-kde/trunk/packages/kdenetwork
 
 Package: kdenetwork
-Section: kde
 Architecture: all
 Depends: kget (>= ${source:Version}),
  kopete (>= ${source:Version}), kppp (>= ${source:Version}),
