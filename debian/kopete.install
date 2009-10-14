@@ -1,8 +1,8 @@
 usr/bin/kopete
 usr/bin/kopete_latexconvert.sh
 usr/bin/skype-action-handler
-usr/bin/winpopup-install.sh
-usr/bin/winpopup-send.sh
+usr/bin/winpopup-install
+usr/bin/winpopup-send
 usr/lib/kde4/kcm_kopete_accountconfig.so
 usr/lib/kde4/kcm_kopete_addbookmarks.so
 usr/lib/kde4/kcm_kopete_appearanceconfig.so
