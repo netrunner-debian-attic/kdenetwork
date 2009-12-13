@@ -1,8 +1,12 @@
 kdenetwork (4:4.3.4-2) UNRELEASED; urgency=low
 
+  +++ Changes by Modestas Vainius
   * Change my email address to modax@debian.org in Uploaders field.
 
- -- Modestas Vainius <modax@debian.org>  Sat, 12 Dec 2009 16:57:20 +0200
+  +++ Changes by Lisandro Damián Nicanor Pérez Meyer
+  * Take out IRC from Kopete's description. (Closes: #540634)
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 13 Dec 2009 11:11:12 -0300
 
 kdenetwork (4:4.3.4-1) unstable; urgency=low
 

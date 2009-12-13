@@ -66,7 +66,7 @@ Recommends: libjasper-runtime
 Replaces: kopete (<< 4:4.1.86)
 Description: main Kopete library
  Kopete is an instant messaging and chat application with support for a wide
- variety of services, such as AIM, Yahoo, ICQ, MSN, IRC, and Jabber.  Advanced
+ variety of services, such as AIM, Yahoo, ICQ, MSN, and Jabber.  Advanced
  features and additional protocols are available as plugins.
  .
  This package contains main Kopete library which is used by Kopete and its
@@ -82,7 +82,7 @@ Recommends: libqca2-plugin-ossl
 Suggests: kdeartwork-emoticons, khelpcenter
 Description: instant messenger for KDE 4
  Kopete is an instant messaging and chat application with support for a wide
- variety of services, such as AIM, Yahoo, ICQ, MSN, IRC, and Jabber.  Advanced
+ variety of services, such as AIM, Yahoo, ICQ, MSN, and Jabber.  Advanced
  features and additional protocols are available as plugins.
  .
  This package is part of the KDE 4 networking module.
@@ -95,7 +95,7 @@ Replaces: kdenetwork-dev (<< 4:4.1.86)
 Conflicts: kdenetwork-dev (<< 4:4.1.86)
 Description: development files for the KDE 4 networking module
  Kopete is an instant messaging and chat application with support for a wide
- variety of services, such as AIM, Yahoo, ICQ, MSN, IRC, and Jabber. Advanced
+ variety of services, such as AIM, Yahoo, ICQ, MSN, and Jabber. Advanced
  features and additional protocols are available as plugins.
  .
  This package contains development files needed for building Kopete plugins.
