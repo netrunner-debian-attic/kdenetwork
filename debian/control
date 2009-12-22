@@ -16,7 +16,7 @@ Build-Depends: cdbs (>= 0.4.51), debhelper (>= 7), quilt, pkg-kde-tools (>= 0.4.
  libv4l-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386]
 Standards-Version: 3.8.3
 Homepage: http://www.kde.org/
-Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/trunk/packages/kdenetwork
+Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/trunk/packages/kdenetwork/#_trunk_packages_kdenetwork_
 Vcs-Svn: svn://svn.debian.org/pkg-kde/trunk/packages/kdenetwork
 
 Package: kdenetwork
