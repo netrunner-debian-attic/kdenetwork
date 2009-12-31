@@ -7,6 +7,11 @@ kdenetwork (4:4.3.4-2) UNRELEASED; urgency=low
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Take out IRC from Kopete's description. (Closes: #540634)
 
+  [ Pino Toscano ]
+  * Make kopete recommend libqt4-sql-sqlite, as it is used by the statistics
+    plugin. (Closes: #534119)
+  * Add a README.Debian documenting the above Kopete change.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 13 Dec 2009 11:11:12 -0300
 
 kdenetwork (4:4.3.4-1) unstable; urgency=low

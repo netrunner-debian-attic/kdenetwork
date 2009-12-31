@@ -1,0 +1,7 @@
+Kopete for Debian
+-----------------
+
+* The statistics plugin requires the Qt4 SQLite 3 plugin, so install the
+  libqt4-sql-sqlite package for it.
+
+ -- Debian Qt/KDE Maintainers
