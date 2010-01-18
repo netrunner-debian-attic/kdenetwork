@@ -1,0 +1,31 @@
+Description: make kopete_wlm compile with libmsn >= 4.0~beta8
+ This adds the gotInboxUrl() callback which is enabled by default on those
+ versions.
+Author: Pino Toscano <pino@kde.org>
+Forwarded: not-needed
+--- a/kopete/protocols/wlm/wlmlibmsn.cpp
++++ b/kopete/protocols/wlm/wlmlibmsn.cpp
+@@ -909,4 +909,11 @@
+         c->disconnect();
+ }
+ 
++void
++Callbacks::gotInboxUrl (MSN::NotificationServerConnection * conn, MSN::hotmailInfo info)
++{
++    Q_UNUSED( conn );
++    Q_UNUSED( info );
++}
++
+ #include "wlmlibmsn.moc"
+--- a/kopete/protocols/wlm/wlmlibmsn.h
++++ b/kopete/protocols/wlm/wlmlibmsn.h
+@@ -279,6 +279,9 @@
+         std::string
+     getSecureHTTPProxy ();
+ 
++    virtual void
++    gotInboxUrl (MSN::NotificationServerConnection * conn, MSN::hotmailInfo info);
++
+   public:
+     WlmServer * m_server;
+     QList <WlmSocket*> socketList;

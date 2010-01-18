@@ -11,8 +11,10 @@ kdenetwork (4:4.3.4-2) UNRELEASED; urgency=low
   * Make kopete recommend libqt4-sql-sqlite, as it is used by the statistics
     plugin. (Closes: #534119)
   * Add a README.Debian documenting the above Kopete change.
+  * Add patch 01_kopete_new_libmsn.diff to make kopete compile with more
+    recent versions of libmsn.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 13 Dec 2009 11:11:12 -0300
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 18 Jan 2010 14:55:47 +0100
 
 kdenetwork (4:4.3.4-1) unstable; urgency=low
 
