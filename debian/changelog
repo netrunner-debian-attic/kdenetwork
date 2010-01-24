@@ -1,4 +1,4 @@
-kdenetwork (4:4.3.4-2) UNRELEASED; urgency=low
+kdenetwork (4:4.3.4-2) unstable; urgency=low
 
   [ Modestas Vainius ]
   * Change my email address to modax@debian.org in Uploaders field.
