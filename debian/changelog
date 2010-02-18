@@ -1,8 +1,10 @@
 kdenetwork (4:4.4.0-0r1) UNRELEASED; urgency=low
 
   * New upstream release.
+    - krfb does not ask anymore to accept a connection when not configured to
+      ask. (Closes: #522937)
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 18 Feb 2010 00:39:05 +0100
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 18 Feb 2010 00:39:59 +0100
 
 kdenetwork (4:4.3.4-2) unstable; urgency=low
 
