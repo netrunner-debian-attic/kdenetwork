@@ -5,6 +5,10 @@ kdenetwork (4:4.4.1~svn-0r1) UNRELEASED; urgency=low
       ask. (Closes: #522937)
     - Kopete auto-reconnects to Jabber accounts. (Closes: #535338)
 
+  [ Modestas Vainius ]
+  * Add cmake to Build-Depends.
+  * Add kde-sc-dev-latest (>= 4:4.4.1~) | kde-sc-dev-maint to Build-Depends.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 25 Feb 2010 01:19:39 +0200
 
 kdenetwork (4:4.3.4-2) unstable; urgency=low
