@@ -1,4 +1,4 @@
-kdenetwork (4:4.4.1~svn-0r1) UNRELEASED; urgency=low
+kdenetwork (4:4.4.1-0) UNRELEASED; urgency=low
 
   * New upstream release:
     - krfb does not ask anymore to accept a connection when not configured to
