@@ -52,7 +52,7 @@ Package: kget
 Section: net
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Suggests: khelpcenter
+Suggests: khelpcenter4
 Description: download manager for KDE 4
  KGet is an advanced download manager with support for Metalink and Bittorrent.
  Downloads are added to the list, where they can be paused, queued, or
@@ -81,7 +81,7 @@ Section: kde
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Recommends: libqca2-plugin-ossl, libqt4-sql-sqlite
-Suggests: kdeartwork-emoticons, khelpcenter
+Suggests: kdeartwork-emoticons, khelpcenter4
 Description: instant messenger for KDE 4
  Kopete is an instant messaging and chat application with support for a wide
  variety of services, such as AIM, Yahoo, ICQ, MSN, and Jabber.  Advanced
@@ -109,7 +109,7 @@ Package: kppp
 Section: net
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, ppp
-Suggests: khelpcenter
+Suggests: khelpcenter4
 Description: modem dialer for KDE 4
  KPPP is a modem dialer for connecting to a dial-up Internet Service Provider.
  It displays statistics and accounting information to help users keep track of
@@ -123,7 +123,7 @@ Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Replaces: kopete (<< 4:4.1.86)
 Recommends: rdesktop
-Suggests: khelpcenter, krfb
+Suggests: khelpcenter4, krfb
 Description: Remote Desktop Connection client for KDE 4
  The KDE Remote Desktop Connection client can view and control a desktop
  session running on another system.  It can connect to Windows Terminal Servers
@@ -135,7 +135,7 @@ Package: krfb
 Section: net
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Suggests: khelpcenter, krdc
+Suggests: khelpcenter4, krdc
 Description: Desktop Sharing for KDE 4
  KDE Desktop Sharing is a manager for easily sharing a desktop session with
  another system.  The desktop session can be viewed or controlled remotely by
