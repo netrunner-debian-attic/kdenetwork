@@ -1,4 +1,7 @@
 usr/bin/krfb
+usr/lib/kde4/krfb_framebuffer_qt.so
+usr/lib/kde4/krfb_framebuffer_x11.so
+usr/lib/libkrfbprivate.so.4.4.0
 usr/share/applications/kde4/krfb.desktop
 usr/share/doc/kde4/HTML/en/krfb/common
 usr/share/doc/kde4/HTML/en/krfb/configuration_access.png
@@ -12,3 +15,6 @@ usr/share/doc/kde4/HTML/en/krfb/invitation_management.png
 usr/share/doc/kde4/HTML/en/krfb/personal_invitation.png
 usr/share/doc/kde4/HTML/en/krfb/screenshot.png
 usr/share/kde4/apps/krfb/krfb.notifyrc
+usr/share/kde4/services/krfb_framebuffer_qt.desktop
+usr/share/kde4/services/krfb_framebuffer_x11.desktop
+usr/share/kde4/servicetypes/krfb-framebuffer.desktop

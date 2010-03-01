@@ -1,4 +1,4 @@
-kdenetwork (4:4.4.1-0) UNRELEASED; urgency=low
+kdenetwork (4:4.4.1-0r1) UNRELEASED; urgency=low
 
   * New upstream release:
     - krfb does not ask anymore to accept a connection when not configured to
@@ -12,7 +12,20 @@ kdenetwork (4:4.4.1-0) UNRELEASED; urgency=low
   * Bump KDE build dependencies to 4:4.4.
   * Bump pkg-kde-tools build dependency to 0.6.4.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 25 Feb 2010 01:19:39 +0200
+  [ George Kiagiadakis ]
+  * Drop build dependency on libknotificationitem1-dev. Not needed anymore.
+  * Add build dependencies on:
+    - libmediastreamer-dev
+    - libtelepathy-qt4-dev
+    - shared-desktop-ontologies
+    - kdepimlibs5-dev
+    - libgpgme11-dev
+    - libexpat-dev
+    - libgif-dev
+  * Drop patch 01_kopete_new_libmsn.diff.
+  * Update installed files.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 01 Mar 2010 11:03:38 +0200
 
 kdenetwork (4:4.3.4-2) unstable; urgency=low
 

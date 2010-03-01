@@ -2,6 +2,7 @@ usr/include/kopete/kabcpersistence.h
 usr/include/kopete/kopete_export.h
 usr/include/kopete/kopeteaccount.h
 usr/include/kopete/kopeteaccountmanager.h
+usr/include/kopete/kopeteaddedinfoevent.h
 usr/include/kopete/kopeteappearancesettings.h
 usr/include/kopete/kopeteavatarmanager.h
 usr/include/kopete/kopetebehaviorsettings.h

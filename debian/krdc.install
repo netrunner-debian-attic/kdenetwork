@@ -1,12 +1,15 @@
 usr/bin/krdc
+usr/bin/krdc_rfb_approver
 usr/lib/kde4/kcm_krdc_rdpplugin.so
 usr/lib/kde4/kcm_krdc_vncplugin.so
 usr/lib/kde4/krdc_rdpplugin.so
 usr/lib/kde4/krdc_testplugin.so
 usr/lib/kde4/krdc_vncplugin.so
 usr/lib/libkrdccore.so.4
-usr/lib/libkrdccore.so.4.3.0
+usr/lib/libkrdccore.so.4.4.0
 usr/share/applications/kde4/krdc.desktop
+usr/share/dbus-1/services/org.freedesktop.Telepathy.Client.krdc_rfb_approver.service
+usr/share/dbus-1/services/org.freedesktop.Telepathy.Client.krdc_rfb_handler.service
 usr/share/doc/kde4/HTML/en/krdc/address_input.png
 usr/share/doc/kde4/HTML/en/krdc/bookmarks_menu.png
 usr/share/doc/kde4/HTML/en/krdc/common
@@ -23,6 +26,7 @@ usr/share/doc/kde4/HTML/en/krdc/windowmode_button.png
 usr/share/kde4/apps/krdc/krdcui.rc
 usr/share/kde4/apps/krdc/pics/pointcursor.png
 usr/share/kde4/apps/krdc/pics/pointcursormask.png
+usr/share/kde4/apps/krdc_rfb_approver/krdc_rfb_approver.notifyrc
 usr/share/kde4/config.kcfg/krdc.kcfg
 usr/share/kde4/services/ServiceMenus/smb2rdc.desktop
 usr/share/kde4/services/krdc_rdp.desktop
@@ -33,3 +37,5 @@ usr/share/kde4/services/krdc_vnc_config.desktop
 usr/share/kde4/services/rdp.protocol
 usr/share/kde4/services/vnc.protocol
 usr/share/kde4/servicetypes/krdc_plugin.desktop
+usr/share/telepathy/clients/krdc_rfb_approver.client
+usr/share/telepathy/clients/krdc_rfb_handler.client

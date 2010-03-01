@@ -15,5 +15,6 @@
 ./usr/lib/libkrdccore.so
 ./usr/lib/libkyahoo.so
 ./usr/lib/liboscar.so
+./usr/lib/libkrfbprivate.so
 ./usr/share/dbus-1/interfaces/org.kde.kdnssd.xml
 ./usr/share/dbus-1/interfaces/org.kde.kppp.xml
