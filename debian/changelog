@@ -25,7 +25,10 @@ kdenetwork (4:4.4.1-0r1) UNRELEASED; urgency=low
   * Drop patch 01_kopete_new_libmsn.diff.
   * Update installed files.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 01 Mar 2010 11:03:38 +0200
+  [ Pino Toscano ]
+  * Add dependency on ${misc:Depends} in all the packages.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 01 Mar 2010 15:58:52 +0100
 
 kdenetwork (4:4.3.4-2) unstable; urgency=low
 

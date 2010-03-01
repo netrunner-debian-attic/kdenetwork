@@ -23,7 +23,7 @@ Vcs-Svn: svn://svn.debian.org/pkg-kde/trunk/packages/kdenetwork
 
 Package: kdenetwork
 Architecture: all
-Depends: kget (>= ${source:Version}),
+Depends: ${misc:Depends}, kget (>= ${source:Version}),
  kopete (>= ${source:Version}), kppp (>= ${source:Version}),
  krdc (>= ${source:Version}), krfb (>= ${source:Version})
 Recommends: kdenetwork-filesharing (>= ${source:Version})
@@ -41,7 +41,7 @@ Description: networking applications from the official KDE 4 release
 Package: kdenetwork-filesharing
 Section: net
 Architecture: any
-Depends: ${shlibs:Depends}, perl-suid
+Depends: ${shlibs:Depends}, ${misc:Depends}, perl-suid
 Description: network filesharing configuration module for KDE 4
  This package provides a System Settings panel to configure network
  file-sharing using NFS and Samba.
@@ -51,7 +51,7 @@ Description: network filesharing configuration module for KDE 4
 Package: kget
 Section: net
 Architecture: any
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Suggests: khelpcenter
 Description: download manager for KDE 4
  KGet is an advanced download manager with support for Metalink and Bittorrent.
@@ -79,7 +79,7 @@ Description: main Kopete library
 Package: kopete
 Section: kde
 Architecture: any
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Recommends: libqca2-plugin-ossl, libqt4-sql-sqlite
 Suggests: kdeartwork-emoticons, khelpcenter
 Description: instant messenger for KDE 4
@@ -92,7 +92,8 @@ Description: instant messenger for KDE 4
 Package: libkopete-dev
 Section: libdevel
 Architecture: any
-Depends: libkopete4 (= ${binary:Version}), ${sameVersionDep:kdelibs5-dev:libkopete4}
+Depends: libkopete4 (= ${binary:Version}), ${sameVersionDep:kdelibs5-dev:libkopete4},
+ ${misc:Depends}
 Replaces: kdenetwork-dev (<< 4:4.1.86)
 Conflicts: kdenetwork-dev (<< 4:4.1.86)
 Description: development files for the KDE 4 networking module
@@ -107,7 +108,7 @@ Description: development files for the KDE 4 networking module
 Package: kppp
 Section: net
 Architecture: any
-Depends: ${shlibs:Depends}, ppp
+Depends: ${shlibs:Depends}, ${misc:Depends}, ppp
 Suggests: khelpcenter
 Description: modem dialer for KDE 4
  KPPP is a modem dialer for connecting to a dial-up Internet Service Provider.
@@ -119,7 +120,7 @@ Description: modem dialer for KDE 4
 Package: krdc
 Section: net
 Architecture: any
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Replaces: kopete (<< 4:4.1.86)
 Recommends: rdesktop
 Suggests: khelpcenter, krfb
@@ -133,7 +134,7 @@ Description: Remote Desktop Connection client for KDE 4
 Package: krfb
 Section: net
 Architecture: any
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Suggests: khelpcenter, krdc
 Description: Desktop Sharing for KDE 4
  KDE Desktop Sharing is a manager for easily sharing a desktop session with
@@ -149,7 +150,7 @@ Package: kdenetwork-dbg
 Section: debug
 Architecture: any
 Priority: extra
-Depends: kdebase-runtime-dbg
+Depends: ${misc:Depends}, kdebase-runtime-dbg
 Recommends: kdebase-workspace-dbg
 Suggests: kdenetwork (= ${source:Version})
 Description: debugging symbols for the KDE 4 networking module
