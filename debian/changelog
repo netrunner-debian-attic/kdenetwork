@@ -1,4 +1,4 @@
-kdenetwork (4:4.4.1-0r2) UNRELEASED; urgency=low
+kdenetwork (4:4.4.1-0rc1) UNRELEASED; urgency=low
 
   * New upstream release:
     - krfb does not ask anymore to accept a connection when not configured to
@@ -31,7 +31,7 @@ kdenetwork (4:4.4.1-0r2) UNRELEASED; urgency=low
   * Add dependency on ${misc:Depends} in all the packages.
   * Change the khelpcenter suggest to khelpcenter4.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 01 Mar 2010 16:03:11 +0100
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 04 Mar 2010 21:02:16 +0200
 
 kdenetwork (4:4.3.4-2) unstable; urgency=low
 
