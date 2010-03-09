@@ -30,8 +30,10 @@ kdenetwork (4:4.4.1-0rc1) UNRELEASED; urgency=low
   [ Pino Toscano ]
   * Add dependency on ${misc:Depends} in all the packages.
   * Change the khelpcenter suggest to khelpcenter4.
+  * Suggest texlive-latex-base in kopete, as it contains `latex' (and installs
+   `dvips' as dependency), used by the "kopetex" plugin.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 04 Mar 2010 21:02:16 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 09 Mar 2010 16:07:15 +0100
 
 kdenetwork (4:4.3.4-2) unstable; urgency=low
 
