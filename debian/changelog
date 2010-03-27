@@ -1,4 +1,4 @@
-kdenetwork (4:4.4.1-0rc1) UNRELEASED; urgency=low
+kdenetwork (4:4.4.2-0rc1) UNRELEASED; urgency=low
 
   * New upstream release:
     - krfb does not ask anymore to accept a connection when not configured to
@@ -34,7 +34,7 @@ kdenetwork (4:4.4.1-0rc1) UNRELEASED; urgency=low
    `dvips' as dependency), used by the "kopetex" plugin. Add a note in
     kopete's README.Debian about these dependencies.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 09 Mar 2010 16:13:23 +0100
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 27 Mar 2010 11:59:10 +0200
 
 kdenetwork (4:4.3.4-2) unstable; urgency=low
 
