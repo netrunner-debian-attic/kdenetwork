@@ -77,7 +77,7 @@ Description: main Kopete library
  This package is part of the KDE 4 networking module.
 
 Package: kopete
-Section: kde
+Section: net
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Recommends: libqca2-plugin-ossl, libqt4-sql-sqlite
