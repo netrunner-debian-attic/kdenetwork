@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.4.1 amd64 i386
+# SymbolsHelper-Confirmed: 4:4.4.2 i386 ia64 s390
 libkopete.so.4 libkopete4 #MINVER#
  _ZGVZN6Kopete2UI8ListView4Item7Private18theVisibilityTimerEvE5timer@Base 4:4.3.4
  _ZGVZN6Kopete2UI8ListView4Item7Private21theLayoutAnimateTimerEvE5timer@Base 4:4.3.4
@@ -93,7 +93,6 @@ libkopete.so.4 libkopete4 #MINVER#
  _ZN17SettingsContainerD0Ev@Base 4:4.3.4
  _ZN17SettingsContainerD1Ev@Base 4:4.3.4
  _ZN17SettingsContainerD2Ev@Base 4:4.3.4
- (optional=templinst|arch=!amd64 !hppa !i386 !s390)_ZN18KServiceTypeTrader23createInstanceFromQueryIN6Kopete6PluginEEEPT_RK7QStringP7QWidgetP7QObjectS7_RK5QListI8QVariantEPS5_@Base 4:4.3.4
  _ZN23KopeteEditAccountWidget10setAccountEPN6Kopete7AccountE@Base 4:4.3.4
  _ZN23KopeteEditAccountWidgetC1EPN6Kopete7AccountE@Base 4:4.3.4
  _ZN23KopeteEditAccountWidgetC2EPN6Kopete7AccountE@Base 4:4.3.4
