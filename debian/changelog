@@ -1,4 +1,4 @@
-kdenetwork (4:4.4.3-0r2) UNRELEASED; urgency=low
+kdenetwork (4:4.4.3-1) unstable; urgency=low
 
   * New upstream release.
 
@@ -7,8 +7,9 @@ kdenetwork (4:4.4.3-0r2) UNRELEASED; urgency=low
   * Bump kde-sc-dev-latest build dependency to 4.4.3.
   * Confirm symbol files for 4.4.2 on i386 ia64 s390.
   * Tighten libmsn-dev build dependency to 4.1.
+  * Release KDE SC 4.4.3 to unstable.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 30 Apr 2010 13:33:06 +0300
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 01 May 2010 23:37:54 +0300
 
 kdenetwork (4:4.4.2-1) experimental; urgency=low
 
