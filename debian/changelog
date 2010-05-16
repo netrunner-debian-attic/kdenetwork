@@ -1,9 +1,15 @@
-kdenetwork (4:4.4.3-2) UNRELEASED; urgency=low
+kdenetwork (4:4.4.3-2) unstable; urgency=medium
 
+  [ Modestas Vainius ]
   * Add 01_kget_CVE-2010-1000.diff patch that fixes CVE-2010-1000.diff
     security vulnerability in KGet.
+  * Build depend on KWebKit Part (libkwebkit-dev).
+  * Damage control: temporarily drop libtelepathy-qt4-dev from Build-Depends
+    in order to allow the package to build on arches where libnice FTFBSes at
+    the moment.
+  * Urgency=medium due to security fix.
 
- -- Modestas Vainius <modax@debian.org>  Sat, 15 May 2010 22:46:28 +0300
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 16 May 2010 22:58:20 +0300
 
 kdenetwork (4:4.4.3-1) unstable; urgency=low
 
