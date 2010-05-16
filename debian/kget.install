@@ -70,6 +70,7 @@ usr/share/kde4/apps/kget/www/title-border-bottom-downloads.png
 usr/share/kde4/apps/kget/www/title-border-bottom-settings.png
 usr/share/kde4/apps/kget/www/view-refresh.png
 usr/share/kde4/apps/khtml/kpartplugins/kget_plug_in.rc
+usr/share/kde4/apps/kwebkitpart/kpartplugins/kget_plug_in.rc
 usr/share/kde4/config.kcfg/kget.kcfg
 usr/share/kde4/config.kcfg/kget_checksumsearchfactory.kcfg
 usr/share/kde4/config.kcfg/kget_contentfetchfactory.kcfg
