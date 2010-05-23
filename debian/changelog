@@ -1,3 +1,10 @@
+kdenetwork (4:4.4.3-3) UNRELEASED; urgency=low
+
+  * Readd libtelepathy-qt4-dev to Build-Depends, update krdc.install
+    appropriately.
+
+ -- Modestas Vainius <modax@debian.org>  Sun, 23 May 2010 11:04:13 +0300
+
 kdenetwork (4:4.4.3-2) unstable; urgency=medium
 
   [ Modestas Vainius ]

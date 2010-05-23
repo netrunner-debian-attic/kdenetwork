@@ -13,7 +13,7 @@ Build-Depends: kde-sc-dev-latest (>= 4:4.4.3),
  libgmp3-dev, libotr2-dev, libboost-dev,
  libavahi-compat-libdnssd-dev, libmeanwhile-dev, libmsn-dev (>= 4.1), libkwebkit-dev,
  libortp-dev, libspeex-dev, libasound2-dev (>= 1.0.14a) [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386],
- libstreamanalyzer-dev, libgadu-dev, libmediastreamer-dev,
+ libstreamanalyzer-dev, libgadu-dev, libmediastreamer-dev, libtelepathy-qt4-dev,
  libv4l-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386],
  shared-desktop-ontologies, kdepimlibs5-dev, libgpgme11-dev, libexpat-dev, libgif-dev
 Standards-Version: 3.8.4
