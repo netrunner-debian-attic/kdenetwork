@@ -3,7 +3,7 @@ Section: kde
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Sune Vuorela <debian@pusling.com>, Fathi Boudra <fabo@debian.org>, Armin Berres <armin+debian@space-based.de>, Modestas Vainius <modax@debian.org>
-Build-Depends: kde-sc-dev-latest (>= 4:4.4.3),
+Build-Depends: kde-sc-dev-latest (>= 4:4.4.4),
  cdbs (>= 0.4.51), cmake, debhelper (>= 7), pkg-kde-tools (>= 0.9),
  kdelibs5-dev (>= 4:4.4), kdepimlibs5-dev (>= 4:4.4),
  zlib1g-dev, libjpeg62-dev, libxml2-dev, libxslt1-dev, libssl-dev,
