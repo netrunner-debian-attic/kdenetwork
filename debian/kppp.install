@@ -2,7 +2,7 @@ usr/bin/kppp
 usr/bin/kppplogview
 usr/share/applications/kde4/Kppp.desktop
 usr/share/applications/kde4/kppplogview.desktop
-usr/share/doc/kde4/HTML/en/kppp/
+usr/share/doc/kde/HTML/en/kppp/
 usr/share/icons/hicolor/128x128/apps/kppp.png
 usr/share/icons/hicolor/16x16/apps/kppp.png
 usr/share/icons/hicolor/22x22/apps/kppp.png
