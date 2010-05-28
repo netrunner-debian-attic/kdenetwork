@@ -15,6 +15,7 @@ kdenetwork (4:4.4.4-0r1) UNRELEASED; urgency=low
     now.
   * Move debian/source.lintian-overrides to debian/source/lintian-overrides.
   * Bump kde-sc-dev-latest build dependency to 4:4.4.4.
+  * Drop 01_kget_CVE-2010-1000.diff patch, merged upstream.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 28 May 2010 21:51:18 +0300
 
