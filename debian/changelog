@@ -19,6 +19,8 @@ kdenetwork (4:4.4.4-0r1) UNRELEASED; urgency=low
   * Build kget against system libktorrent:
     - add 01_use_system_libktorrent.diff patch (mostly a backport);
     - add libktorrent-dev to Build-Depends.
+  * Build conflict with libmediastreamer-dev (= 3.3.0-1) on amd64. It (or
+    rather closely related libortp-dev) is broken. See #583008.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 28 May 2010 21:51:18 +0300
 
