@@ -1,4 +1,4 @@
-kdenetwork (4:4.4.4-0r2) UNRELEASED; urgency=low
+kdenetwork (4:4.4.4-0r3) UNRELEASED; urgency=low
 
   * New upstream release.
 
@@ -17,7 +17,9 @@ kdenetwork (4:4.4.4-0r2) UNRELEASED; urgency=low
   * Bump kde-sc-dev-latest build dependency to 4:4.4.4.
   * Drop 01_kget_CVE-2010-1000.diff patch, merged upstream.
   * Build kget against system libktorrent:
-    - add 01_use_system_libktorrent.diff patch (mostly a backport);
+    - add 01_backport_use_system_libktorrent.diff patch (backport);
+    - add 02_debian_libktorrent_porting.diff with custom porting changes for
+      libktorrent;
     - add libktorrent-dev to Build-Depends.
   * Build conflict with libmediastreamer-dev (= 3.3.0-1) on amd64. It (or
     rather closely related libortp-dev) is broken. See #583008.
