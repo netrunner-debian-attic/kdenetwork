@@ -1,4 +1,4 @@
-kdenetwork (4:4.4.4-0r3) UNRELEASED; urgency=low
+kdenetwork (4:4.4.4-1) unstable; urgency=low
 
   * New upstream release.
 
@@ -31,7 +31,7 @@ kdenetwork (4:4.4.4-0r3) UNRELEASED; urgency=low
     architectures, and demote to recommend its dependency in the kdenetwork
     metapackage.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 31 May 2010 11:57:27 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 01 Jun 2010 01:15:16 +0300
 
 kdenetwork (4:4.4.3-2) unstable; urgency=medium
 
