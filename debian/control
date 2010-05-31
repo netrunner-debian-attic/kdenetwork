@@ -43,7 +43,7 @@ Description: networking applications from the official KDE 4 release
 Package: kdenetwork-filesharing
 Section: net
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, perl-suid
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: network filesharing configuration module for KDE 4
  This package provides a System Settings panel to configure network
  file-sharing using NFS and Samba.

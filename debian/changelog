@@ -23,6 +23,8 @@ kdenetwork (4:4.4.4-0r3) UNRELEASED; urgency=low
     - add libktorrent-dev to Build-Depends.
   * Build conflict with libmediastreamer-dev (= 3.3.0-1) on amd64. It (or
     rather closely related libortp-dev) is broken. See #583008.
+  * Drop perl-suid from kdenetwork-filesharing Depends (Closes: #581947). It's
+    a left over.
 
   [ Pino Toscano ]
   * Since kppp looks to be Linux-only at the moment, restrict it to just Linux
