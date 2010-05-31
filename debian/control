@@ -26,9 +26,9 @@ Vcs-Svn: svn://svn.debian.org/pkg-kde/trunk/packages/kdenetwork
 Package: kdenetwork
 Architecture: all
 Depends: ${misc:Depends}, kget (>= ${source:Version}),
- kopete (>= ${source:Version}), kppp (>= ${source:Version}),
+ kopete (>= ${source:Version}),
  krdc (>= ${source:Version}), krfb (>= ${source:Version})
-Recommends: kdenetwork-filesharing (>= ${source:Version})
+Recommends: kdenetwork-filesharing (>= ${source:Version}), kppp (>= ${source:Version})
 Description: networking applications from the official KDE 4 release
  KDE is produced by an international technology team that creates free and open
  source software for desktop and portable computing. Among KDE's products are a
@@ -109,7 +109,7 @@ Description: development files for the KDE 4 networking module
 
 Package: kppp
 Section: net
-Architecture: any
+Architecture: armel powerpcspe lpia i386 ia64 alpha amd64 armeb arm avr32 hppa m32r m68k mips mipsel powerpc ppc64 s390 s390x sh3 sh3eb sh4 sh4eb sparc sparc64
 Depends: ${shlibs:Depends}, ${misc:Depends}, ppp
 Suggests: khelpcenter4
 Description: modem dialer for KDE 4
