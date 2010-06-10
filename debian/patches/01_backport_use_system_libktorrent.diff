@@ -5,6 +5,7 @@ Author: Lukas Appelhans <l.appelhans@gmx.de>
 Origin: backport, http://websvn.kde.org/?view=revision&revision=1117656
 Forwarded: not-needed
 Last-Update: 2010-05-30
+Fixed-For: 4.5.0
 
 --- a/kget/transfer-plugins/bittorrent/btsettingswidget.cpp
 +++ b/kget/transfer-plugins/bittorrent/btsettingswidget.cpp
