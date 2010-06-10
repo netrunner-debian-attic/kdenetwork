@@ -7,6 +7,7 @@ Author: Modestas Vainius <modax@debian.org>
 Origin: vendor
 Forwarded: not-needed
 Last-Update: 2010-05-30
+Fixed-For: 4.5.0
 
 --- a/kget/transfer-plugins/bittorrent/scandlg.cpp
 +++ b/kget/transfer-plugins/bittorrent/scandlg.cpp
