@@ -38,7 +38,7 @@ Description: networking applications from the official KDE 4 release
  educational, graphics and software development.
  .
  This metapackage includes networking applications provided with the official
- release of KD.
+ release of KDE.
 
 Package: kdenetwork-filesharing
 Section: net
