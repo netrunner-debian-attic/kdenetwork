@@ -2,7 +2,7 @@ Source: kdenetwork
 Section: kde
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
-Uploaders: Sune Vuorela <debian@pusling.com>, Fathi Boudra <fabo@debian.org>, Armin Berres <armin+debian@space-based.de>, Modestas Vainius <modax@debian.org>
+Uploaders: Sune Vuorela <sune@debian.org>, Fathi Boudra <fabo@debian.org>, Armin Berres <armin+debian@space-based.de>, Modestas Vainius <modax@debian.org>
 Build-Depends: kde-sc-dev-latest (>= 4:4.4.5),
  cdbs (>= 0.4.51), cmake, debhelper (>= 7), pkg-kde-tools (>= 0.9),
  kdelibs5-dev (>= 4:4.4), kdepimlibs5-dev (>= 4:4.4),
@@ -38,29 +38,29 @@ Description: networking applications from the official KDE 4 release
  educational, graphics and software development.
  .
  This metapackage includes networking applications provided with the official
- release of KDE 4.
+ release of KD.
 
 Package: kdenetwork-filesharing
 Section: net
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: network filesharing configuration module for KDE 4
+Description: network filesharing configuration module
  This package provides a System Settings panel to configure network
  file-sharing using NFS and Samba.
  .
- This package is part of the KDE 4 networking module.
+ This package is part of the KDE networking module.
 
 Package: kget
 Section: net
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Suggests: khelpcenter4
-Description: download manager for KDE 4
+Description: download manager
  KGet is an advanced download manager with support for Metalink and Bittorrent.
  Downloads are added to the list, where they can be paused, queued, or
  scheduled for later.
  .
- This package is part of the KDE 4 networking module.
+ This package is part of the KDE networking module.
 
 Package: libkopete4
 Section: libs
@@ -76,7 +76,7 @@ Description: main Kopete library
  This package contains main Kopete library which is used by Kopete and its
  plugins.
  .
- This package is part of the KDE 4 networking module.
+ This package is part of the KDE networking module.
 
 Package: kopete
 Section: net
@@ -84,12 +84,12 @@ Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Recommends: libqca2-plugin-ossl, libqt4-sql-sqlite
 Suggests: kdeartwork-emoticons, khelpcenter4, texlive-latex-base
-Description: instant messenger for KDE 4
+Description: instant messaging and chat application
  Kopete is an instant messaging and chat application with support for a wide
  variety of services, such as AIM, Yahoo, ICQ, MSN, and Jabber.  Advanced
  features and additional protocols are available as plugins.
  .
- This package is part of the KDE 4 networking module.
+ This package is part of the KDE networking module.
 
 Package: libkopete-dev
 Section: libdevel
@@ -98,21 +98,21 @@ Depends: libkopete4 (= ${binary:Version}), ${sameVersionDep:kdelibs5-dev:libkope
  ${misc:Depends}
 Replaces: kdenetwork-dev (<< 4:4.1.86)
 Conflicts: kdenetwork-dev (<< 4:4.1.86)
-Description: development files for the KDE 4 networking module
+Description: development files for the Kopete instant messaging and chat application
  Kopete is an instant messaging and chat application with support for a wide
  variety of services, such as AIM, Yahoo, ICQ, MSN, and Jabber. Advanced
  features and additional protocols are available as plugins.
  .
  This package contains development files needed for building Kopete plugins.
  .
- This package is part of the KDE 4 networking module.
+ This package is part of the KDE networking module.
 
 Package: kppp
 Section: net
 Architecture: armel powerpcspe lpia i386 ia64 alpha amd64 armeb arm avr32 hppa m32r m68k mips mipsel powerpc ppc64 s390 s390x sh3 sh3eb sh4 sh4eb sparc sparc64
 Depends: ${shlibs:Depends}, ${misc:Depends}, ppp
 Suggests: khelpcenter4
-Description: modem dialer for KDE 4
+Description: modem dialer for KDE
  KPPP is a modem dialer for connecting to a dial-up Internet Service Provider.
  It displays statistics and accounting information to help users keep track of
  connection costs.
@@ -126,19 +126,19 @@ Depends: ${shlibs:Depends}, ${misc:Depends}
 Replaces: kopete (<< 4:4.1.86)
 Recommends: rdesktop
 Suggests: khelpcenter4, krfb
-Description: Remote Desktop Connection client for KDE 4
+Description: Remote Desktop Connection client
  The KDE Remote Desktop Connection client can view and control a desktop
  session running on another system.  It can connect to Windows Terminal Servers
  using RDP and many other platforms using VNC/RFB.
  .
- This package is part of the KDE 4 networking module.
+ This package is part of the KDE networking module.
 
 Package: krfb
 Section: net
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Suggests: khelpcenter4, krdc
-Description: Desktop Sharing for KDE 4
+Description: Desktop Sharing utility
  KDE Desktop Sharing is a manager for easily sharing a desktop session with
  another system.  The desktop session can be viewed or controlled remotely by
  any VNC or RFB client, such as the KDE Remote Desktop Connection client.
@@ -146,7 +146,7 @@ Description: Desktop Sharing for KDE 4
  KDE Desktop Sharing can restrict access to only users who are explicitly
  invited, and will ask for confirmation when a user attempts to connect.
  .
- This package is part of the KDE 4 networking module.
+ This package is part of the KDE networking module.
 
 Package: kdenetwork-dbg
 Section: debug
@@ -155,20 +155,20 @@ Priority: extra
 Depends: ${misc:Depends}, kdebase-runtime-dbg
 Recommends: kdebase-workspace-dbg
 Suggests: kdenetwork (= ${source:Version})
-Description: debugging symbols for the KDE 4 networking module
+Description: debugging symbols for the KDE networking module
  This package contains debugging files used to investigate problems with
- binaries included in the KDE 4 networking module.
+ binaries included in the KDE networking module.
 
 Package: kde-zeroconf
 Section: kde
 Architecture: any
 Priority: extra
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: zeroconf plugins and kio slaves for KDE 4
+Description: zeroconf plugins and kio slaves for KDE
  Zeroconf is an implementation of IPv4 link-local addresses (RFC3927)
  which can be used for ad-hoc networks.  Addresses are allocated from
  the 169.254.0.0/16 range semi-randomly.
  .
  Keywords: avahi, dnssd.
  .
- This package is part of the KDE 4 networking module.
+ This package is part of the KDE networking module.
