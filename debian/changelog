@@ -149,7 +149,7 @@ kdenetwork (4:4.3.2-1) unstable; urgency=low
   +++ Changes by Karl Ferdinand Ebert:
 
   * Add source.lintian-overrides to ignore lintian warning about missing
-    debug depends. 
+    debug depends.
 
   +++ Changes by Ana Beatriz Guerrero Lopez:
 
