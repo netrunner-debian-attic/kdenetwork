@@ -20,8 +20,8 @@ Build-Depends: kde-sc-dev-latest (>= 4:4.4.5),
 Build-Conflicts: libmediastreamer-dev (= 3.3.0-1) [amd64]
 Standards-Version: 3.8.4
 Homepage: http://www.kde.org/
-Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/trunk/packages/kdenetwork/#_trunk_packages_kdenetwork_
-Vcs-Svn: svn://svn.debian.org/pkg-kde/trunk/packages/kdenetwork
+Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-sc/kdenetwork.git
+Vcs-Git: git://git.debian.org/pkg-kde/kde-sc/kdenetwork.git
 
 Package: kdenetwork
 Architecture: all
