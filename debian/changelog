@@ -373,6 +373,11 @@ kdenetwork (4:4.0.74-1) experimental; urgency=low
 
 kdenetwork (4:4.0.72-1) experimental; urgency=low
 
+  +++ Changes by Ana Beatriz Guerrero Lopez:
+
+  * Update build depends, add  zlib1g-dev, libjpeg62-dev, libxml2-dev,
+    libxslt1-dev and libssl-dev.
+
   +++ Changes by Sune Vuorela:
 
   * Add zeroconf package.
@@ -385,14 +390,6 @@ kdenetwork (4:4.0.72-1) experimental; urgency=low
     complete probably).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 06 May 2008 10:05:16 +0200
-
-kdenetwork (4:4.0.68+svn794641-1) experimental; urgency=low
-
-  * New upstream snapshot.
-  * Update build depends, add  zlib1g-dev, libjpeg62-dev, libxml2-dev,
-    libxslt1-dev and libssl-dev.
-
- -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Thu, 24 Apr 2008 19:03:51 +0200
 
 kdenetwork (4:4.0.66+svn791114-1) experimental; urgency=low
 
@@ -496,6 +493,7 @@ kdenetwork (4:3.97.0-1) experimental; urgency=low
 kdenetwork (4:3.96.0-1) experimental; urgency=low
 
   * KDE 4.0 rc1, first upload to the Debian archive.
+  * Split the package into several independant packages.
   * Update branch to r740225.
   * Update build-depends, add libvncserver-dev (>=0.9.3),
     libqca2-dev, libplasma-dev, libsqlite3-dev and libdecibel-dev.
@@ -504,17 +502,3 @@ kdenetwork (4:3.96.0-1) experimental; urgency=low
   * Write copyright file.
 
  -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Thu, 22 Nov 2007 08:08:54 +0100
-
-kdenetwork (4:3.94.0-1) experimental; urgency=low
-
-  * KDE4 beta3.
-  * Split the package into several independant packages.
-
- -- Armin Berres <armin+debian@space-based.de>  Fri, 19 Oct 2007 13:16:39 +0200
-
-kdenetwork (4:3.90.1-1) experimental; urgency=low
-
-  * Initial release.
-
- -- Ana Beatriz Guerrero Lopez <ana@debian.org>  Thu, 24 May 2007 22:43:12 +0200
-
