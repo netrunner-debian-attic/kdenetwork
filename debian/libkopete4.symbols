@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.4.2 i386 ia64 s390
+# SymbolsHelper-Confirmed: 4:4.5.1 amd64
 libkopete.so.4 libkopete4 #MINVER#
  _ZGVZN6Kopete2UI8ListView4Item7Private18theVisibilityTimerEvE5timer@Base 4:4.3.4
  _ZGVZN6Kopete2UI8ListView4Item7Private21theLayoutAnimateTimerEvE5timer@Base 4:4.3.4
@@ -76,6 +76,7 @@ libkopete.so.4 libkopete4 #MINVER#
  _ZN17KopeteViewManager16staticMetaObjectE@Base 4:4.3.4
  _ZN17KopeteViewManager17slotViewActivatedEP10KopeteView@Base 4:4.3.4
  _ZN17KopeteViewManager17slotViewDestroyedEP10KopeteView@Base 4:4.3.4
+ _ZN17KopeteViewManager18createNotificationERN6Kopete7MessageERK7QStringPNS0_11ChatSessionEPNS0_12MessageEventEP7QWidgetbb@Base 4:4.5.1
  _ZN17KopeteViewManager24slotChatSessionDestroyedEPN6Kopete11ChatSessionE@Base 4:4.3.4
  _ZN17KopeteViewManager4viewEPN6Kopete11ChatSessionERK7QString@Base 4:4.3.4
  _ZN17KopeteViewManager9nextEventEv@Base 4:4.3.4
