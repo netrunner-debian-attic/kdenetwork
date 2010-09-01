@@ -1,8 +1,11 @@
-kdenetwork (4:4.4.5-2) UNRELEASED; urgency=low
+kdenetwork (4:4.5.1-0r1) UNRELEASED; urgency=low
 
+  * New upstream release.
+
+  [ Modestas Vainius ]
   * Point debian/control Vcs fields to the new Git repository.
 
- -- Modestas Vainius <modax@debian.org>  Mon, 26 Jul 2010 23:24:36 +0300
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 01 Sep 2010 18:14:10 +0300
 
 kdenetwork (4:4.4.5-1) unstable; urgency=low
 
