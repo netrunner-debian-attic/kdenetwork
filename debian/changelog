@@ -8,6 +8,7 @@ kdenetwork (4:4.5.1-0r1) UNRELEASED; urgency=low
   [ George Kiagiadakis ]
   * Add myself to uploaders.
   * Update installed files.
+  * Remove all patches; applied upstream.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 01 Sep 2010 18:14:10 +0300
 
