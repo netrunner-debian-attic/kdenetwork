@@ -1,2 +1,3 @@
 01_backport_use_system_libktorrent.diff
 02_debian_libktorrent_porting.diff
+03_kopete_icq_login_fix.diff

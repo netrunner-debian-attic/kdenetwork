@@ -7,6 +7,8 @@ DEB_FIXPERMS_EXCLUDE := usr/bin/kppp
 #DEB_DH_MAKESHLIBS_ARGS_libkopete4 := -V'libkopete4 (>= 4:4.1.86)'
 DEB_DH_MAKESHLIBS_ARGS_libkopete4 := -V
 
+DEB_DH_SHLIBDEPS_ARGS_libkopete4 := -- -xkopete
+
 binary-install/kppp::
 	chown root:dip debian/kppp/usr/bin/kppp
 	chmod 4754 debian/kppp/usr/bin/kppp

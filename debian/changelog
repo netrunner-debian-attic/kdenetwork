@@ -1,8 +1,12 @@
-kdenetwork (4:4.4.5-2) UNRELEASED; urgency=low
+kdenetwork (4:4.4.5-2) unstable; urgency=low
 
   * Point debian/control Vcs fields to the new Git repository.
+  * Add patch 03_kopete_icq_login_fix.diff to change ICQ login server address.
+    (Closes: #603661)
+  * Solve circular dependencies by downgrading kopete Depends to Recommends
+    for libkopete4. (Closes: #580044)
 
- -- Modestas Vainius <modax@debian.org>  Mon, 26 Jul 2010 23:24:36 +0300
+ -- Modestas Vainius <modax@debian.org>  Sun, 28 Nov 2010 17:25:54 +0200
 
 kdenetwork (4:4.4.5-1) unstable; urgency=low
 
