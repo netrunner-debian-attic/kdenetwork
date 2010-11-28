@@ -6,7 +6,7 @@ usr/lib/kde4/krdc_rdpplugin.so
 usr/lib/kde4/krdc_testplugin.so
 usr/lib/kde4/krdc_vncplugin.so
 usr/lib/libkrdccore.so.4
-usr/lib/libkrdccore.so.4.4.0
+usr/lib/libkrdccore.so.4.5.0
 usr/share/applications/kde4/krdc.desktop
 usr/share/dbus-1/services/org.freedesktop.Telepathy.Client.krdc_rfb_approver.service
 usr/share/dbus-1/services/org.freedesktop.Telepathy.Client.krdc_rfb_handler.service

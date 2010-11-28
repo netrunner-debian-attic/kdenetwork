@@ -1,3 +1,17 @@
+kdenetwork (4:4.5.1-0r1) UNRELEASED; urgency=low
+
+  * New upstream release.
+
+  [ George Kiagiadakis ]
+  * Add myself to uploaders.
+  * Update installed files.
+  * Remove all patches; applied upstream.
+  * Bump build dependencies on kdelibs5-dev and
+    kdepimlibs5-dev to version 4:4.5.
+  * Update libkopete symbols file.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 01 Sep 2010 18:14:10 +0300
+
 kdenetwork (4:4.4.5-2) unstable; urgency=low
 
   * Point debian/control Vcs fields to the new Git repository.
