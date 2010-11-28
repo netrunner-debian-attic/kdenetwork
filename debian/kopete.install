@@ -172,6 +172,8 @@ usr/share/kde4/apps/kconf_update/kopete-pluginloader.pl
 usr/share/kde4/apps/kconf_update/kopete-pluginloader.upd
 usr/share/kde4/apps/kconf_update/kopete-pluginloader2.sh
 usr/share/kde4/apps/kconf_update/kopete-pluginloader2.upd
+usr/share/kde4/apps/kconf_update/kopete-update_icq_server.pl
+usr/share/kde4/apps/kconf_update/kopete-update_icq_server.upd
 usr/share/kde4/apps/kconf_update/kopete-update_yahoo_server.pl
 usr/share/kde4/apps/kconf_update/kopete-update_yahoo_server.upd
 usr/share/kde4/apps/kopete/CompactContactListLayouts.xml
