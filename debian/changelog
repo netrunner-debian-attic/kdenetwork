@@ -4,13 +4,13 @@ kdenetwork (4:4.6.0-0r1) UNRELEASED; urgency=low
     - fixes shift modifier key not working in krfb when pressed on remote
       keyboard (Closes: #595283)
   * Update installed files.
+  * Update libkopete symbols file.
 
   [ George Kiagiadakis ]
   * Add myself to uploaders.
   * Remove all patches; applied upstream.
   * Bump build dependencies on kdelibs5-dev and
     kdepimlibs5-dev to version 4:4.6.
-  * Update libkopete symbols file.
 
   [ José Manuel Santamaría Lema ]
   * Removed patch 03_kopete_icq_login_fix.diff, applied upstream.

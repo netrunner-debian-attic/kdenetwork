@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.5.1 amd64
+# SymbolsHelper-Confirmed: 4:4.6.0 amd64
 libkopete.so.4 libkopete4 #MINVER#
  _ZGVZN6Kopete2UI8ListView4Item7Private18theVisibilityTimerEvE5timer@Base 4:4.3.4
  _ZGVZN6Kopete2UI8ListView4Item7Private21theLayoutAnimateTimerEvE5timer@Base 4:4.3.4
@@ -1830,6 +1830,7 @@ libkopete.so.4 libkopete4 #MINVER#
  _ZNK6Kopete7Account11isConnectedEv@Base 4:4.3.4
  _ZNK6Kopete7Account12accountLabelEv@Base 4:4.3.4
  _ZNK6Kopete7Account14excludeConnectEv@Base 4:4.3.4
+ _ZNK6Kopete7Account15accountIconPathEN11KIconLoader5GroupE@Base 4:4.6.0
  _ZNK6Kopete7Account19hasCustomStatusMenuEv@Base 4:4.3.4
  _ZNK6Kopete7Account26suppressStatusNotificationEv@Base 4:4.3.4
  _ZNK6Kopete7Account5colorEv@Base 4:4.3.4
