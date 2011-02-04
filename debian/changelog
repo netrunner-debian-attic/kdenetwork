@@ -9,11 +9,12 @@ kdenetwork (4:4.6.0-0r1) UNRELEASED; urgency=low
   * Add myself to uploaders.
   * Remove all patches; applied upstream.
   * Bump build dependencies on kdelibs5-dev and
-    kdepimlibs5-dev to version 4:4.5.
+    kdepimlibs5-dev to version 4:4.6.
   * Update libkopete symbols file.
 
   [ José Manuel Santamaría Lema ]
   * Removed patch 03_kopete_icq_login_fix.diff, applied upstream.
+  * Bump kde-sc-dev-latest build dependency to 4:4.4.6.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 01 Sep 2010 18:14:10 +0300
 
