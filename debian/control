@@ -19,7 +19,7 @@ Build-Depends: kde-sc-dev-latest (>= 4:4.6.0),
  shared-desktop-ontologies, libgpgme11-dev, libexpat-dev, libgif-dev,
  libktorrent-dev, libkonq5-dev, kdebase-workspace-dev
 Build-Conflicts: libmediastreamer-dev (= 3.3.0-1) [amd64]
-Standards-Version: 3.8.4
+Standards-Version: 3.9.1
 Homepage: http://www.kde.org/
 Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-sc/kdenetwork.git
 Vcs-Git: git://git.debian.org/pkg-kde/kde-sc/kdenetwork.git
@@ -69,6 +69,7 @@ Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Recommends: libjasper-runtime, kopete (= ${binary:Version})
 Replaces: kopete (<< 4:4.1.86)
+Breaks: kopete (<< 4:4.1.86)
 Description: main Kopete library
  Kopete is an instant messaging and chat application with support for a wide
  variety of services, such as AIM, Yahoo, ICQ, MSN, and Jabber.  Advanced
@@ -98,7 +99,7 @@ Architecture: any
 Depends: libkopete4 (= ${binary:Version}), ${sameVersionDep:kdelibs5-dev:libkopete4},
  ${misc:Depends}
 Replaces: kdenetwork-dev (<< 4:4.1.86)
-Conflicts: kdenetwork-dev (<< 4:4.1.86)
+Breaks: kdenetwork-dev (<< 4:4.1.86)
 Description: development files for the Kopete instant messaging and chat application
  Kopete is an instant messaging and chat application with support for a wide
  variety of services, such as AIM, Yahoo, ICQ, MSN, and Jabber. Advanced
@@ -125,6 +126,7 @@ Section: net
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Replaces: kopete (<< 4:4.1.86)
+Breaks: kopete (<< 4:4.1.86)
 Recommends: rdesktop
 Suggests: khelpcenter4, krfb
 Description: Remote Desktop Connection client
