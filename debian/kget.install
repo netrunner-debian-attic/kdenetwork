@@ -18,7 +18,7 @@ usr/lib/kde4/plasma_engine_kget.so
 usr/lib/kde4/plasma_kget_barapplet.so
 usr/lib/kde4/plasma_kget_piechart.so
 usr/lib/libkgetcore.so.4
-usr/lib/libkgetcore.so.4.5.0
+usr/lib/libkgetcore.so.4.6.0
 usr/share/applications/kde4/kget.desktop
 usr/share/dbus-1/services/org.kde.kget.service
 usr/share/doc/kde/HTML/en/kget/common
@@ -47,6 +47,7 @@ usr/share/icons/hicolor/32x32/apps/kget.png
 usr/share/icons/hicolor/48x48/apps/kget.png
 usr/share/icons/hicolor/64x64/apps/kget.png
 usr/share/icons/hicolor/scalable/apps/kget.svgz
+usr/share/kde4/apps/dolphinpart/kpartplugins/kget_plug_in.desktop
 usr/share/kde4/apps/dolphinpart/kpartplugins/kget_plug_in.rc
 usr/share/kde4/apps/kget/content_fetch_scripts/youtubedl/kget_youtubedl.py
 usr/share/kde4/apps/kget/content_fetch_scripts/youtubedl/kget_youtubedl_option.py
@@ -69,7 +70,9 @@ usr/share/kde4/apps/kget/www/preferences-system.png
 usr/share/kde4/apps/kget/www/title-border-bottom-downloads.png
 usr/share/kde4/apps/kget/www/title-border-bottom-settings.png
 usr/share/kde4/apps/kget/www/view-refresh.png
+usr/share/kde4/apps/khtml/kpartplugins/kget_plug_in.desktop
 usr/share/kde4/apps/khtml/kpartplugins/kget_plug_in.rc
+usr/share/kde4/apps/kwebkitpart/kpartplugins/kget_plug_in.desktop
 usr/share/kde4/apps/kwebkitpart/kpartplugins/kget_plug_in.rc
 usr/share/kde4/config.kcfg/kget.kcfg
 usr/share/kde4/config.kcfg/kget_checksumsearchfactory.kcfg

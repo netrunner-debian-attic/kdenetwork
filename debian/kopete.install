@@ -56,11 +56,11 @@ usr/lib/kde4/kopete_wp.so
 usr/lib/kde4/kopete_yahoo.so
 usr/lib/kde4/libchattexteditpart.so
 usr/lib/libkopete_oscar.so.4
-usr/lib/libkopete_oscar.so.4.5.0
+usr/lib/libkopete_oscar.so.4.6.0
 usr/lib/libkopete_otr_shared.so.1
 usr/lib/libkopete_otr_shared.so.1.0.0
 usr/lib/libkopete_videodevice.so.4
-usr/lib/libkopete_videodevice.so.4.5.0
+usr/lib/libkopete_videodevice.so.4.6.0
 usr/lib/libkopeteaddaccountwizard.so.1
 usr/lib/libkopeteaddaccountwizard.so.1.0.0
 usr/lib/libkopetechatwindow_shared.so.1
@@ -642,6 +642,7 @@ usr/share/kde4/config.kcfg/kopetebehaviorsettings.kcfg
 usr/share/kde4/config.kcfg/kopetestatussettings.kcfg
 usr/share/kde4/config.kcfg/latexconfig.kcfg
 usr/share/kde4/config.kcfg/nowlisteningconfig.kcfg
+usr/share/kde4/config.kcfg/translatorconfig.kcfg
 usr/share/kde4/config.kcfg/urlpicpreview.kcfg
 usr/share/kde4/config.kcfg/webpresenceconfig.kcfg
 usr/share/kde4/config/kopeterc
@@ -704,6 +705,7 @@ usr/share/kde4/services/xmpp.protocol
 usr/share/kde4/servicetypes/kopeteplugin.desktop
 usr/share/kde4/servicetypes/kopeteprotocol.desktop
 usr/share/kde4/servicetypes/kopeteui.desktop
+usr/share/sounds/KDE-Im-Phone-Ring.wav
 usr/share/sounds/Kopete_Event.ogg
 usr/share/sounds/Kopete_Received.ogg
 usr/share/sounds/Kopete_Sent.ogg

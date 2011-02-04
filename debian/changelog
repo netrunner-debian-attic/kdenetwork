@@ -3,10 +3,10 @@ kdenetwork (4:4.6.0-0r1) UNRELEASED; urgency=low
   * New upstream release:
     - fixes shift modifier key not working in krfb when pressed on remote
       keyboard (Closes: #595283)
+  * Update installed files.
 
   [ George Kiagiadakis ]
   * Add myself to uploaders.
-  * Update installed files.
   * Remove all patches; applied upstream.
   * Bump build dependencies on kdelibs5-dev and
     kdepimlibs5-dev to version 4:4.5.
