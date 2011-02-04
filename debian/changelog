@@ -16,6 +16,11 @@ kdenetwork (4:4.6.0-0r1) UNRELEASED; urgency=low
   * Removed patch 03_kopete_icq_login_fix.diff, applied upstream.
   * Bump kde-sc-dev-latest build dependency to 4:4.6.0.
 
+  [ Pino Toscano ]
+  * Add build dependencies:
+    - libkonq5-dev
+    - kdebase-workspace-dev
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 01 Sep 2010 18:14:10 +0300
 
 kdenetwork (4:4.4.5-2) unstable; urgency=low
