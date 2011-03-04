@@ -22,6 +22,9 @@ kdenetwork (4:4.6.1-0r0) UNRELEASED; urgency=low
   * Add build dependencies:
     - libkonq5-dev
     - kdebase-workspace-dev
+   * Use wildcard architectures:
+     - !kfreebsd-i386 !kfreebsd-amd64 !hurd-i386 -> linux-any
+     - list of linux architectures -> linux-any
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 01 Sep 2010 18:14:10 +0300
 

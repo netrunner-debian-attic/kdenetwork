@@ -13,9 +13,9 @@ Build-Depends: kde-sc-dev-latest (>= 4:4.6.1),
  libsqlite3-dev, libqimageblitz-dev (>= 1:0.0.4),
  libgmp3-dev, libotr2-dev, libboost-dev,
  libavahi-compat-libdnssd-dev, libmeanwhile-dev, libmsn-dev (>= 4.1), libkwebkit-dev,
- libortp-dev, libspeex-dev, libasound2-dev (>= 1.0.14a) [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386],
+ libortp-dev, libspeex-dev, libasound2-dev (>= 1.0.14a) [linux-any],
  libstreamanalyzer-dev, libgadu-dev, libmediastreamer-dev, libtelepathy-qt4-dev,
- libv4l-dev [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386],
+ libv4l-dev [linux-any],
  shared-desktop-ontologies, libgpgme11-dev, libexpat-dev, libgif-dev,
  libktorrent-dev, libkonq5-dev, kdebase-workspace-dev
 Build-Conflicts: libmediastreamer-dev (= 3.3.0-1) [amd64]
@@ -111,7 +111,7 @@ Description: development files for the Kopete instant messaging and chat applica
 
 Package: kppp
 Section: net
-Architecture: armel powerpcspe lpia i386 ia64 alpha amd64 armeb arm avr32 hppa m32r m68k mips mipsel powerpc ppc64 s390 s390x sh3 sh3eb sh4 sh4eb sparc sparc64
+Architecture: linux-any
 Depends: ${shlibs:Depends}, ${misc:Depends}, ppp
 Suggests: khelpcenter4
 Description: modem dialer for KDE
