@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.6.0 amd64
+# SymbolsHelper-Confirmed: 4:4.6.1 amd64
 libkopete.so.4 libkopete4 #MINVER#
  _ZGVZN6Kopete2UI8ListView4Item7Private18theVisibilityTimerEvE5timer@Base 4:4.3.4
  _ZGVZN6Kopete2UI8ListView4Item7Private21theLayoutAnimateTimerEvE5timer@Base 4:4.3.4
@@ -445,6 +445,7 @@ libkopete.so.4 libkopete4 #MINVER#
  _ZN6Kopete14AccountManager13removeAccountEPNS_7AccountE@Base 4:4.3.4
  _ZN6Kopete14AccountManager15registerAccountEPNS_7AccountE@Base 4:4.3.4
  _ZN6Kopete14AccountManager15setOnlineStatusEjRKNS_13StatusMessageEj@Base 4:4.3.4
+ _ZN6Kopete14AccountManager15setOnlineStatusEjRKNS_13StatusMessageEjb@Base 4:4.6.1
  _ZN6Kopete14AccountManager16networkConnectedEv@Base 4:4.3.4
  _ZN6Kopete14AccountManager16setStatusMessageERK7QString@Base 4:4.3.4
  _ZN6Kopete14AccountManager16slotPluginLoadedEPNS_6PluginE@Base 4:4.3.4
