@@ -17,7 +17,8 @@ Build-Depends: kde-sc-dev-latest (>= 4:4.6.1),
  libstreamanalyzer-dev, libgadu-dev, libmediastreamer-dev, libtelepathy-qt4-dev,
  libv4l-dev [linux-any],
  shared-desktop-ontologies, libgpgme11-dev, libexpat-dev, libgif-dev,
- libktorrent-dev, libkonq5-dev, kdebase-workspace-dev
+ libktorrent-dev, libkonq5-dev, kdebase-workspace-dev,
+ libjasper-dev
 Build-Conflicts: libmediastreamer-dev (= 3.3.0-1) [amd64]
 Standards-Version: 3.9.1
 Homepage: http://www.kde.org/
