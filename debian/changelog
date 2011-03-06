@@ -26,6 +26,9 @@ kdenetwork (4:4.6.1-0r1) UNRELEASED; urgency=low
   * Add build dependencies:
     - libkonq5-dev
     - kdebase-workspace-dev
+  * Remove unused build dependencies:
+    - libgmp3-dev
+    - libkwebkit-dev
    * Use wildcard architectures:
      - !kfreebsd-i386 !kfreebsd-amd64 !hurd-i386 -> linux-any
    * Remove libjasper-runtime recommend from kopete, as now it uses the jasper
