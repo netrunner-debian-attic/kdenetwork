@@ -69,7 +69,7 @@ Package: libkopete4
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Recommends: libjasper-runtime, kopete (= ${binary:Version})
+Recommends: kopete (= ${binary:Version})
 Replaces: kopete (<< 4:4.1.86)
 Breaks: kopete (<< 4:4.1.86)
 Description: main Kopete library

@@ -28,6 +28,8 @@ kdenetwork (4:4.6.1-0r1) UNRELEASED; urgency=low
     - kdebase-workspace-dev
    * Use wildcard architectures:
      - !kfreebsd-i386 !kfreebsd-amd64 !hurd-i386 -> linux-any
+   * Remove libjasper-runtime recommend from kopete, as now it uses the jasper
+     library directly.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 01 Sep 2010 18:14:10 +0300
 
