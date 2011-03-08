@@ -12,6 +12,10 @@ kdenetwork (4:4.6.1-0r4) UNRELEASED; urgency=low
   * Remove all patches; applied upstream.
   * Bump build dependencies on kdelibs5-dev and
     kdepimlibs5-dev to version 4:4.6.
+  * Drop libtelepathy-qt4-dev build-dependency, since it
+    will cause trouble when libtelepathy-qt4 0.5 is uploaded
+    in the archive and krdc/krfb telepathy support is not
+    usable anyway without the rest of the telepathy components.
 
   [ José Manuel Santamaría Lema ]
   * Removed patch 03_kopete_icq_login_fix.diff, applied upstream.
