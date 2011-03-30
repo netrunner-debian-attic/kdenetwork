@@ -1,4 +1,4 @@
-kdenetwork (4:4.6.1-0r4) UNRELEASED; urgency=low
+kdenetwork (4:4.6.1-0r5) UNRELEASED; urgency=low
 
   * New upstream release:
     - fixes shift modifier key not working in krfb when pressed on remote
@@ -46,7 +46,7 @@ kdenetwork (4:4.6.1-0r4) UNRELEASED; urgency=low
   * Add backport_make_video4inux1_optional.diff patch to make kopete build with
     kernel 2.6.38 which no longer supports Video4Linux 1.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 01 Sep 2010 18:14:10 +0300
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 30 Mar 2011 21:47:07 +0300
 
 kdenetwork (4:4.4.5-2) unstable; urgency=low
 
