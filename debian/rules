@@ -1,14 +1,25 @@
 #!/usr/bin/make -f
 
-include /usr/share/pkg-kde-tools/qt-kde-team/1/debian-qt-kde.mk
+include /usr/share/pkg-kde-tools/qt-kde-team/2/debian-qt-kde.mk
 
-DEB_FIXPERMS_EXCLUDE := usr/bin/kppp
+.PHONY: override_dh_auto_test
 
-#DEB_DH_MAKESHLIBS_ARGS_libkopete4 := -V'libkopete4 (>= 4:4.1.86)'
-DEB_DH_MAKESHLIBS_ARGS_libkopete4 := -V
+override_dh_install:
+	$(overriden_command)
+	if [ -d debian/kppp ]; then \
+	    chown root:dip debian/kppp/usr/bin/kppp && \
+	    chmod 4754 debian/kppp/usr/bin/kppp; \
+	fi
 
-DEB_DH_SHLIBDEPS_ARGS_libkopete4 := -- -xkopete
+override_dh_fixperms:
+	$(overriden_command) -Xusr/bin/kppp
 
-binary-install/kppp::
-	chown root:dip debian/kppp/usr/bin/kppp
-	chmod 4754 debian/kppp/usr/bin/kppp
+override_dh_makeshlibs:
+	$(overriden_command) -V
+
+override_dh_shlibdeps:
+	$(overriden_command) -plibkopete4 -- -xkopete
+	$(overriden_command) --remaining-packages
+
+override_dh_strip:
+	$(overriden_command) --dbg-package=kdenetwork-dbg

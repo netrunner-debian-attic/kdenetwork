@@ -39,6 +39,9 @@ kdenetwork (4:4.6.1-0r4) UNRELEASED; urgency=low
   * Remove libjasper-runtime recommend from kopete, as now it uses the jasper
     library directly.
 
+  [ Modestas Vainius ]
+  * Switch debian/rules engine to dhmk based qt-kde-team/2/*.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 01 Sep 2010 18:14:10 +0300
 
 kdenetwork (4:4.4.5-2) unstable; urgency=low

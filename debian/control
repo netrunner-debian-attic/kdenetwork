@@ -6,7 +6,7 @@ Uploaders: Sune Vuorela <sune@debian.org>, Fathi Boudra <fabo@debian.org>, Armin
  Modestas Vainius <modax@debian.org>, George Kiagiadakis <kiagiadakis.george@gmail.com>,
  José Manuel Santamaría Lema <panfaust@gmail.com>
 Build-Depends: kde-sc-dev-latest (>= 4:4.6.1),
- cdbs (>= 0.4.51), cmake, debhelper (>= 7), pkg-kde-tools (>= 0.9),
+ cmake, debhelper (>= 7.2.7~), pkg-kde-tools (>= 0.11),
  kdelibs5-dev (>= 4:4.6), kdepimlibs5-dev (>= 4:4.6),
  zlib1g-dev, libjpeg62-dev, libxml2-dev, libxslt1-dev, libssl-dev,
  libxdamage-dev, libxss-dev, libslp-dev, libidn11-dev, libxtst-dev,
