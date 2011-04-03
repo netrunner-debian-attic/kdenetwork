@@ -4,6 +4,10 @@ kdenetwork (4:4.6.1-0r5) UNRELEASED; urgency=low
     - fixes shift modifier key not working in krfb when pressed on remote
       keyboard (Closes: #595283)
     - removes KWallet timeout in kopete (Closes: #606949)
+    - kopete does not disconnect anymore after several XMPP ping messages from
+      Jabber server (Closes: #585007)
+    - kopete uses the right category for ICQ disconnect messages
+      (Closes: #588043)
   * Update installed files.
   * Update libkopete symbols file.
 
