@@ -1,4 +1,4 @@
-kdenetwork (4:4.6.1-0r5) UNRELEASED; urgency=low
+kdenetwork (4:4.6.2-0r0) UNRELEASED; urgency=low
 
   * New upstream release:
     - fixes shift modifier key not working in krfb when pressed on remote
@@ -26,7 +26,7 @@ kdenetwork (4:4.6.1-0r5) UNRELEASED; urgency=low
 
   [ José Manuel Santamaría Lema ]
   * Removed patch 03_kopete_icq_login_fix.diff, applied upstream.
-  * Bump kde-sc-dev-latest build dependency to 4:4.6.1.
+  * Bump kde-sc-dev-latest build dependency to 4:4.6.2.
   * Bump build dependency on libkonq5-dev to 4:4.6.
   * Bump S-V to 3.9.1; add Breaks next to Replaces where needed.
   * Add build dependencies:
