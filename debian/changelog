@@ -1,4 +1,4 @@
-kdenetwork (4:4.6.2-0r0) UNRELEASED; urgency=low
+kdenetwork (4:4.6.2-0r1) UNRELEASED; urgency=low
 
   * New upstream release:
     - fixes shift modifier key not working in krfb when pressed on remote
