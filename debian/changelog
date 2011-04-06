@@ -51,8 +51,6 @@ kdenetwork (4:4.6.2-0r0) UNRELEASED; urgency=low
   * Switch debian/rules engine to dhmk based qt-kde-team/2/*.
   * Require libktorrent-dev 1.1.
   * Move KDE SC Build-Depends to the beginning of the line.
-  * Add backport_make_video4inux1_optional.diff patch to make kopete build with
-    kernel 2.6.38 which no longer supports Video4Linux 1.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 30 Mar 2011 21:47:07 +0300
 
