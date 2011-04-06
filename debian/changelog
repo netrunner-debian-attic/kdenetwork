@@ -43,6 +43,7 @@ kdenetwork (4:4.6.2-0r0) UNRELEASED; urgency=low
     - libkwebkit-dev
   * Use wildcard architectures:
     - !kfreebsd-i386 !kfreebsd-amd64 !hurd-i386 -> linux-any
+    - list of linux architectures -> linux-any
   * Remove libjasper-runtime recommend from kopete, as now it uses the jasper
     library directly.
 
