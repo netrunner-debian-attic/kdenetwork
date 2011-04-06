@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.6.1 amd64
+# SymbolsHelper-Confirmed: 4:4.6.2 amd64
 libkopete.so.4 libkopete4 #MINVER#
  _ZGVZN6Kopete2UI8ListView4Item7Private18theVisibilityTimerEvE5timer@Base 4:4.3.4
  _ZGVZN6Kopete2UI8ListView4Item7Private21theLayoutAnimateTimerEvE5timer@Base 4:4.3.4
@@ -149,6 +149,7 @@ libkopete.so.4 libkopete4 #MINVER#
  _ZN6Kopete11ChatSession13appendMessageERNS_7MessageE@Base 4:4.3.4
  _ZN6Kopete11ChatSession13inviteContactERK7QString@Base 4:4.3.4
  _ZN6Kopete11ChatSession13removeContactEPKNS_7ContactERK7QStringN2Qt10TextFormatEb@Base 4:4.3.4
+ _ZN6Kopete11ChatSession13viewActivatedEP10KopeteView@Base 4:4.6.2
  _ZN6Kopete11ChatSession14contactRemovedEPKNS_7ContactERK7QStringN2Qt10TextFormatEb@Base 4:4.3.4
  _ZN6Kopete11ChatSession14messageSuccessEv@Base 4:4.3.4
  _ZN6Kopete11ChatSession14setDisplayNameERK7QString@Base 4:4.3.4
