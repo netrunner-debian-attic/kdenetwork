@@ -46,6 +46,7 @@ kdenetwork (4:4.6.2-0r1) UNRELEASED; urgency=low
     - list of linux architectures -> linux-any
   * Remove libjasper-runtime recommend from kopete, as now it uses the jasper
     library directly.
+  * Clean up Replaces/Breaks from the pre-squeeze era whenever possible.
 
   [ Modestas Vainius ]
   * Switch debian/rules engine to dhmk based qt-kde-team/2/*.

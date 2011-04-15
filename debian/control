@@ -69,8 +69,6 @@ Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Recommends: kopete (= ${binary:Version})
-Replaces: kopete (<< 4:4.1.86)
-Breaks: kopete (<< 4:4.1.86)
 Description: main Kopete library
  Kopete is an instant messaging and chat application with support for a wide
  variety of services, such as AIM, Yahoo, ICQ, MSN, and Jabber.  Advanced
@@ -99,8 +97,6 @@ Section: libdevel
 Architecture: any
 Depends: libkopete4 (= ${binary:Version}), ${sameVersionDep:kdelibs5-dev:libkopete4},
  ${misc:Depends}
-Replaces: kdenetwork-dev (<< 4:4.1.86)
-Breaks: kdenetwork-dev (<< 4:4.1.86)
 Description: development files for the Kopete instant messaging and chat application
  Kopete is an instant messaging and chat application with support for a wide
  variety of services, such as AIM, Yahoo, ICQ, MSN, and Jabber. Advanced
@@ -126,8 +122,6 @@ Package: krdc
 Section: net
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Replaces: kopete (<< 4:4.1.86)
-Breaks: kopete (<< 4:4.1.86)
 Recommends: rdesktop
 Suggests: khelpcenter4, krfb
 Description: Remote Desktop Connection client
