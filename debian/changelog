@@ -3,6 +3,7 @@ kdenetwork (4:4.4.5-3) UNRELEASED; urgency=low
   * Add cve_2010_1000_directory_traversal.diff, note that CVE-2010-1000 was
     already fixed, but this patch performs a better protection against that
     vulnerability.
+  * Add ftbfs_openssl_constify.diff to make it build against latest openssl.
 
  -- José Manuel Santamaría Lema <panfaust@gmail.com>  Wed, 20 Apr 2011 19:41:27 +0200
 
