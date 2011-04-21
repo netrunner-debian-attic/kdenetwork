@@ -1,0 +1,299 @@
+Origin: http://websvn.kde.org/?view=revision&revision=1226213
+Description: Make V4L support optional as it has been removed from kernel 2.6.38
+ NOTE: This patch has been extended a bit compared with svn rev 1226213.
+--- a/kopete/libkopete/avdevice/videodevice.h
++++ b/kopete/libkopete/avdevice/videodevice.h
+@@ -49,13 +49,21 @@
+ 
+ #include <linux/fs.h>
+ #include <linux/kernel.h>
++
++#ifdef HAVE_V4L
+ #include <linux/videodev.h>
++#endif // have_v4l
++
+ #define VIDEO_MODE_PAL_Nc  3
+ #define VIDEO_MODE_PAL_M   4
+ #define VIDEO_MODE_PAL_N   5
+ #define VIDEO_MODE_NTSC_JP 6
+ #define __STRICT_ANSI__
+ 
++#if defined(HAVE_LIBV4L2) && ! defined(HAVE_V4L)
++#include <linux/videodev2.h>
++#endif
++
+ #ifdef HAVE_LIBV4L2
+ #include <libv4l2.h>
+ #endif // HAVE_V4L2
+@@ -307,8 +315,10 @@
+ 	void enumerateControls (void);
+ 	void enumerateMenu (void);
+ #endif
++#ifdef HAVE_V4L
+ 	struct video_capability V4L_capabilities;
+ 	struct video_buffer V4L_videobuffer;
++#endif
+ #endif	
+ 	QVector<Kopete::AV::VideoInput> m_input;
+ //	QFile file;
+--- a/kopete/config-kopete.h.cmake
++++ b/kopete/config-kopete.h.cmake
+@@ -62,3 +62,5 @@
+ 
+ /* Define to 1 if you want libv4l support */
+ #cmakedefine HAVE_LIBV4L2 1
++
++#cmakedefine HAVE_V4L 1
+--- a/kopete/CMakeLists.txt
++++ b/kopete/CMakeLists.txt
+@@ -113,6 +113,7 @@
+ check_include_files(valgrind/valgrind.h HAVE_VALGRIND_H)
+ check_include_files(stdint.h HAVE_STDINT_H)
+ check_include_files(inttypes.h HAVE_INTTYPES_H)
++check_include_files(linux/videodev.h HAVE_V4L)
+ macro_bool_to_01(X11_Xss_FOUND HAVE_XSCREENSAVER)
+ 
+ macro_optional_find_package(Expat)
+--- a/kopete/libkopete/avdevice/videodevice.cpp
++++ b/kopete/libkopete/avdevice/videodevice.cpp
+@@ -345,7 +345,7 @@
+ 		}
+ 
+ #endif
+-
++#ifdef HAVE_V4L
+ 		CLEAR(V4L_capabilities);
+ 
+ 		if(m_driver==VIDEODEV_DRIVER_NONE)
+@@ -410,6 +410,7 @@
+ 			}
+ 		}
+ #endif
++#endif
+ 		m_name=m_model; // Take care about changing the name to be different from the model itself...
+ 
+ 		detectPixelFormats();
+@@ -541,6 +542,7 @@
+ 			}
+ 			break;
+ #endif
++#ifdef HAVE_V4L
+ 		case VIDEODEV_DRIVER_V4L:
+ 			m_videoread=true;
+ 			m_io_method=IO_METHOD_READ;
+@@ -552,6 +554,7 @@
+ 			}
+ 			break;
+ #endif
++#endif
+ 		case VIDEODEV_DRIVER_NONE:
+ 		default:
+ 
+@@ -720,6 +723,7 @@
+ 				}
+ 				break;
+ #endif
++#ifdef HAVE_V4L
+ 			case VIDEODEV_DRIVER_V4L:
+ 				{
+ 					struct video_window V4L_videowindow;
+@@ -747,6 +751,7 @@
+ 				}
+ 				break;
+ #endif
++#endif
+ 			case VIDEODEV_DRIVER_NONE:
+ 			default:
+ 				break;
+@@ -818,6 +823,7 @@
+ 			}
+ 			break;
+ #endif
++#ifdef HAVE_V4L
+ 		case VIDEODEV_DRIVER_V4L:
+ 			{
+ 			struct video_picture V4L_picture;
+@@ -846,6 +852,7 @@
+ 			}
+ 			break;
+ #endif
++#endif
+ 		case VIDEODEV_DRIVER_NONE:
+ 		default:
+ 			break;
+@@ -894,6 +901,7 @@
+ 				}
+ 				break;
+ #endif
++#ifdef HAVE_V4L
+ 			case VIDEODEV_DRIVER_V4L:
+ 				struct video_channel V4L_input;
+ 				V4L_input.channel=newinput;
+@@ -905,6 +913,7 @@
+ 				}
+ 				break;
+ #endif
++#endif
+ 			case VIDEODEV_DRIVER_NONE:
+ 			default:
+ 				break;
+@@ -1583,6 +1592,7 @@
+ 			}
+ 			break;
+ #endif
++#ifdef HAVE_V4L
+ 		case VIDEODEV_DRIVER_V4L:
+ 			{
+ 				struct video_picture V4L_picture;
+@@ -1598,6 +1608,7 @@
+ 			}
+ 			break;
+ #endif
++#endif
+ 		case VIDEODEV_DRIVER_NONE:
+ 		default:
+ 			break;
+@@ -1658,6 +1669,7 @@
+ 			}
+ 			break;
+ #endif
++#ifdef HAVE_V4L
+ 		case VIDEODEV_DRIVER_V4L:
+ 			{
+ 				struct video_picture V4L_picture;
+@@ -1673,6 +1685,7 @@
+ 			}
+ 		break;
+ #endif
++#endif
+ 		case VIDEODEV_DRIVER_NONE:
+ 		default:
+ 			break;
+@@ -1733,6 +1746,7 @@
+ 			}
+ 			break;
+ #endif
++#ifdef HAVE_V4L
+ 		case VIDEODEV_DRIVER_V4L:
+ 			{
+ 				struct video_picture V4L_picture;
+@@ -1748,6 +1762,7 @@
+ 			}
+ 		break;
+ #endif
++#endif
+ 		case VIDEODEV_DRIVER_NONE:
+ 		default:
+ 			break;
+@@ -1808,6 +1823,7 @@
+ 			}
+ 			break;
+ #endif
++#ifdef HAVE_V4L
+ 		case VIDEODEV_DRIVER_V4L:
+ 			{
+ 				struct video_picture V4L_picture;
+@@ -1823,6 +1839,7 @@
+ 			}
+ 		break;
+ #endif
++#endif
+ 		case VIDEODEV_DRIVER_NONE:
+ 		default:
+ 			break;
+@@ -1883,6 +1900,7 @@
+ 			}
+ 			break;
+ #endif
++#ifdef HAVE_V4L
+ 		case VIDEODEV_DRIVER_V4L:
+ 			{
+ 				struct video_picture V4L_picture;
+@@ -1898,6 +1916,7 @@
+ 			}
+ 		break;
+ #endif
++#endif
+ 		case VIDEODEV_DRIVER_NONE:
+ 		default:
+ 			break;
+@@ -2022,6 +2041,7 @@
+ 			}
+ 			break;
+ #endif
++#ifdef HAVE_V4L
+ 		case VIDEODEV_DRIVER_V4L:
+ 			switch(palette)
+ 			{
+@@ -2040,6 +2060,7 @@
+ 			}
+ 			break;
+ #endif
++#endif
+ 		case VIDEODEV_DRIVER_NONE:
+ 		default:
+ 			return PIXELFORMAT_NONE;	break;
+@@ -2102,6 +2123,7 @@
+ 			}
+ 			break;
+ #endif
++#ifdef HAVE_V4L
+ 		case VIDEODEV_DRIVER_V4L:
+ 			switch(pixelformat)
+ 			{
+@@ -2147,6 +2169,7 @@
+ 			}
+ 			break;
+ #endif
++#endif
+ 		case VIDEODEV_DRIVER_NONE:
+ 		default:
+ 			return PIXELFORMAT_NONE;	break;
+@@ -2308,6 +2331,7 @@
+ 			}
+ 			break;
+ #endif
++#ifdef HAVE_V4L
+ 		case VIDEODEV_DRIVER_V4L:
+ 			switch(pixelformat)
+ 			{
+@@ -2325,6 +2349,7 @@
+ 			}
+ 			break;
+ #endif
++#endif
+ 		case VIDEODEV_DRIVER_NONE:
+ 		default:
+ 			break;
+@@ -2471,6 +2496,7 @@
+ 			}
+ 			break;
+ #endif
++#ifdef HAVE_V4L
+ 		case VIDEODEV_DRIVER_V4L:
+ 			switch(standard)
+ 			{
+@@ -2526,6 +2552,7 @@
+ 			}
+ 			break;
+ #endif
++#endif
+ 		case VIDEODEV_DRIVER_NONE:
+ 		default:
+ 			return STANDARD_UNKNOWN;	break;
+@@ -2652,6 +2679,7 @@
+ 			}
+ 			break;
+ #endif
++#ifdef HAVE_V4L
+ 		case VIDEODEV_DRIVER_V4L:
+ 			switch(standard)
+ 			{
+@@ -2666,6 +2694,7 @@
+ 			}
+ 			break;
+ #endif
++#endif
+ 		case VIDEODEV_DRIVER_NONE:
+ 		default:
+ 			break;

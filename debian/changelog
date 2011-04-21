@@ -5,6 +5,7 @@ kdenetwork (4:4.4.5-3) UNRELEASED; urgency=low
     vulnerability.
   * Add ftbfs_openssl_constify.diff to make it build against latest openssl.
   * Build depend on libqtwebkit-dev. (Closes: #618178)
+  * Add ftbfs_check_v4l.diff to make V4L support optional.
 
  -- José Manuel Santamaría Lema <panfaust@gmail.com>  Wed, 20 Apr 2011 19:41:27 +0200
 

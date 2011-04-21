@@ -3,3 +3,4 @@
 03_kopete_icq_login_fix.diff
 cve_2010_1000_directory_traversal.diff
 ftbfs_openssl_constify.diff
+ftbfs_check_v4l.diff
