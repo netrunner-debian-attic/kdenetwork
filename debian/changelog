@@ -19,9 +19,6 @@ kdenetwork (4:4.6.2-1) experimental; urgency=low
   * Update installed files.
   * Update libkopete symbols file.
 
-  * TODO: W: kget: embedded-javascript-library usr/[...]/mootools-core-yc.js
-  * TODO: W: kget: embedded-javascript-library usr/[...]/mootools-more.js
-
   [ George Kiagiadakis ]
   * Add myself to uploaders.
   * Remove all patches; applied upstream.
