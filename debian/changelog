@@ -1,8 +1,13 @@
-kdenetwork (4:4.6.2-2) UNRELEASED; urgency=low
+kdenetwork (4:4.6.3-0r0) UNRELEASED; urgency=low
+
+  * New upstream release.
 
   [ Pino Toscano ]
   * Add patch no_home_set.diff to not fail the cmake step in kopete if no $HOME
     environment variable is set.
+
+  [ José Manuel Santamaría Lema ]
+  * Bump kde-sc-dev-latest build dependency to 4:4.6.3.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 28 Apr 2011 21:29:24 +0200
 
