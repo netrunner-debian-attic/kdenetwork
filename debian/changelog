@@ -1,3 +1,10 @@
+kdenetwork (4:4.6.3-0r0) UNRELEASED; urgency=low
+
+  [ José Manuel Santamaría Lema ]
+  * Bump kde-sc-dev-latest build dependency to 4:4.6.3.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 07 May 2011 17:11:42 +0300
+
 kdenetwork (4:4.6.3-0exp1) experimental; urgency=low
 
   * New upstream release.
