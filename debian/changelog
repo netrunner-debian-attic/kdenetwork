@@ -1,4 +1,4 @@
-kdenetwork (4:4.6.3-0exp1) UNRELEASED; urgency=low
+kdenetwork (4:4.6.3-0exp1) experimental; urgency=low
 
   * New upstream release.
 
@@ -9,7 +9,7 @@ kdenetwork (4:4.6.3-0exp1) UNRELEASED; urgency=low
   [ José Manuel Santamaría Lema ]
   * Bump Standards-Version to 3.9.2; no changes needed.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 28 Apr 2011 21:29:24 +0200
+ -- Modestas Vainius <modax@debian.org>  Sat, 07 May 2011 16:18:19 +0300
 
 kdenetwork (4:4.6.2-1) experimental; urgency=low
 
