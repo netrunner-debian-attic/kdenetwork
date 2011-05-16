@@ -3,6 +3,10 @@ kdenetwork (4:4.6.3-0r0) UNRELEASED; urgency=low
   [ José Manuel Santamaría Lema ]
   * Bump kde-sc-dev-latest build dependency to 4:4.6.3.
 
+  [ Modestas Vainius ]
+  * Merge 4:4.4.5-2+squeeze1 upload to squeeze:
+    - drop cve_2010_1000_directory_traversal.diff patch, applied upstream.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 07 May 2011 17:11:42 +0300
 
 kdenetwork (4:4.6.3-0exp1) experimental; urgency=low
@@ -71,6 +75,15 @@ kdenetwork (4:4.6.2-1) experimental; urgency=low
   * Move KDE SC Build-Depends to the beginning of the line.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 27 Apr 2011 12:23:42 +0300
+
+kdenetwork (4:4.4.5-2+squeeze1) stable; urgency=low
+
+  [ José Manuel Santamaría Lema ]
+  * Add cve_2010_1000_directory_traversal.diff, note that CVE-2010-1000 was
+    already fixed, but this patch performs a better protection against that
+    vulnerability.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 17 May 2011 00:33:31 +0300
 
 kdenetwork (4:4.4.5-2) unstable; urgency=low
 
