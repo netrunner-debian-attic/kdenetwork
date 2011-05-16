@@ -1,10 +1,11 @@
-kdenetwork (4:4.4.5-2+squeeze1) UNRELEASED; urgency=low
+kdenetwork (4:4.4.5-2+squeeze1) stable; urgency=low
 
+  [ José Manuel Santamaría Lema ]
   * Add cve_2010_1000_directory_traversal.diff, note that CVE-2010-1000 was
     already fixed, but this patch performs a better protection against that
     vulnerability.
 
- -- José Manuel Santamaría Lema <panfaust@gmail.com>  Sun, 17 Apr 2011 20:04:11 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 17 May 2011 00:33:31 +0300
 
 kdenetwork (4:4.4.5-2) unstable; urgency=low
 
