@@ -1,4 +1,4 @@
-kdenetwork (4:4.6.3-0r0) UNRELEASED; urgency=low
+kdenetwork (4:4.6.3-1) unstable; urgency=low
 
   [ José Manuel Santamaría Lema ]
   * Bump kde-sc-dev-latest build dependency to 4:4.6.3.
@@ -7,7 +7,7 @@ kdenetwork (4:4.6.3-0r0) UNRELEASED; urgency=low
   * Merge 4:4.4.5-2+squeeze1 upload to squeeze:
     - drop cve_2010_1000_directory_traversal.diff patch, applied upstream.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 07 May 2011 17:11:42 +0300
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 26 May 2011 02:41:37 +0300
 
 kdenetwork (4:4.6.3-0exp1) experimental; urgency=low
 
