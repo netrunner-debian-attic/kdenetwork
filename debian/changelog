@@ -1,6 +1,7 @@
 kdenetwork (4:4.6.4-0r0) UNRELEASED; urgency=low
 
   * New upstream release.
+  * Bump kde-sc-dev-latest build dependency to 4:4.6.4.
 
  -- José Manuel Santamaría Lema <panfaust@gmail.com>  Sun, 12 Jun 2011 20:19:23 +0200
 
