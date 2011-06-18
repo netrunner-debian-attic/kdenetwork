@@ -5,6 +5,9 @@ kdenetwork (4:4.6.4-0r1) UNRELEASED; urgency=low
   [ José Manuel Santamaría Lema ]
   * Bump kde-sc-dev-latest build dependency to 4:4.6.4.
 
+  [ Pino Toscano ]
+  * Change libjpeg62-dev build-dependency to libjpeg-dev.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 12 Jun 2011 21:20:08 +0200
 
 kdenetwork (4:4.6.3-1) unstable; urgency=low
