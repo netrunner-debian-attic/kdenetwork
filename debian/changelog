@@ -1,9 +1,9 @@
-kdenetwork (4:4.6.4-0r1) UNRELEASED; urgency=low
+kdenetwork (4:4.6.5-0r0) UNRELEASED; urgency=low
 
   * New upstream release.
 
   [ José Manuel Santamaría Lema ]
-  * Bump kde-sc-dev-latest build dependency to 4:4.6.4.
+  * Bump kde-sc-dev-latest build dependency to 4:4.6.5.
 
   [ Pino Toscano ]
   * Change libjpeg62-dev build-dependency to libjpeg-dev.
