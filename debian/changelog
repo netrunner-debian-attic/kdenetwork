@@ -4,6 +4,7 @@ kdenetwork (4:4.6.5-0r0) UNRELEASED; urgency=low
 
   [ José Manuel Santamaría Lema ]
   * Bump kde-sc-dev-latest build dependency to 4:4.6.5.
+  * Update symbols files.
 
   [ Pino Toscano ]
   * Change libjpeg62-dev build-dependency to libjpeg-dev.
