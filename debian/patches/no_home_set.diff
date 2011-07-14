@@ -1,4 +1,4 @@
-Author: Pino Toscano <pino@kde.org>
+Author: Pino Toscano <pino@debian.org>
 Description: Do not bail if $HOME is not set.
  In case there is no $HOME environment variable set (which can happen on
  buildds, for example), do not make cmake error out due to the regexp
