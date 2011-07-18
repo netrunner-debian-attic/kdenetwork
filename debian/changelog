@@ -1,4 +1,4 @@
-kdenetwork (4:4.6.5-0r1) UNRELEASED; urgency=low
+kdenetwork (4:4.6.5-1) unstable; urgency=low
 
   * New upstream release.
 
@@ -10,7 +10,7 @@ kdenetwork (4:4.6.5-0r1) UNRELEASED; urgency=low
   * Change libjpeg62-dev build-dependency to libjpeg-dev. (Closes: #633437)
   * Switch to my @debian.org address, I'm a DD now.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 12 Jun 2011 21:20:08 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 18 Jul 2011 21:53:58 +0300
 
 kdenetwork (4:4.6.3-1) unstable; urgency=low
 
