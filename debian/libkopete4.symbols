@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.6.5 amd64
+# SymbolsHelper-Confirmed: 4:4.6.5 amd64 armel i386 ia64 kfreebsd-amd64 kfreebsd-i386 mipsel powerpc s390 sparc
 libkopete.so.4 libkopete4 #MINVER#
  _ZGVZN6Kopete2UI8ListView4Item7Private18theVisibilityTimerEvE5timer@Base 4:4.3.4
  _ZGVZN6Kopete2UI8ListView4Item7Private21theLayoutAnimateTimerEvE5timer@Base 4:4.3.4
@@ -35,6 +35,8 @@ libkopete.so.4 libkopete4 #MINVER#
  _ZN15AccountSelectorD0Ev@Base 4:4.3.4
  _ZN15AccountSelectorD1Ev@Base 4:4.3.4
  _ZN15AccountSelectorD2Ev@Base 4:4.3.4
+ (optional=external|arch=kfreebsd-any)_ZN15KEmoticonsTheme5TokenD1Ev@Base 4:4.6.5
+ (optional=external|arch=kfreebsd-any)_ZN15KEmoticonsTheme5TokenD2Ev@Base 4:4.6.5
  _ZN15KopeteStdAction11changeAliasEPK7QObjectPKcPS0_@Base 4:4.3.4
  _ZN15KopeteStdAction11contactInfoEPK7QObjectPKcPS0_@Base 4:4.3.4
  _ZN15KopeteStdAction11preferencesEP17KActionCollectionPKc@Base 4:4.3.4
@@ -94,6 +96,8 @@ libkopete.so.4 libkopete4 #MINVER#
  _ZN17SettingsContainerD0Ev@Base 4:4.3.4
  _ZN17SettingsContainerD1Ev@Base 4:4.3.4
  _ZN17SettingsContainerD2Ev@Base 4:4.3.4
+ (optional=external|arch=kfreebsd-any)_ZN19KCoreConfigSkeleton8ItemEnum7Choice2D1Ev@Base 4:4.6.5
+ (optional=external|arch=kfreebsd-any)_ZN19KCoreConfigSkeleton8ItemEnum7Choice2D2Ev@Base 4:4.6.5
  _ZN23KopeteEditAccountWidget10setAccountEPN6Kopete7AccountE@Base 4:4.3.4
  _ZN23KopeteEditAccountWidgetC1EPN6Kopete7AccountE@Base 4:4.3.4
  _ZN23KopeteEditAccountWidgetC2EPN6Kopete7AccountE@Base 4:4.3.4
@@ -131,9 +135,9 @@ libkopete.so.4 libkopete4 #MINVER#
  _ZN6Kopete10ViewPlugin13aboutToUnloadEv@Base 4:4.3.4
  _ZN6Kopete10ViewPluginC1ERK14KComponentDataP7QObject@Base 4:4.3.4
  _ZN6Kopete10ViewPluginC2ERK14KComponentDataP7QObject@Base 4:4.3.4
- _ZN6Kopete10ViewPluginD0Ev@Base 4:4.6.5
- _ZN6Kopete10ViewPluginD1Ev@Base 4:4.6.5
- _ZN6Kopete10ViewPluginD2Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete10ViewPluginD0Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete10ViewPluginD1Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete10ViewPluginD2Ev@Base 4:4.6.5
  _ZN6Kopete11ChatSession10addContactEPKNS_7ContactERKNS_12OnlineStatusEb@Base 4:4.3.4
  _ZN6Kopete11ChatSession10addContactEPKNS_7ContactEb@Base 4:4.3.4
  _ZN6Kopete11ChatSession10setLastUrlERK7QString@Base 4:4.4.1
@@ -341,6 +345,8 @@ libkopete.so.4 libkopete4 #MINVER#
  _ZN6Kopete12WebcamWidgetD1Ev@Base 4:4.3.4
  _ZN6Kopete12WebcamWidgetD2Ev@Base 4:4.3.4
  _ZN6Kopete12nameFromKABCERK7QString@Base 4:4.3.4
+ (optional=external|arch=kfreebsd-any)_ZN6Kopete13AvatarManager11AvatarEntryD1Ev@Base 4:4.6.5
+ (optional=external|arch=kfreebsd-any)_ZN6Kopete13AvatarManager11AvatarEntryD2Ev@Base 4:4.6.5
  _ZN6Kopete13AvatarManager11avatarAddedENS0_11AvatarEntryE@Base 4:4.3.4
  _ZN6Kopete13AvatarManager11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.3.4
  _ZN6Kopete13AvatarManager11qt_metacastEPKc@Base 4:4.3.4
@@ -672,9 +678,9 @@ libkopete.so.4 libkopete4 #MINVER#
  _ZN6Kopete17DeleteContactTaskD0Ev@Base 4:4.3.4
  _ZN6Kopete17DeleteContactTaskD1Ev@Base 4:4.3.4
  _ZN6Kopete17DeleteContactTaskD2Ev@Base 4:4.3.4
- _ZN6Kopete17FileEngineHandlerD0Ev@Base 4:4.6.5
- _ZN6Kopete17FileEngineHandlerD1Ev@Base 4:4.6.5
- _ZN6Kopete17FileEngineHandlerD2Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete17FileEngineHandlerD0Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete17FileEngineHandlerD1Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete17FileEngineHandlerD2Ev@Base 4:4.6.5
  _ZN6Kopete17PasswordedAccount11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.3.4
  _ZN6Kopete17PasswordedAccount11qt_metacastEPKc@Base 4:4.3.4
  _ZN6Kopete17PasswordedAccount12disconnectedENS_7Account16DisconnectReasonE@Base 4:4.3.4
@@ -825,9 +831,9 @@ libkopete.so.4 libkopete4 #MINVER#
  _ZN6Kopete21MessageHandlerFactoryD2Ev@Base 4:4.3.4
  _ZN6Kopete23EmoticonMimeTypeHandlerC1Ev@Base 4:4.3.4
  _ZN6Kopete23EmoticonMimeTypeHandlerC2Ev@Base 4:4.3.4
- _ZN6Kopete23EmoticonMimeTypeHandlerD0Ev@Base 4:4.6.5
- _ZN6Kopete23EmoticonMimeTypeHandlerD1Ev@Base 4:4.6.5
- _ZN6Kopete23EmoticonMimeTypeHandlerD2Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete23EmoticonMimeTypeHandlerD0Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete23EmoticonMimeTypeHandlerD1Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete23EmoticonMimeTypeHandlerD2Ev@Base 4:4.6.5
  _ZN6Kopete27ChatSessionMembersListModel11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.3.4
  _ZN6Kopete27ChatSessionMembersListModel11qt_metacastEPKc@Base 4:4.3.4
  _ZN6Kopete27ChatSessionMembersListModel14setChatSessionEPNS_11ChatSessionE@Base 4:4.3.4
@@ -886,9 +892,9 @@ libkopete.so.4 libkopete4 #MINVER#
  _ZN6Kopete2UI13ContactAction9triggeredERK7QStringb@Base 4:4.3.4
  _ZN6Kopete2UI13ContactActionC1EPNS_7ContactEP17KActionCollection@Base 4:4.3.4
  _ZN6Kopete2UI13ContactActionC2EPNS_7ContactEP17KActionCollection@Base 4:4.3.4
- _ZN6Kopete2UI13ContactActionD0Ev@Base 4:4.6.5
- _ZN6Kopete2UI13ContactActionD1Ev@Base 4:4.6.5
- _ZN6Kopete2UI13ContactActionD2Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete2UI13ContactActionD0Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete2UI13ContactActionD1Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete2UI13ContactActionD2Ev@Base 4:4.6.5
  _ZN6Kopete2UI14PasswordWidget11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.3.4
  _ZN6Kopete2UI14PasswordWidget11qt_metacastEPKc@Base 4:4.3.4
  _ZN6Kopete2UI14PasswordWidget11setPasswordERK7QString@Base 4:4.3.4
@@ -1075,9 +1081,9 @@ libkopete.so.4 libkopete4 #MINVER#
  _ZN6Kopete2UI8ListView14ImageComponentD2Ev@Base 4:4.3.4
  _ZN6Kopete2UI8ListView15SpacerComponentC1EPNS1_13ComponentBaseEii@Base 4:4.3.4
  _ZN6Kopete2UI8ListView15SpacerComponentC2EPNS1_13ComponentBaseEii@Base 4:4.3.4
- _ZN6Kopete2UI8ListView15SpacerComponentD0Ev@Base 4:4.6.5
- _ZN6Kopete2UI8ListView15SpacerComponentD1Ev@Base 4:4.6.5
- _ZN6Kopete2UI8ListView15SpacerComponentD2Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete2UI8ListView15SpacerComponentD0Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete2UI8ListView15SpacerComponentD1Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete2UI8ListView15SpacerComponentD2Ev@Base 4:4.6.5
  _ZN6Kopete2UI8ListView16ContactComponent12updatePixmapEv@Base 4:4.3.4
  _ZN6Kopete2UI8ListView16ContactComponent7contactEv@Base 4:4.3.4
  _ZN6Kopete2UI8ListView16ContactComponent7toolTipERK6QPoint@Base 4:4.3.4
@@ -1090,16 +1096,16 @@ libkopete.so.4 libkopete4 #MINVER#
  _ZN6Kopete2UI8ListView16HSpacerComponent4RTTIE@Base 4:4.3.4
  _ZN6Kopete2UI8ListView16HSpacerComponentC1EPNS1_13ComponentBaseE@Base 4:4.3.4
  _ZN6Kopete2UI8ListView16HSpacerComponentC2EPNS1_13ComponentBaseE@Base 4:4.3.4
- _ZN6Kopete2UI8ListView16HSpacerComponentD0Ev@Base 4:4.6.5
- _ZN6Kopete2UI8ListView16HSpacerComponentD1Ev@Base 4:4.6.5
- _ZN6Kopete2UI8ListView16HSpacerComponentD2Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete2UI8ListView16HSpacerComponentD0Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete2UI8ListView16HSpacerComponentD1Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete2UI8ListView16HSpacerComponentD2Ev@Base 4:4.6.5
  _ZN6Kopete2UI8ListView16VSpacerComponent14heightForWidthEi@Base 4:4.3.4
  _ZN6Kopete2UI8ListView16VSpacerComponent4RTTIE@Base 4:4.3.4
  _ZN6Kopete2UI8ListView16VSpacerComponentC1EPNS1_13ComponentBaseE@Base 4:4.3.4
  _ZN6Kopete2UI8ListView16VSpacerComponentC2EPNS1_13ComponentBaseE@Base 4:4.3.4
- _ZN6Kopete2UI8ListView16VSpacerComponentD0Ev@Base 4:4.6.5
- _ZN6Kopete2UI8ListView16VSpacerComponentD1Ev@Base 4:4.6.5
- _ZN6Kopete2UI8ListView16VSpacerComponentD2Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete2UI8ListView16VSpacerComponentD0Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete2UI8ListView16VSpacerComponentD1Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete2UI8ListView16VSpacerComponentD2Ev@Base 4:4.6.5
  _ZN6Kopete2UI8ListView20DisplayNameComponent15setDefaultColorEv@Base 4:4.3.4
  _ZN6Kopete2UI8ListView20DisplayNameComponent4RTTIE@Base 4:4.3.4
  _ZN6Kopete2UI8ListView20DisplayNameComponent4textEv@Base 4:4.3.4
@@ -1269,9 +1275,9 @@ libkopete.so.4 libkopete4 #MINVER#
  _ZN6Kopete6Status10StatusItemC1Ev@Base 4:4.3.4
  _ZN6Kopete6Status10StatusItemC2ERK7QString@Base 4:4.3.4
  _ZN6Kopete6Status10StatusItemC2Ev@Base 4:4.3.4
- _ZN6Kopete6Status10StatusItemD0Ev@Base 4:4.6.5
- _ZN6Kopete6Status10StatusItemD1Ev@Base 4:4.6.5
- _ZN6Kopete6Status10StatusItemD2Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete6Status10StatusItemD0Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete6Status10StatusItemD1Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete6Status10StatusItemD2Ev@Base 4:4.6.5
  _ZN6Kopete6Status11StatusGroup11appendChildEPNS0_10StatusItemE@Base 4:4.3.4
  _ZN6Kopete6Status11StatusGroup11insertChildEiPNS0_10StatusItemE@Base 4:4.3.4
  _ZN6Kopete6Status11StatusGroup11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.3.4
@@ -1285,9 +1291,9 @@ libkopete.so.4 libkopete4 #MINVER#
  _ZN6Kopete6Status11StatusGroupC1Ev@Base 4:4.3.4
  _ZN6Kopete6Status11StatusGroupC2ERK7QString@Base 4:4.3.4
  _ZN6Kopete6Status11StatusGroupC2Ev@Base 4:4.3.4
- _ZN6Kopete6Status11StatusGroupD0Ev@Base 4:4.6.5
- _ZN6Kopete6Status11StatusGroupD1Ev@Base 4:4.6.5
- _ZN6Kopete6Status11StatusGroupD2Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete6Status11StatusGroupD0Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete6Status11StatusGroupD1Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete6Status11StatusGroupD2Ev@Base 4:4.6.5
  _ZN6Kopete6Status6Status10setMessageERK7QString@Base 4:4.3.4
  _ZN6Kopete6Status6Status11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.3.4
  _ZN6Kopete6Status6Status11qt_metacastEPKc@Base 4:4.3.4
@@ -1296,9 +1302,9 @@ libkopete.so.4 libkopete4 #MINVER#
  _ZN6Kopete6Status6StatusC1Ev@Base 4:4.3.4
  _ZN6Kopete6Status6StatusC2ERK7QString@Base 4:4.3.4
  _ZN6Kopete6Status6StatusC2Ev@Base 4:4.3.4
- _ZN6Kopete6Status6StatusD0Ev@Base 4:4.6.5
- _ZN6Kopete6Status6StatusD1Ev@Base 4:4.6.5
- _ZN6Kopete6Status6StatusD2Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete6Status6StatusD0Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete6Status6StatusD1Ev@Base 4:4.6.5
+ (optional=gccinternal|arch=!ia64 !mipsel)_ZN6Kopete6Status6StatusD2Ev@Base 4:4.6.5
  _ZN6Kopete7Account10addContactERK7QStringPNS_11MetaContactENS0_7AddModeE@Base 4:4.3.4
  _ZN6Kopete7Account10addContactERK7QStringS3_PNS_5GroupENS0_7AddModeE@Base 4:4.3.4
  _ZN6Kopete7Account11blackListerEv@Base 4:4.3.4
@@ -2234,6 +2240,6 @@ libkopete.so.4 libkopete4 #MINVER#
  (c++)"non-virtual thunk to Kopete::UI::ListView::SearchLine::~SearchLine()@Base" 4:4.3.4
  (c++)"non-virtual thunk to Kopete::UI::MetaContactSelectorWidget::~MetaContactSelectorWidget()@Base" 4:4.3.4
  (c++)"non-virtual thunk to Kopete::UI::PasswordWidget::~PasswordWidget()@Base" 4:4.3.4
- (c++)"non-virtual thunk to Kopete::ViewPlugin::~ViewPlugin()@Base" 4:4.6.5
+ (optional=gccinternal|c++|arch=!ia64 !mipsel)"non-virtual thunk to Kopete::ViewPlugin::~ViewPlugin()@Base" 4:4.6.5
  (c++)"non-virtual thunk to Kopete::WebcamWidget::~WebcamWidget()@Base" 4:4.3.4
  (c++)"non-virtual thunk to SettingsContainer::~SettingsContainer()@Base" 4:4.3.4
