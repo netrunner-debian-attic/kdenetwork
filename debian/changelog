@@ -1,3 +1,8 @@
+kdenetwork (4:4.6.5-2) UNRELEASED; urgency=low
+
+
+ -- Modestas Vainius <modax@debian.org>  Sat, 23 Jul 2011 13:46:26 +0300
+
 kdenetwork (4:4.6.5-1) unstable; urgency=low
 
   * New upstream release.
