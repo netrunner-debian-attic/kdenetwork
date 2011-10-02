@@ -5,6 +5,7 @@ kdenetwork (4:4.7.1-0r0) UNRELEASED; urgency=low
   [ José Manuel Santamaría Lema ]
   * Bump kde-sc-dev-latest build dependency to 4:4.7.1.
   * Bump build dependencies on other KDE SC packages to 4:4.7.
+  * Add libmms-dev to Build-Depends.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 29 Sep 2011 22:25:51 +0200
 
