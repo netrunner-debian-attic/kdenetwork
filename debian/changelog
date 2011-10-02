@@ -7,6 +7,7 @@ kdenetwork (4:4.7.1-0r0) UNRELEASED; urgency=low
   * Bump build dependencies on other KDE SC packages to 4:4.7.
   * Add libmms-dev to Build-Depends.
   * Add ${perl:Depends} to kopete Depends.
+  * Update installed files.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 29 Sep 2011 22:25:51 +0200
 
