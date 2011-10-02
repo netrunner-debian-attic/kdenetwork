@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.6.5 amd64 armel i386 ia64 kfreebsd-amd64 kfreebsd-i386 mipsel powerpc s390 sparc
+# SymbolsHelper-Confirmed: 4:4.7.1 amd64
 libkopete.so.4 libkopete4 #MINVER#
  _ZGVZN6Kopete2UI8ListView4Item7Private18theVisibilityTimerEvE5timer@Base 4:4.3.4
  _ZGVZN6Kopete2UI8ListView4Item7Private21theLayoutAnimateTimerEvE5timer@Base 4:4.3.4
@@ -181,6 +181,7 @@ libkopete.so.4 libkopete4 #MINVER#
  _ZN6Kopete11ChatSession20slotContactDestroyedEPNS_7ContactE@Base 4:4.3.4
  _ZN6Kopete11ChatSession21emitNudgeNotificationEv@Base 4:4.3.4
  _ZN6Kopete11ChatSession21slotUpdateDisplayNameEv@Base 4:4.3.4
+ _ZN6Kopete11ChatSession21toggleGraphicOverrideEb@Base 4:4.7.1
  _ZN6Kopete11ChatSession22setContactOnlineStatusEPKNS_7ContactERKNS_12OnlineStatusE@Base 4:4.3.4
  _ZN6Kopete11ChatSession23slotOnlineStatusChangedEPNS_7ContactERKNS_12OnlineStatusES5_@Base 4:4.3.4
  _ZN6Kopete11ChatSession25receivedEventNotificationERK7QString@Base 4:4.3.4
@@ -396,6 +397,7 @@ libkopete.so.4 libkopete4 #MINVER#
  _ZN6Kopete13StatusManager12loadSettingsEv@Base 4:4.3.4
  _ZN6Kopete13StatusManager12setRootGroupEPNS_6Status11StatusGroupE@Base 4:4.3.4
  _ZN6Kopete13StatusManager13updateUidHashEPNS_6Status10StatusItemE@Base 4:4.3.4
+ _ZN6Kopete13StatusManager14checkIdleTimerEv@Base 4:4.7.1
  _ZN6Kopete13StatusManager15askAndSetActiveEv@Base 4:4.3.4
  _ZN6Kopete13StatusManager15parseStatusItemE11QDomElement@Base 4:4.3.4
  _ZN6Kopete13StatusManager15setGlobalStatusEjRKNS_13StatusMessageE@Base 4:4.3.4
@@ -1661,6 +1663,7 @@ libkopete.so.4 libkopete4 #MINVER#
  _ZNK6Kopete12OnlineStatus10mimeSourceERK7QStringi6QColorb@Base 4:4.3.4
  _ZNK6Kopete12OnlineStatus11descriptionEv@Base 4:4.3.4
  _ZNK6Kopete12OnlineStatus12overlayIconsEv@Base 4:4.3.4
+ _ZNK6Kopete12OnlineStatus12protocolIconEN11KIconLoader8StdSizesE@Base 4:4.7.1
  _ZNK6Kopete12OnlineStatus12protocolIconEv@Base 4:4.3.4
  _ZNK6Kopete12OnlineStatus13mimeSourceForEPKNS_7AccountEi@Base 4:4.3.4
  _ZNK6Kopete12OnlineStatus13mimeSourceForEPKNS_7ContactEi@Base 4:4.3.4
