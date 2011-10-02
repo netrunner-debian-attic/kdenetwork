@@ -83,7 +83,7 @@ Description: main Kopete library
 Package: kopete
 Section: net
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${perl:Depends}
 Recommends: libqca2-plugin-ossl, libqt4-sql-sqlite
 Suggests: kdeartwork-emoticons, khelpcenter4, texlive-latex-base
 Description: instant messaging and chat application
