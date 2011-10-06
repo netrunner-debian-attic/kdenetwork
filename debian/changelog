@@ -1,5 +1,6 @@
 kdenetwork (4:4.6.5-3) UNRELEASED; urgency=low
 
+  * Add liboscar_namespace.diff. (Closes: #644197)
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 29 Sep 2011 22:25:51 +0200
 
