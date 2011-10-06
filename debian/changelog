@@ -3,6 +3,9 @@ kdenetwork (4:4.6.5-3) UNRELEASED; urgency=low
   [ José Manuel Santamaría Lema ]
   * Add libgadu_pthread_check.diff, fixes an FTBFS when building with
     libvncserver-dev supporting libgnutls.
+  * Bump libvncserver-dev B-D to 0.9.8-3, this solves two problems:
+    - libvncserver-dev now depends on libgnutls-dev, preventing an FTBFS.
+    - fixes a bic issue. (Closes: #644455)
   * Add liboscar_namespace.diff. (Closes: #644197)
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 29 Sep 2011 22:25:51 +0200
