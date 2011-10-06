@@ -1,0 +1,603 @@
+Author: Sune Vuorela <sune@debian.org>
+Author: Ralf Jung <ralfjung-e@gmx.de>
+Description: Put protocols' Client classes in a namespace.
+ This patch avoids crashes when terminating kopete, fixes these bugs:
+ https://bugs.kde.org/show_bug.cgi?id=268056
+ http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=644197
+--- a/kopete/protocols/oscar/oscarprivacyengine.h
++++ b/kopete/protocols/oscar/oscarprivacyengine.h
+@@ -33,7 +33,9 @@ class QComboBox;
+ class QAbstractItemView;
+ 
+ class OscarAccount;
++namespace Oscar {
+ class Client;
++}
+ 
+ class OSCAR_EXPORT OscarPrivacyEngine : public QObject
+ {
+@@ -68,7 +70,7 @@ private:
+ 	QStandardItemModel m_contactsModel;
+ 	QStandardItemModel m_allContactsModel;
+ 	
+-	Client* m_client;
++	Oscar::Client* m_client;
+ 	Type m_type;
+ 	
+ 	QComboBox* m_comboBox;
+--- a/kopete/protocols/oscar/liboscar/client.cpp
++++ b/kopete/protocols/oscar/liboscar/client.cpp
+@@ -95,6 +95,8 @@ namespace
+ 	DefaultCodecProvider defaultCodecProvider;
+ }
+ 
++namespace Oscar {
++
+ class Client::ClientPrivate
+ {
+ public:
+@@ -1832,5 +1834,7 @@ void Client::gotFileMessage( int type, c
+ 	kDebug(14151) << "nobody wants it :(";
+ }
+ 
++}
++
+ #include "client.moc"
+ //kate: tab-width 4; indent-mode csands; space-indent off; replace-tabs off;
+--- a/kopete/protocols/oscar/liboscar/client.h
++++ b/kopete/protocols/oscar/liboscar/client.h
+@@ -55,7 +55,6 @@ namespace Kopete
+ namespace Oscar
+ {
+ class Settings;
+-}
+ 
+ class LIBOSCAR_EXPORT Client : public QObject
+ {
+@@ -649,7 +648,8 @@ private:
+ 	class ClientPrivate;
+ 	ClientPrivate* d;
+ };
+-Q_DECLARE_OPERATORS_FOR_FLAGS(Client::ICQStatus)
++}
++Q_DECLARE_OPERATORS_FOR_FLAGS(Oscar::Client::ICQStatus)
+ 
+ #endif
+ 
+--- a/kopete/protocols/oscar/liboscar/connection.h
++++ b/kopete/protocols/oscar/liboscar/connection.h
+@@ -25,7 +25,6 @@ Kopete (c) 2002-2005 by the Kopete devel
+ #include "liboscar_export.h"
+ 
+ class ConnectionPrivate;
+-class Client;
+ class ClientStream;
+ class Transfer;
+ class RateClassManager;
+@@ -36,6 +35,7 @@ class QHostAddress;
+ 
+ namespace Oscar
+ {
++class Client;
+ class Settings;
+ 
+ class MessageInfo
+@@ -68,7 +68,7 @@ public:
+ 
+ 	static void setStartFlapSequenceList( const QList<Oscar::WORD>& seqList );
+ 	
+-	void setClient( Client* );
++	void setClient( Oscar::Client* );
+ 
+ 	void connectToServer( const QString& host, quint16 port );
+ 	/**
+--- a/kopete/protocols/oscar/aim/aimchatsession.cpp
++++ b/kopete/protocols/oscar/aim/aimchatsession.cpp
+@@ -25,6 +25,8 @@
+ #include "kopeteprotocol.h"
+ #include "client.h"
+ 
++using namespace Oscar;
++
+ AIMChatSession::AIMChatSession( const Kopete::Contact* user,  Kopete::ContactPtrList others,
+                                 Kopete::Protocol* protocol, Oscar::WORD exchange,
+                                 const QString& room )
+--- a/kopete/protocols/oscar/aim/aimchatsession.h
++++ b/kopete/protocols/oscar/aim/aimchatsession.h
+@@ -22,7 +22,9 @@
+ #include "kopetechatsession.h"
+ #include "oscartypes.h"
+ 
++namespace Oscar {
+ class Client;
++}
+ 
+ class AIMChatSession : public Kopete::ChatSession
+ {
+@@ -37,7 +39,7 @@ public:
+      * Set the engine to use so that we can disconnect from the chat service
+      * properly
+      */
+-    void setEngine( Client* engine );
++    void setEngine( Oscar::Client* engine );
+ 
+     /**
+      * Get the name of the AIM chat room represented by
+@@ -77,7 +79,7 @@ public:
+ private:
+     QString m_roomName;
+     Oscar::WORD m_exchange;
+-    Client* m_engine;
++    Oscar::Client* m_engine;
+ };
+ 
+ 
+--- a/kopete/protocols/oscar/oscaraccount.h
++++ b/kopete/protocols/oscar/oscaraccount.h
+@@ -36,7 +36,9 @@ class Group;
+ class FileTransferInfo;
+ }
+ 
++namespace Oscar {
+ class Client;
++}
+ class ClientStream;
+ class OscarContact;
+ class OscarAccountPrivate;
+@@ -52,7 +54,7 @@ public:
+ 	virtual ~OscarAccount();
+ 
+ 	/** Provide the derived accounts and contacts with access to the backend */
+-	Client* engine();
++	Oscar::Client* engine();
+ 
+ 	/** Disconnects this account */
+ 	virtual void disconnect();
+--- a/kopete/protocols/oscar/oscaraccount.cpp
++++ b/kopete/protocols/oscar/oscaraccount.cpp
+@@ -73,6 +73,8 @@
+ #include "oscarstatusmanager.h"
+ #include <kopetesockettimeoutwatcher.h>
+ 
++using namespace Oscar;
++
+ 
+ class OscarAccountPrivate : public Client::CodecProvider
+ {
+--- a/kopete/protocols/yahoo/libkyahoo/yahoochattask.cpp
++++ b/kopete/protocols/yahoo/libkyahoo/yahoochattask.cpp
+@@ -27,6 +27,8 @@
+ #include <kio/jobclasses.h>
+ #include <QDomDocument>
+ 
++using namespace KYahoo;
++
+ YahooChatTask::YahooChatTask(Task* parent) : Task(parent)
+ {
+ 	kDebug(YAHOO_RAW_DEBUG) ;
+--- a/kopete/protocols/yahoo/libkyahoo/modifyyabtask.cpp
++++ b/kopete/protocols/yahoo/libkyahoo/modifyyabtask.cpp
+@@ -31,6 +31,8 @@
+ #include <k3bufferedsocket.h>
+ 
+ using namespace KNetwork;
++using namespace KYahoo;
++
+ ModifyYABTask::ModifyYABTask(Task* parent) : Task(parent)
+ {
+ 	kDebug(YAHOO_RAW_DEBUG) ;
+--- a/kopete/protocols/yahoo/libkyahoo/yahoobuddyiconloader.h
++++ b/kopete/protocols/yahoo/libkyahoo/yahoobuddyiconloader.h
+@@ -25,7 +25,9 @@
+ #include <kurl.h>
+ 
+ class KJob;
+-class Client;
++namespace KYahoo {
++	class Client;
++}
+ namespace KIO {
+ 	class Job;
+ 	class TransferJob;
+@@ -49,7 +51,7 @@ class YahooBuddyIconLoader : public QObj
+ {
+ 	Q_OBJECT
+ public:
+-	YahooBuddyIconLoader( Client *c );
++	YahooBuddyIconLoader( KYahoo::Client *c );
+ 	~YahooBuddyIconLoader();
+ 
+ 	/**
+@@ -71,7 +73,7 @@ private slots:
+ private:
+ 	typedef QMap< KIO::TransferJob *, IconLoadJob > TransferJobMap;
+ 	TransferJobMap m_jobs;
+-	Client *m_client;
++	KYahoo::Client *m_client;
+ };
+ 
+ #endif
+--- a/kopete/protocols/yahoo/libkyahoo/filetransfernotifiertask.cpp
++++ b/kopete/protocols/yahoo/libkyahoo/filetransfernotifiertask.cpp
+@@ -25,6 +25,8 @@
+ #include <kdebug.h>
+ #include <kcodecs.h>
+ 
++using namespace KYahoo;
++
+ FileTransferNotifierTask::FileTransferNotifierTask(Task* parent) : Task(parent)
+ {
+ 	kDebug(YAHOO_RAW_DEBUG) ;
+--- a/kopete/protocols/yahoo/libkyahoo/yahoobuddyiconloader.cpp
++++ b/kopete/protocols/yahoo/libkyahoo/yahoobuddyiconloader.cpp
+@@ -31,6 +31,8 @@
+ #include "yahootypes.h"
+ #include "client.h"
+ 
++using namespace KYahoo;
++
+ YahooBuddyIconLoader::YahooBuddyIconLoader( Client *c )
+ : m_client( c )
+ {
+--- a/kopete/protocols/yahoo/libkyahoo/sendfiletask.cpp
++++ b/kopete/protocols/yahoo/libkyahoo/sendfiletask.cpp
+@@ -29,6 +29,7 @@
+ #include <krandom.h>
+ 
+ using namespace KNetwork;
++using namespace KYahoo;
+ 
+ SendFileTask::SendFileTask(Task* parent) : Task(parent)
+ {
+--- a/kopete/protocols/yahoo/libkyahoo/client.cpp
++++ b/kopete/protocols/yahoo/libkyahoo/client.cpp
+@@ -60,6 +60,7 @@
+ 
+ using namespace KNetwork;
+ 
++namespace KYahoo {
+ 
+ class Client::ClientPrivate
+ {
+@@ -1009,4 +1010,6 @@ void Client::deleteTasks()
+ 	d->receiveFileTask = 0;
+ }
+ 
++}
++
+ #include "client.moc"
+--- a/kopete/protocols/yahoo/libkyahoo/webcamtask.cpp
++++ b/kopete/protocols/yahoo/libkyahoo/webcamtask.cpp
+@@ -30,6 +30,7 @@
+ #include <klocale.h>
+ 
+ using namespace KNetwork;
++using namespace KYahoo;
+ 
+ WebcamTask::WebcamTask(Task* parent) : Task(parent)
+ {
+--- a/kopete/protocols/yahoo/libkyahoo/task.cpp
++++ b/kopete/protocols/yahoo/libkyahoo/task.cpp
+@@ -25,6 +25,8 @@
+ 
+ #include "task.h"
+ 
++using namespace KYahoo;
++
+ class Task::TaskPrivate
+ {
+ public:
+--- a/kopete/protocols/yahoo/libkyahoo/statusnotifiertask.cpp
++++ b/kopete/protocols/yahoo/libkyahoo/statusnotifiertask.cpp
+@@ -24,6 +24,8 @@
+ #include <kdebug.h>
+ #include <klocale.h>
+ 
++using namespace KYahoo;
++
+ StatusNotifierTask::StatusNotifierTask(Task* parent) : Task(parent)
+ {
+ 	kDebug(YAHOO_RAW_DEBUG) ;
+--- a/kopete/protocols/yahoo/libkyahoo/sendmessagetask.cpp
++++ b/kopete/protocols/yahoo/libkyahoo/sendmessagetask.cpp
+@@ -23,6 +23,8 @@
+ #include <kdebug.h>
+ #include <klocale.h>
+ 
++using namespace KYahoo;
++
+ SendMessageTask::SendMessageTask(Task* parent) : Task(parent)
+ {
+ 	kDebug(YAHOO_RAW_DEBUG) ;
+--- a/kopete/protocols/yahoo/libkyahoo/client.h
++++ b/kopete/protocols/yahoo/libkyahoo/client.h
+@@ -42,6 +42,8 @@ class Task;
+ class KTemporaryFile;
+ struct YABEntry;
+ 
++namespace KYahoo {
++
+ class LIBKYAHOO_EXPORT Client : public QObject
+ {
+ Q_OBJECT
+@@ -749,4 +751,6 @@ Q_OBJECT
+ 		QTimer *m_aliveTimer;
+ };
+ 
++}
++
+ #endif
+--- a/kopete/protocols/yahoo/libkyahoo/logintask.cpp
++++ b/kopete/protocols/yahoo/libkyahoo/logintask.cpp
+@@ -37,6 +37,8 @@ extern "C"
+ #include "libyahoo.h"
+ }
+ 
++using namespace KYahoo;
++
+ LoginTask::LoginTask(Task* parent) : Task(parent)
+ {
+ 	kDebug(YAHOO_RAW_DEBUG) ;
+--- a/kopete/protocols/yahoo/libkyahoo/picturenotifiertask.cpp
++++ b/kopete/protocols/yahoo/libkyahoo/picturenotifiertask.cpp
+@@ -24,6 +24,7 @@
+ #include <kdebug.h>
+ #include <klocale.h>
+ 
++using namespace KYahoo;
+ 
+ PictureNotifierTask::PictureNotifierTask(Task* parent) : Task(parent)
+ {
+--- a/kopete/protocols/yahoo/libkyahoo/yabtask.cpp
++++ b/kopete/protocols/yahoo/libkyahoo/yabtask.cpp
+@@ -27,6 +27,8 @@
+ #include <kio/jobclasses.h>
+ #include <klocale.h>
+ 
++using namespace KYahoo;
++
+ YABTask::YABTask(Task* parent) : Task(parent)
+ {
+ 	kDebug(YAHOO_RAW_DEBUG) ;
+--- a/kopete/protocols/yahoo/libkyahoo/task.h
++++ b/kopete/protocols/yahoo/libkyahoo/task.h
+@@ -24,7 +24,10 @@
+ 
+ class QString;
+ 
+-class Client;
++namespace KYahoo {
++	class Client;
++}
++
+ class Transfer;
+ 
+ class Task : public QObject
+@@ -33,11 +36,11 @@ class Task : public QObject
+ public:
+ 	enum { ErrDisc };
+ 	Task(Task *parent);
+-	Task( Client *, bool isRoot );
++	Task( KYahoo::Client *, bool isRoot );
+ 	virtual ~Task();
+ 
+ 	Task *parent() const;
+-	Client *client() const;
++	KYahoo::Client *client() const;
+ 	Transfer *transfer() const;
+ 	
+ 	QString id() const;
+--- a/kopete/protocols/yahoo/libkyahoo/sendpicturetask.cpp
++++ b/kopete/protocols/yahoo/libkyahoo/sendpicturetask.cpp
+@@ -30,6 +30,7 @@
+ #include <klocale.h>
+ 
+ using namespace KNetwork;
++using namespace KYahoo;
+ 
+ SendPictureTask::SendPictureTask(Task* parent) : Task(parent)
+ {
+--- a/kopete/protocols/yahoo/libkyahoo/messagereceivertask.cpp
++++ b/kopete/protocols/yahoo/libkyahoo/messagereceivertask.cpp
+@@ -23,6 +23,8 @@
+ #include "client.h"
+ #include <kdebug.h>
+ 
++using namespace KYahoo;
++
+ MessageReceiverTask::MessageReceiverTask(Task* parent) : Task(parent)
+ {
+ 	kDebug(YAHOO_RAW_DEBUG) ;
+--- a/kopete/protocols/yahoo/yahooaccount.h
++++ b/kopete/protocols/yahoo/yahooaccount.h
+@@ -54,7 +54,9 @@ class ChatSession;
+ class StatusMessage;
+ class FileTransferInfo;
+ }
+-class Client;
++namespace KYahoo {
++	class Client;
++}
+ struct YABEntry;
+ class KJob;
+ namespace KIO{
+@@ -87,7 +89,7 @@ public:
+ 	/**
+ 	 * The session
+ 	 */
+-	Client *yahooSession();
++	KYahoo::Client *yahooSession();
+ 
+ 	/**
+ 	 * Returns true if contact @p id is on the server-side contact list
+@@ -296,7 +298,7 @@ private:
+ 	KAction *m_editOwnYABEntry;	// Menu item editOwnYABEntry
+ 	KAction *m_joinChatAction;	// Menu item joinChatAction
+ 	
+-	Client *m_session;		// The Connection object
++	KYahoo::Client *m_session;		// The Connection object
+ };
+ 
+ #endif // YAHOOACCOUNT_H
+--- a/kopete/protocols/yahoo/yahooaccount.cpp
++++ b/kopete/protocols/yahoo/yahooaccount.cpp
+@@ -71,6 +71,8 @@
+ #include "yahoochatselectordialog.h"
+ #include "yahoochatchatsession.h"
+ 
++using namespace KYahoo;
++
+ YahooAccount::YahooAccount(YahooProtocol *parent, const QString& accountId)
+  : Kopete::PasswordedAccount(parent, accountId, false)
+ {
+--- a/kopete/protocols/groupwise/gwaccount.h
++++ b/kopete/protocols/groupwise/gwaccount.h
+@@ -50,7 +50,9 @@ namespace QCA {
+ }
+ class QCATLSHandler;
+ class ClientStream;
+-class Client;
++namespace GroupWise {
++	class Client;
++}
+ class GWContactList;
+ 
+ using namespace GroupWise;
+--- a/kopete/protocols/groupwise/libgroupwise/chatroommanager.h
++++ b/kopete/protocols/groupwise/libgroupwise/chatroommanager.h
+@@ -24,7 +24,9 @@
+ #include "gwchatrooms.h"
+ #include "libgroupwise_export.h"
+ 
+-class Client;
++namespace GroupWise {
++	class Client;
++}
+ 
+ /**
+  * Keeps a record of the server side chatrooms
+@@ -34,7 +36,7 @@ class LIBGROUPWISE_EXPORT ChatroomManage
+ {
+ 	Q_OBJECT
+ 	public:
+-		ChatroomManager( Client * client);
++		ChatroomManager( GroupWise::Client * client);
+ 		~ChatroomManager();
+ 		GroupWise::ChatroomMap rooms();
+ 		void requestProperties( const QString & displayName );
+@@ -59,7 +61,7 @@ class LIBGROUPWISE_EXPORT ChatroomManage
+ 		 */
+ 		void slotGotChatProperties();
+ 	private:
+-		Client * m_client;
++		GroupWise::Client * m_client;
+ 		GroupWise::ChatroomMap m_rooms;
+ 		bool m_replace;
+ };
+--- a/kopete/protocols/groupwise/libgroupwise/client.cpp
++++ b/kopete/protocols/groupwise/libgroupwise/client.cpp
+@@ -47,6 +47,8 @@
+ #include "userdetailsmanager.h"
+ #include "client.h"
+ 
++namespace GroupWise {
++
+ class Client::ClientPrivate
+ {
+ public:
+@@ -545,4 +547,6 @@ void Client::smt_messageSent()
+ 	}
+ }
+ 
++}
++
+ #include "client.moc"
+--- a/kopete/protocols/groupwise/libgroupwise/client.h
++++ b/kopete/protocols/groupwise/libgroupwise/client.h
+@@ -39,6 +39,8 @@ class Task;
+ 
+ using namespace GroupWise;
+ 
++namespace GroupWise {
++
+ class LIBGROUPWISE_EXPORT Client : public QObject
+ {
+ Q_OBJECT
+@@ -401,4 +403,6 @@ fd		 * @param password
+ 		ClientPrivate* d;
+ };
+ 
++}
++
+ #endif
+--- a/kopete/protocols/groupwise/libgroupwise/task.h
++++ b/kopete/protocols/groupwise/libgroupwise/task.h
+@@ -27,7 +27,9 @@
+ #include "libgroupwise_export.h"
+ #include "transfer.h"
+ 
+-class Client;
++namespace GroupWise {
++	class Client;
++}
+ class Request; 
+ 
+ class LIBGROUPWISE_EXPORT Task : public QObject
+@@ -36,11 +38,11 @@ class LIBGROUPWISE_EXPORT Task : public
+ public:
+ 	enum { ErrDisc };
+ 	Task(Task *parent);
+-	Task( Client *, bool isRoot );
++	Task( GroupWise::Client *, bool isRoot );
+ 	virtual ~Task();
+ 
+ 	Task *parent() const;
+-	Client *client() const;
++	GroupWise::Client *client() const;
+ 	Transfer *transfer() const;
+ 	
+ 	QString id() const;
+--- a/kopete/protocols/groupwise/libgroupwise/privacymanager.h
++++ b/kopete/protocols/groupwise/libgroupwise/privacymanager.h
+@@ -23,7 +23,9 @@
+ #include <QStringList>
+ #include "libgroupwise_export.h"
+ 
+-class Client;
++namespace GroupWise {
++	class Client;
++}
+ 
+ /**
+ Keeps a record of the server side privacy allow and deny lists, default policy and whether the user is allowed to change privacy settings
+@@ -34,7 +36,7 @@ class LIBGROUPWISE_EXPORT PrivacyManager
+ {
+ Q_OBJECT
+ public:
+-	PrivacyManager( Client * client);
++	PrivacyManager( GroupWise::Client * client);
+ 	~PrivacyManager();
+ 	// accessors
+ 	bool isBlocked( const QString & dn );
+@@ -79,7 +81,7 @@ protected slots:
+ 	void slotAllowRemoved();
+ 	void slotDenyRemoved();	
+ private:
+-	Client * m_client;
++	GroupWise::Client * m_client;
+ 	bool m_locked;
+ 	bool m_defaultDeny;
+ 	QStringList m_allowList;
+--- a/kopete/protocols/groupwise/libgroupwise/userdetailsmanager.h
++++ b/kopete/protocols/groupwise/libgroupwise/userdetailsmanager.h
+@@ -25,7 +25,9 @@
+ #include "gwerror.h"
+ #include "libgroupwise_export.h"
+ 
+-class Client;
++namespace GroupWise {
++	class Client;
++}
+ 
+ /**
+ Several client event handling processes require that a contact's details are available before exposing the event to the user.  This class is responsible for issuing details requests, tracking which users the client already has received details for, and signalling when details have been received.  The manager allows multiple interleaved get details requests to be replaced by a single request.

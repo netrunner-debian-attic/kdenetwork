@@ -6,7 +6,8 @@ kdenetwork (4:4.6.5-3) UNRELEASED; urgency=low
   * Bump libvncserver-dev B-D to 0.9.8-3, this solves two problems:
     - libvncserver-dev now depends on libgnutls-dev, preventing an FTBFS.
     - fixes a bic issue. (Closes: #644455)
-  * Add liboscar_namespace.diff. (Closes: #644197)
+  * Add protocols_namespaces.diff. Thanks to Ralf Jung for tracking down the
+    issue and wirting a significant part of the patch. (Closes: #644197)
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 29 Sep 2011 22:25:51 +0200
 
