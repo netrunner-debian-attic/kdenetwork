@@ -5,7 +5,7 @@ kdenetwork (4:4.6.5-3) UNRELEASED; urgency=low
     libvncserver-dev supporting libgnutls.
   * Bump libvncserver-dev B-D to 0.9.8.1, this solves two problems:
     - libvncserver-dev now depends on libgnutls-dev, preventing an FTBFS.
-    - fixes a bic issue.
+    - fixes a binary compatibility issue. (see bug #644455)
   * Add protocols_namespaces.diff. Thanks to Ralf Jung for tracking down the
     issue and writing a significant part of the patch. (Closes: #644197)
 
