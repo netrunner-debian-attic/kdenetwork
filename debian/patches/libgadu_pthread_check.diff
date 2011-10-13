@@ -5,6 +5,7 @@ Description: Fix libgadu pthread check.
  located in /usr/include, but LIBGADU_INCLUDE_DIR only contains
  the additional required include paths, such as those added by gnutls,
  as found with latest openSUSE libgadu.pc
+Applied-Upstream: 4.8
 
 --- /dev/null
 +++ b/kopete/cmake/modules/gadu_pthread_check.c

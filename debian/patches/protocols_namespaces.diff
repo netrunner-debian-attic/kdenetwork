@@ -2,8 +2,10 @@ Author: Sune Vuorela <sune@debian.org>
 Author: Ralf Jung <ralfjung-e@gmx.de>
 Description: Put protocols' Client classes in a namespace.
  This patch avoids crashes when terminating kopete, fixes these bugs:
- https://bugs.kde.org/show_bug.cgi?id=268056
- http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=644197
+Bug: https://bugs.kde.org/show_bug.cgi?id=268056
+Bug-Debian: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=644197
+Applied-Upstream: 4.8, commit:1257454 (for the kopete/protocols/oscar/* parts)
+
 --- a/kopete/protocols/oscar/oscarprivacyengine.h
 +++ b/kopete/protocols/oscar/oscarprivacyengine.h
 @@ -33,7 +33,9 @@ class QComboBox;
