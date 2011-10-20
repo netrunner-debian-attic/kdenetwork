@@ -244,14 +244,14 @@ Applied-Upstream: 4.8, commit:1257454 (for the kopete/protocols/oscar/* parts)
  {
 --- a/kopete/protocols/yahoo/libkyahoo/sendfiletask.cpp
 +++ b/kopete/protocols/yahoo/libkyahoo/sendfiletask.cpp
-@@ -29,6 +29,7 @@
+@@ -30,6 +30,7 @@
  #include <krandom.h>
  
  using namespace KNetwork;
 +using namespace KYahoo;
  
- SendFileTask::SendFileTask(Task* parent) : Task(parent)
- {
+ 
+ /* Buffer size to send file data. Automatically resized. Won't grow up past BUFFER_SIZE_MAX. Code will try
 --- a/kopete/protocols/yahoo/libkyahoo/client.cpp
 +++ b/kopete/protocols/yahoo/libkyahoo/client.cpp
 @@ -60,6 +60,7 @@

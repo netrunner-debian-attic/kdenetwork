@@ -9,6 +9,7 @@ kdenetwork (4:4.7.2-0r0) UNRELEASED; urgency=low
   * Add ${perl:Depends} to kopete Depends.
   * Update installed files.
   * Update symbols files.
+  * Refresh patches.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 20 Oct 2011 12:55:24 -0300
 
