@@ -1,4 +1,4 @@
-kdenetwork (4:4.6.5-3) UNRELEASED; urgency=low
+kdenetwork (4:4.6.5-3) unstable; urgency=low
 
   [ José Manuel Santamaría Lema ]
   * Add libgadu_pthread_check.diff, fixes an FTBFS when building with
@@ -9,7 +9,7 @@ kdenetwork (4:4.6.5-3) UNRELEASED; urgency=low
   * Add protocols_namespaces.diff. Thanks to Ralf Jung for tracking down the
     issue and writing a significant part of the patch. (Closes: #644197)
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 29 Sep 2011 22:25:51 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 20 Oct 2011 12:55:24 -0300
 
 kdenetwork (4:4.6.5-2) unstable; urgency=low
 
