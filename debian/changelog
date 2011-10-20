@@ -10,7 +10,20 @@ kdenetwork (4:4.7.2-0r0) UNRELEASED; urgency=low
   * Update installed files.
   * Update symbols files.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 29 Sep 2011 22:25:51 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 20 Oct 2011 12:55:24 -0300
+
+kdenetwork (4:4.6.5-3) unstable; urgency=low
+
+  [ José Manuel Santamaría Lema ]
+  * Add libgadu_pthread_check.diff, fixes an FTBFS when building with
+    libvncserver-dev supporting libgnutls.
+  * Bump libvncserver-dev B-D to 0.9.8.1, this solves two problems:
+    - libvncserver-dev now depends on libgnutls-dev, preventing an FTBFS.
+    - fixes a binary compatibility issue. (see bug #644455)
+  * Add protocols_namespaces.diff. Thanks to Ralf Jung for tracking down the
+    issue and writing a significant part of the patch. (Closes: #644197)
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 20 Oct 2011 12:55:24 -0300
 
 kdenetwork (4:4.6.5-2) unstable; urgency=low
 

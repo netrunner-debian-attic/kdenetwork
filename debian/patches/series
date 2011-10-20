@@ -1,1 +1,3 @@
 no_home_set.diff
+protocols_namespaces.diff
+libgadu_pthread_check.diff
