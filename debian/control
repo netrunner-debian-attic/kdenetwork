@@ -8,7 +8,7 @@ Uploaders: Sune Vuorela <sune@debian.org>, Fathi Boudra <fabo@debian.org>, Armin
 Build-Depends: kde-sc-dev-latest (>= 4:4.7.2),
  cmake, debhelper (>= 7.3.16), pkg-kde-tools (>= 0.12),
  kdelibs5-dev (>= 4:4.7), kdepimlibs5-dev (>= 4:4.7), libkonq5-dev (>= 4:4.7),
- kdebase-workspace-dev (>= 4:4.7),
+ kde-workspace-dev (>= 4:4.7),
  zlib1g-dev, libjpeg-dev, libxml2-dev, libxslt1-dev, libssl-dev,
  libxdamage-dev, libxss-dev, libslp-dev, libidn11-dev, libxtst-dev,
  libvncserver-dev (>= 0.9.8.1), libqca2-dev (>= 2.0.0),
@@ -151,8 +151,8 @@ Package: kdenetwork-dbg
 Section: debug
 Architecture: any
 Priority: extra
-Depends: ${misc:Depends}, kdebase-runtime-dbg
-Recommends: kdebase-workspace-dbg
+Depends: ${misc:Depends}, kde-runtime-dbg
+Recommends: kde-workspace-dbg
 Suggests: kdenetwork (= ${source:Version})
 Description: debugging symbols for the KDE networking module
  This package contains debugging files used to investigate problems with

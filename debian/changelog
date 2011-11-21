@@ -10,6 +10,11 @@ kdenetwork (4:4.7.2-0r1) UNRELEASED; urgency=low
   * Update installed files.
   * Update symbols files.
   * Refresh patches.
+  * Manage package renames:
+    - Build depend on kde-workspace-dev instead of kdebase-workspace-dev.
+    - kdenetwork-dbg depends on kde-runtime-dbg instead of kdebase-runtime-dbg.
+    - kdenetwork-dbg recommends kde-workspace-dbg instead of
+      kdebase-workspace-dbg.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 20 Oct 2011 12:55:24 -0300
 
