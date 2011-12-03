@@ -1,4 +1,4 @@
-kdenetwork (4:4.7.2-0r1) UNRELEASED; urgency=low
+kdenetwork (4:4.7.2-0r1) experimental; urgency=low
 
   * New upstream release.
 
@@ -16,7 +16,7 @@ kdenetwork (4:4.7.2-0r1) UNRELEASED; urgency=low
     - kdenetwork-dbg recommends kde-workspace-dbg instead of
       kdebase-workspace-dbg.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 20 Oct 2011 12:55:24 -0300
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 03 Dec 2011 10:44:32 -0300
 
 kdenetwork (4:4.6.5-3) unstable; urgency=low
 
