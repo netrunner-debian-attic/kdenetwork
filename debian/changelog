@@ -7,6 +7,9 @@ kdenetwork (4:4.7.4-0r0) UNRELEASED; urgency=low
   * Bump kde-sc-dev-latest build dependency to 4:4.7.4.
   * Remove parts from protocols_namespaces.diff, that were applied upstream.
 
+  [ José Manuel Santamaría Lema ]
+  * Bump shared-desktop-ontologies build dependency to 0.8.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 07 Dec 2011 15:31:25 +0100
 
 kdenetwork (4:4.7.2-1) experimental; urgency=low
