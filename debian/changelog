@@ -1,4 +1,4 @@
-kdenetwork (4:4.7.4-0r1) UNRELEASED; urgency=low
+kdenetwork (4:4.7.4-1) experimental; urgency=low
 
   * New upstream release.
 
@@ -10,7 +10,7 @@ kdenetwork (4:4.7.4-0r1) UNRELEASED; urgency=low
   [ José Manuel Santamaría Lema ]
   * Bump shared-desktop-ontologies build dependency to 0.8.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 07 Dec 2011 15:31:25 +0100
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 18 Dec 2011 01:36:35 +0100
 
 kdenetwork (4:4.7.2-1) experimental; urgency=low
 
