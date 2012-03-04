@@ -9,6 +9,7 @@ kdenetwork (4:4.7.4-1) experimental; urgency=low
 
   [ José Manuel Santamaría Lema ]
   * Bump shared-desktop-ontologies build dependency to 0.8.
+  * Confirm symbols files on more architectures.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 18 Dec 2011 01:36:35 +0100
 
