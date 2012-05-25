@@ -96,8 +96,8 @@ libkopete.so.4 libkopete4 #MINVER#
  _ZN17SettingsContainerD0Ev@Base 4:4.3.4
  _ZN17SettingsContainerD1Ev@Base 4:4.3.4
  _ZN17SettingsContainerD2Ev@Base 4:4.3.4
- (optional=external|arch=kfreebsd-any)_ZN19KCoreConfigSkeleton8ItemEnum7Choice2D1Ev@Base 4:4.6.5
- (optional=external|arch=kfreebsd-any)_ZN19KCoreConfigSkeleton8ItemEnum7Choice2D2Ev@Base 4:4.6.5
+ (optional=external)_ZN19KCoreConfigSkeleton8ItemEnum7Choice2D1Ev@Base 4:4.6.5
+ (optional=external)_ZN19KCoreConfigSkeleton8ItemEnum7Choice2D2Ev@Base 4:4.6.5
  _ZN23KopeteEditAccountWidget10setAccountEPN6Kopete7AccountE@Base 4:4.3.4
  _ZN23KopeteEditAccountWidgetC1EPN6Kopete7AccountE@Base 4:4.3.4
  _ZN23KopeteEditAccountWidgetC2EPN6Kopete7AccountE@Base 4:4.3.4
