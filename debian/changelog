@@ -4,6 +4,7 @@ kdenetwork (4:4.7.4-3) UNRELEASED; urgency=low
   * Backport upstream r1292762 to fix building with GCC 4.7; patch
     upstream_r1292762.diff. (Closes: #672044)
   * Bump Standards-Version to 3.9.3, no changes required.
+  * Update the symbols files.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 07 Mar 2012 09:46:27 +0100
 
