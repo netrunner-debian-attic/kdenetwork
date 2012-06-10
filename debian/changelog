@@ -12,6 +12,10 @@ kdenetwork (4:4.8.4-0r0) UNRELEASED; urgency=low
     - protocols_namespaces.diff
     - upstream_r1292762.diff
 
+  [ Pino Toscano ]
+  * Fix build failure with FORTIFY & GCC 4.7; patch
+    kdenetwork-4.7.97-fix-for-g++47.patch from Fedora.
+
  -- Eshat Cakar <info@eshat.de>  Sun, 13 May 2012 13:42:09 +0200
 
 kdenetwork (4:4.7.4-3) unstable; urgency=low
