@@ -6,6 +6,10 @@ kdenetwork (4:4.8.4-0r0) UNRELEASED; urgency=low
   * Bump kde-sc-dev-latest build dependency to 4:4.8.4.
   * Add watch file.
   * Bump various kde build dependencies to 4:4.8.
+  * Remove patches, all applied upstream:
+    - no_home_set.diff
+    - libgadu_pthread_check.diff
+    - protocols_namespaces.diff
 
  -- Eshat Cakar <info@eshat.de>  Sun, 13 May 2012 13:42:09 +0200
 
