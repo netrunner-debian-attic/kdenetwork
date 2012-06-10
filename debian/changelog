@@ -4,6 +4,7 @@ kdenetwork (4:4.8.4-0r0) UNRELEASED; urgency=low
 
   [ Eshat Cakar ]
   * Bump kde-sc-dev-latest build dependency to 4:4.8.4.
+  * Add watch file.
 
  -- Eshat Cakar <info@eshat.de>  Sun, 13 May 2012 13:42:09 +0200
 
