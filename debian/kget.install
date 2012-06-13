@@ -18,7 +18,7 @@ usr/lib/kde4/plasma_engine_kget.so
 usr/lib/kde4/plasma_kget_barapplet.so
 usr/lib/kde4/plasma_kget_piechart.so
 usr/lib/libkgetcore.so.4
-usr/lib/libkgetcore.so.4.7.0
+usr/lib/libkgetcore.so.4.8.0
 usr/share/applications/kde4/kget.desktop
 usr/share/dbus-1/services/org.kde.kget.service
 usr/share/doc/kde/HTML/en/kget/common
@@ -49,6 +49,9 @@ usr/share/icons/hicolor/64x64/apps/kget.png
 usr/share/icons/hicolor/scalable/apps/kget.svgz
 usr/share/kde4/apps/dolphinpart/kpartplugins/kget_plug_in.desktop
 usr/share/kde4/apps/dolphinpart/kpartplugins/kget_plug_in.rc
+usr/share/kde4/apps/kconf_update/kget.upd
+usr/share/kde4/apps/kconf_update/kget_limitdownloads.pl
+usr/share/kde4/apps/kconf_update/kget_sensitive.pl
 usr/share/kde4/apps/kget/kget.notifyrc
 usr/share/kde4/apps/kget/kgetui.rc
 usr/share/kde4/apps/kget/pics/kget_splash.png
