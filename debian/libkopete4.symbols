@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.7.4 amd64 armel hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sparc
+# SymbolsHelper-Confirmed: 4:4.8.4 amd64
 libkopete.so.4 libkopete4 #MINVER#
  _ZGVZN6Kopete2UI8ListView4Item7Private18theVisibilityTimerEvE5timer@Base 4:4.3.4
  _ZGVZN6Kopete2UI8ListView4Item7Private21theLayoutAnimateTimerEvE5timer@Base 4:4.3.4
@@ -1329,6 +1329,7 @@ libkopete.so.4 libkopete4 #MINVER#
  _ZN6Kopete7Account18isConnectedChangedEv@Base 4:4.3.4
  _ZN6Kopete7Account19slotStopSuppressionEv@Base 4:4.3.4
  _ZN6Kopete7Account20setAllContactsStatusERKNS_12OnlineStatusE@Base 4:4.3.4
+ _ZN6Kopete7Account23networkingStatusChangedEN5Solid10Networking6StatusE@Base 4:4.8.4
  _ZN6Kopete7Account23slotOnlineStatusChangedEPNS_7ContactERKNS_12OnlineStatusES5_@Base 4:4.3.4
  _ZN6Kopete7Account26slotContactPropertyChangedEPNS_17PropertyContainerERK7QStringRK8QVariantS8_@Base 4:4.3.4
  _ZN6Kopete7Account5blockERK7QString@Base 4:4.3.4
