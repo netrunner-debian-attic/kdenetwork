@@ -1,3 +1,11 @@
+kdenetwork (4:4.10.2-1) UNRELEASED; urgency=low
+
+  * New upstream.
+  * Update symbols file.
+  * Update install files.
+
+ -- Sune Vuorela <sune@debian.org>  Fri, 12 Apr 2013 21:14:17 +0000
+
 kdenetwork (4:4.8.4-1) unstable; urgency=low
 
   * New upstream release.

@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.8.4 amd64
+# SymbolsHelper-Confirmed: 4:4.10.2 amd64
 libkopete.so.4 libkopete4 #MINVER#
  _ZGVZN6Kopete2UI8ListView4Item7Private18theVisibilityTimerEvE5timer@Base 4:4.3.4
  _ZGVZN6Kopete2UI8ListView4Item7Private21theLayoutAnimateTimerEvE5timer@Base 4:4.3.4
@@ -179,6 +179,7 @@ libkopete.so.4 libkopete4 #MINVER#
  _ZN6Kopete11ChatSession19slotMyselfDestroyedEPNS_7ContactE@Base 4:4.3.4
  _ZN6Kopete11ChatSession20receivedMessageStateEjNS_7Message12MessageStateE@Base 4:4.3.4
  _ZN6Kopete11ChatSession20slotContactDestroyedEPNS_7ContactE@Base 4:4.3.4
+ _ZN6Kopete11ChatSession20statusMessageChangedEPNS_7ContactE@Base 4:4.10.2
  _ZN6Kopete11ChatSession21emitNudgeNotificationEv@Base 4:4.3.4
  _ZN6Kopete11ChatSession21slotUpdateDisplayNameEv@Base 4:4.3.4
  _ZN6Kopete11ChatSession21toggleGraphicOverrideEb@Base 4:4.7.1
@@ -1230,7 +1231,9 @@ libkopete.so.4 libkopete4 #MINVER#
  _ZN6Kopete5Group16staticMetaObjectE@Base 4:4.3.4
  _ZN6Kopete5Group18displayNameChangedEPS0_RK7QString@Base 4:4.3.4
  _ZN6Kopete5Group7Private13uniqueGroupIdE@Base 4:4.3.4
+ _ZN6Kopete5Group7offlineEv@Base 4:4.10.2
  _ZN6Kopete5Group8topLevelEv@Base 4:4.3.4
+ _ZN6Kopete5Group9s_offlineE@Base 4:4.10.2
  _ZN6Kopete5Group9temporaryEv@Base 4:4.3.4
  _ZN6Kopete5GroupC1ERK7QString@Base 4:4.3.4
  _ZN6Kopete5GroupC1ERK7QStringNS0_9GroupTypeE@Base 4:4.3.4
@@ -1364,6 +1367,7 @@ libkopete.so.4 libkopete4 #MINVER#
  _ZN6Kopete7Contact17changeMetaContactEv@Base 4:4.3.4
  _ZN6Kopete7Contact19onlineStatusChangedEPS0_RKNS_12OnlineStatusES4_@Base 4:4.3.4
  _ZN6Kopete7Contact19toggleAlwaysVisibleEv@Base 4:4.4.1
+ _ZN6Kopete7Contact20statusMessageChangedEPS0_@Base 4:4.10.2
  _ZN6Kopete7Contact21canAcceptFilesChangedEv@Base 4:4.3.4
  _ZN6Kopete7Contact24customContextMenuActionsEPNS_11ChatSessionE@Base 4:4.3.4
  _ZN6Kopete7Contact24customContextMenuActionsEv@Base 4:4.3.4
@@ -1877,6 +1881,7 @@ libkopete.so.4 libkopete4 #MINVER#
  _ZNK6Kopete7Account26suppressStatusNotificationEv@Base 4:4.3.4
  _ZNK6Kopete7Account5colorEv@Base 4:4.3.4
  _ZNK6Kopete7Account6isAwayEv@Base 4:4.3.4
+ _ZNK6Kopete7Account6isBusyEv@Base 4:4.10.2
  _ZNK6Kopete7Account6myselfEv@Base 4:4.3.4
  _ZNK6Kopete7Account8identityEv@Base 4:4.3.4
  _ZNK6Kopete7Account8priorityEv@Base 4:4.3.4
