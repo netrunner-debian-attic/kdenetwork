@@ -4,6 +4,8 @@ kdenetwork (4:4.10.2-1) UNRELEASED; urgency=low
   * Update symbols file.
   * Update install files.
   * Bump build-deps
+  * Temporarily remove kde-workspace build-dep to get the package built on
+    autobuilders.
 
  -- Sune Vuorela <sune@debian.org>  Fri, 12 Apr 2013 21:14:17 +0000
 
