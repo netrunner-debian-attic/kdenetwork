@@ -3,6 +3,10 @@ kdenetwork (4:4.8.4-2) UNRELEASED; urgency=low
   [ Pino Toscano ]
   * Backport upstream r1353735 to fix building with Linux kernels >= 3.9;
     patch upstream_r1353735.diff.
+  * Stop building with OTR support, since the kopete plugin does not support
+    libotr >= 4.x: (Closes: #711073)
+    - drop the libotr2-dev build dependency
+    - remove the kopete_otr files from kopete.install
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 04 Jun 2013 15:39:10 +0200
 
