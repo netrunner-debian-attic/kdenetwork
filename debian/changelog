@@ -8,6 +8,7 @@ kdenetwork (4:4.8.4-2) UNRELEASED; urgency=low
     - drop the libotr2-dev build dependency
     - remove the kopete_otr files from kopete.install
     - update kopete.lintian-overrides
+  * Fix Vcs-* headers.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 04 Jun 2013 15:39:10 +0200
 
