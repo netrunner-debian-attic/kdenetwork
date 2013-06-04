@@ -1,4 +1,6 @@
-kdenetwork (4:4.8.4-2) UNRELEASED; urgency=low
+kdenetwork (4:4.8.4-2) unstable; urgency=low
+
+  * Team upload.
 
   [ Pino Toscano ]
   * Backport upstream r1353735 to fix building with Linux kernels >= 3.9;
@@ -10,7 +12,7 @@ kdenetwork (4:4.8.4-2) UNRELEASED; urgency=low
   * Fix Vcs-* headers.
   * Update lintian overrides.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 04 Jun 2013 15:39:10 +0200
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 04 Jun 2013 12:10:57 -0300
 
 kdenetwork (4:4.8.4-1) unstable; urgency=low
 
