@@ -24,7 +24,7 @@ Build-Depends: kde-sc-dev-latest (>= 4:4.8.4),
  libexpat-dev, libgif-dev, libktorrent-dev (>= 1.1), libjasper-dev,
  libmms-dev
 Build-Conflicts: libmediastreamer-dev (= 3.3.0-1) [amd64]
-Standards-Version: 3.9.3
+Standards-Version: 3.9.4
 Homepage: http://www.kde.org/
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-sc/kdenetwork.git
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-sc/kdenetwork.git
