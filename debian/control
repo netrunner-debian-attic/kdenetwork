@@ -9,7 +9,7 @@ Uploaders: Sune Vuorela <sune@debian.org>,
  José Manuel Santamaría Lema <panfaust@gmail.com>,
  Eshat Cakar <info@eshat.de>
 Build-Depends: kde-sc-dev-latest (>= 4:4.10.2),
- cmake, debhelper (>= 7.3.16), pkg-kde-tools (>= 0.12),
+ cmake, debhelper (>= 9), pkg-kde-tools (>= 0.12),
  kdepimlibs5-dev (>= 4:4.10.2), libkonq5-dev (>= 4:4.10.2),
  zlib1g-dev, libjpeg-dev, libxml2-dev, libxslt1-dev, libssl-dev,
  libxdamage-dev, libxss-dev, libslp-dev, libidn11-dev, libxtst-dev,
