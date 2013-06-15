@@ -14,7 +14,6 @@ usr/lib/kde4/kcm_kopete_highlight.so
 usr/lib/kde4/kcm_kopete_history.so
 usr/lib/kde4/kcm_kopete_latex.so
 usr/lib/kde4/kcm_kopete_nowlistening.so
-usr/lib/kde4/kcm_kopete_otr.so
 usr/lib/kde4/kcm_kopete_pipes.so
 usr/lib/kde4/kcm_kopete_pluginconfig.so
 usr/lib/kde4/kcm_kopete_privacy.so
@@ -39,7 +38,6 @@ usr/lib/kde4/kopete_jabber.so
 usr/lib/kde4/kopete_latex.so
 usr/lib/kde4/kopete_meanwhile.so
 usr/lib/kde4/kopete_nowlistening.so
-usr/lib/kde4/kopete_otr.so
 usr/lib/kde4/kopete_pipes.so
 usr/lib/kde4/kopete_privacy.so
 usr/lib/kde4/kopete_qq.so
@@ -58,8 +56,6 @@ usr/lib/kde4/libchattexteditpart.so
 usr/lib/kde4/plugins/accessible/chatwindowaccessiblewidgetfactory.so
 usr/lib/libkopete_oscar.so.4
 usr/lib/libkopete_oscar.so.4.*.*
-usr/lib/libkopete_otr_shared.so.1
-usr/lib/libkopete_otr_shared.so.1.0.0
 usr/lib/libkopete_videodevice.so.4
 usr/lib/libkopete_videodevice.so.4.*.*
 usr/lib/libkopeteaddaccountwizard.so.1
@@ -166,9 +162,6 @@ usr/share/icons/oxygen/22x22/actions/view-user-offline-kopete.png
 usr/share/icons/oxygen/22x22/actions/voicecall.png
 usr/share/icons/oxygen/22x22/actions/webcamreceive.png
 usr/share/icons/oxygen/22x22/actions/webcamsend.png
-usr/share/icons/oxygen/22x22/status/object-locked-finished.png
-usr/share/icons/oxygen/22x22/status/object-locked-unverified.png
-usr/share/icons/oxygen/22x22/status/object-locked-verified.png
 usr/share/icons/oxygen/32x32/actions/account_offline_overlay.png
 usr/share/icons/oxygen/32x32/actions/im-status-message-edit.png
 usr/share/icons/oxygen/32x32/actions/metacontact_unknown.png
@@ -178,7 +171,6 @@ usr/share/icons/oxygen/32x32/actions/voicecall.png
 usr/share/icons/oxygen/32x32/actions/webcamreceive.png
 usr/share/icons/oxygen/32x32/actions/webcamsend.png
 usr/share/icons/oxygen/48x48/actions/im-status-message-edit.png
-usr/share/icons/oxygen/48x48/actions/mail-encrypt.png
 usr/share/icons/oxygen/48x48/actions/view-user-offline-kopete.png
 usr/share/icons/oxygen/48x48/actions/voicecall.png
 usr/share/icons/oxygen/48x48/actions/webcamreceive.png
@@ -193,9 +185,6 @@ usr/share/icons/oxygen/scalable/actions/view-user-offline-kopete.svgz
 usr/share/icons/oxygen/scalable/actions/voicecall.svgz
 usr/share/icons/oxygen/scalable/actions/webcamreceive.svgz
 usr/share/icons/oxygen/scalable/actions/webcamsend.svgz
-usr/share/icons/oxygen/scalable/status/object-locked-finished.svgz
-usr/share/icons/oxygen/scalable/status/object-locked-unverified.svgz
-usr/share/icons/oxygen/scalable/status/object-locked-verified.svgz
 usr/share/kde4/apps/kconf_update/kopete-account-0.10.pl
 usr/share/kde4/apps/kconf_update/kopete-account-kconf_update.sh
 usr/share/kde4/apps/kconf_update/kopete-account-kconf_update.upd
@@ -661,8 +650,6 @@ usr/share/kde4/apps/kopete_history/historychatui.rc
 usr/share/kde4/apps/kopete_history/historyui.rc
 usr/share/kde4/apps/kopete_jabber/jabberchatui.rc
 usr/share/kde4/apps/kopete_latex/latexchatui.rc
-usr/share/kde4/apps/kopete_otr/otrchatui.rc
-usr/share/kde4/apps/kopete_otr/otrui.rc
 usr/share/kde4/apps/kopete_privacy/privacychatui.rc
 usr/share/kde4/apps/kopete_privacy/privacyui.rc
 usr/share/kde4/apps/kopete_skype/skypechatui.rc
@@ -676,7 +663,6 @@ usr/share/kde4/apps/kopete_yahoo/yahooconferenceui.rc
 usr/share/kde4/apps/kopete_yahoo/yahooimui.rc
 usr/share/kde4/apps/kopeterichtexteditpart/kopeterichtexteditpartfull.rc
 usr/share/kde4/config.kcfg/historyconfig.kcfg
-usr/share/kde4/config.kcfg/kopete_otr.kcfg
 usr/share/kde4/config.kcfg/kopeteappearancesettings.kcfg
 usr/share/kde4/config.kcfg/kopetebehaviorsettings.kcfg
 usr/share/kde4/config.kcfg/kopetestatussettings.kcfg
@@ -696,7 +682,6 @@ usr/share/kde4/services/kconfiguredialog/kopete_highlight_config.desktop
 usr/share/kde4/services/kconfiguredialog/kopete_history_config.desktop
 usr/share/kde4/services/kconfiguredialog/kopete_latex_config.desktop
 usr/share/kde4/services/kconfiguredialog/kopete_nowlistening_config.desktop
-usr/share/kde4/services/kconfiguredialog/kopete_otr_config.desktop
 usr/share/kde4/services/kconfiguredialog/kopete_pipes_config.desktop
 usr/share/kde4/services/kconfiguredialog/kopete_privacy_config.desktop
 usr/share/kde4/services/kconfiguredialog/kopete_texteffect_config.desktop
@@ -722,7 +707,6 @@ usr/share/kde4/services/kopete_jabber.desktop
 usr/share/kde4/services/kopete_latex.desktop
 usr/share/kde4/services/kopete_meanwhile.desktop
 usr/share/kde4/services/kopete_nowlistening.desktop
-usr/share/kde4/services/kopete_otr.desktop
 usr/share/kde4/services/kopete_pipes.desktop
 usr/share/kde4/services/kopete_pluginconfig.desktop
 usr/share/kde4/services/kopete_privacy.desktop
