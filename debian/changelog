@@ -1,7 +1,7 @@
 kdenetwork (4:4.10.4-2) UNRELEASED; urgency=low
 
   [ Maximiliano Curia ]
-  * Sync with sid version.
+  * Merge 4:4.8.4-2 from sid.
 
   [ Pino Toscano ]
   * Drop patch upstream_r1353735.diff, backported from upstream.
