@@ -1,3 +1,9 @@
+kdenetwork (4:4.8.4-3) UNRELEASED; urgency=low
+
+  * Remove setiud bit to the kppp binary. (Closes: #709972)
+
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 30 Jun 2013 15:08:31 +0200
+
 kdenetwork (4:4.8.4-2) unstable; urgency=low
 
   * Team upload.

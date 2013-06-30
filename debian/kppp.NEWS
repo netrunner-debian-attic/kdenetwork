@@ -1,0 +1,8 @@
+kppp (4:4.8.4-3) unstable; urgency=low
+
+  The /usr/bin/kppp binary is no longer setuid executable, that means that to
+  use the kppp command the user needs to belong to the groups:
+    - dip (as required by pppd)
+    - dialout (to access the modem devices)
+
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 30 Jun 2013 15:01:05 +0200
