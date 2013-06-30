@@ -1,0 +1,13 @@
+Index: kdenetwork-4.8.4/krfb/krfb/CMakeLists.txt
+===================================================================
+--- kdenetwork-4.8.4.orig/krfb/krfb/CMakeLists.txt	2011-07-27 20:25:38.777636832 +0200
++++ kdenetwork-4.8.4/krfb/krfb/CMakeLists.txt	2013-06-30 17:38:40.589454305 +0200
+@@ -119,6 +119,8 @@
+     )
+ endif (X11_XTest_FOUND)
+ 
++target_link_libraries (krfb pthread)
++
+ install (TARGETS krfb
+          ${INSTALL_TARGETS_DEFAULT_ARGS}
+ )

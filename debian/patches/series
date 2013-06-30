@@ -1,2 +1,3 @@
 kdenetwork-4.7.97-fix-for-g++47.patch
 upstream_r1353735.diff
+add_libpthread_to_krfb.diff
