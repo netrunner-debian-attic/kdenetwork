@@ -4,6 +4,7 @@ kdenetwork (4:4.10.4-2) UNRELEASED; urgency=low
   * Merge 4:4.8.4-2 from sid.
 
   [ Pino Toscano ]
+  * Merge 4:4.8.4-3 from sid.
   * Drop patch upstream_r1353735.diff, backported from upstream.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 15 Jun 2013 08:48:17 +0200
