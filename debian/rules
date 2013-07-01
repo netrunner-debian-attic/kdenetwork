@@ -8,7 +8,7 @@ override_dh_install:
 	$(overridden_command)
 	if [ -d debian/kppp ]; then \
 	    chown root:dip debian/kppp/usr/bin/kppp && \
-	    chmod 4754 debian/kppp/usr/bin/kppp; \
+	    chmod 0754 debian/kppp/usr/bin/kppp; \
 	fi
 
 override_dh_fixperms:

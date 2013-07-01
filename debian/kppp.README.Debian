@@ -1,0 +1,9 @@
+KPPP for Debian
+-----------------
+ 
+ As of 4:4.8.4-3 to use the kppp command the user needs to belong to the
+ groups:
+   - dip (as required by pppd)
+   - dialout (to access the modem devices)
+ 
+ -- Debian Qt/KDE Maintainers
