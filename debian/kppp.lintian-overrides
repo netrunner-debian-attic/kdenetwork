@@ -1,1 +1,2 @@
-kppp: setuid-binary usr/bin/kppp 4754 root/dip
+# kppp calls pppd, so explicitly require the dip group
+kppp: non-standard-executable-perm usr/bin/kppp 0754 != 0755

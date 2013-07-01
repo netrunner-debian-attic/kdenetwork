@@ -29,6 +29,18 @@ kdenetwork (4:4.10.2-1) experimental; urgency=low
 
  -- Sune Vuorela <sune@debian.org>  Fri, 12 Apr 2013 21:32:12 +0000
 
+kdenetwork (4:4.8.4-3) unstable; urgency=low
+
+  * Remove setiud bit to the kppp binary. (Closes: #709972)
+  * Bump debhelper build-dep and compat to 9.
+  * Update uploaders.
+  * Add myself to uploaders.
+  * Bump Standards-Version to 3.9.4, no changes needed.
+  * New patch: add_libpthread_to_krfb.diff. (Closes: #713770)
+  * Update kppp lintian-overrides.
+
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 30 Jun 2013 18:54:50 +0200
+
 kdenetwork (4:4.8.4-2) unstable; urgency=low
 
   * Team upload.
