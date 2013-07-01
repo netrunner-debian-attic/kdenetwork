@@ -9,6 +9,7 @@ kdenetwork (4:4.10.4-2) UNRELEASED; urgency=low
 
   [ Maximiliano Curia ]
   * Add libtelepathy-qt4-dev as a build-dep.
+  * Add nepomuk-core-dev as a build-dep.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 15 Jun 2013 08:48:17 +0200
 
