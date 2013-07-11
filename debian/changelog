@@ -1,4 +1,6 @@
-kdenetwork (4:4.10.4-2) UNRELEASED; urgency=low
+kdenetwork (4:4.10.5-1) UNRELEASED; urgency=low
+
+  * New upstream release.
 
   [ Maximiliano Curia ]
   * Merge 4:4.8.4-2 from sid.
@@ -10,7 +12,7 @@ kdenetwork (4:4.10.4-2) UNRELEASED; urgency=low
   * Merge 4:4.8.4-3 from sid.
   * Drop patch upstream_r1353735.diff, backported from upstream.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 15 Jun 2013 08:48:17 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 11 Jul 2013 10:08:37 +0200
 
 kdenetwork (4:4.10.4-1) experimental; urgency=low
 
