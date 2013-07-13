@@ -7,6 +7,7 @@ kdenetwork (4:4.10.5-1) UNRELEASED; urgency=low
   * Add libtelepathy-qt4-dev as a build-dep.
   * Add nepomuk-core-dev as a build-dep.
   * Add kde-workspace-dev as a build-dep.
+  * Patch to install kget documentation: fix-kget-doc.patch.
 
   [ Pino Toscano ]
   * Merge 4:4.8.4-3 from sid.

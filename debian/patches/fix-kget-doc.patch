@@ -1,0 +1,20 @@
+Index: kdenetwork-4.10.5/kget/CMakeLists.txt
+===================================================================
+--- kdenetwork-4.10.5.orig/kget/CMakeLists.txt	2013-07-13 01:09:51.000000000 +0200
++++ kdenetwork-4.10.5/kget/CMakeLists.txt	2013-07-13 01:09:58.000000000 +0200
+@@ -100,6 +100,7 @@
+ add_subdirectory(desktop)
+ add_subdirectory(plasma)
+ add_subdirectory(tests)
++add_subdirectory(doc)
+ 
+ macro_optional_find_package(KDE4Workspace)
+ macro_log_feature(KDE4WORKSPACE_FOUND "KDE4Workspace" "KDE4 workspace libraries, part of kdebase-workspace" "http://www.kde.org" FALSE "" "Allows 'shutdown after downloads completed' in kget")
+Index: kdenetwork-4.10.5/kget/doc/CMakeLists.txt
+===================================================================
+--- kdenetwork-4.10.5.orig/kget/doc/CMakeLists.txt	2013-06-28 20:07:00.882861832 +0200
++++ kdenetwork-4.10.5/kget/doc/CMakeLists.txt	2013-07-13 10:36:47.837021486 +0200
+@@ -1,2 +1,2 @@
+ ########### install files ###############
+-kde4_create_handbook(index.docbook INSTALL_DESTINATION ${HTML_INSTALL_DIR}/en)
++kde4_create_handbook(index.docbook INSTALL_DESTINATION ${HTML_INSTALL_DIR}/en SUBDIR kget)
