@@ -1,0 +1,20 @@
+Author: Pino Toscano <pino@debian.org>
+Description: Compile kppp only on Linux
+ This mimics (in a simplier way) the exclusion it existed in previous
+ kdenetwork releases.
+Last-Update: 2013-07-15
+Forwarded: not-needed
+
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -19,7 +19,9 @@ set( CMAKE_REQUIRED_DEFINITIONS ${_KDE4_
+ 
+ macro_optional_add_subdirectory( kdenetwork-strigi-analyzers )
+ macro_optional_add_subdirectory( kdenetwork-filesharing )
+-macro_optional_add_subdirectory( kppp )
++if( CMAKE_SYSTEM_NAME MATCHES Linux )
++  macro_optional_add_subdirectory( kppp )
++endif()
+ macro_optional_add_subdirectory( kdnssd )
+ macro_optional_add_subdirectory( krdc )
+ macro_optional_add_subdirectory( krfb )
