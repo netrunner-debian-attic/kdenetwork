@@ -1,10 +1,10 @@
-kdenetwork (4:4.10.5-2) UNRELEASED; urgency=low
+kdenetwork (4:4.10.5-2) unstable; urgency=low
 
   [ Pino Toscano ]
   * Build kppp only on Linux, as it was in previous versions; patch
     kppp-linux-only.diff.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 15 Jul 2013 20:45:46 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 16 Jul 2013 09:53:02 +0200
 
 kdenetwork (4:4.10.5-1) unstable; urgency=low
 
