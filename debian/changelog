@@ -1,11 +1,13 @@
-kdenetwork (4:4.10.5-3) UNRELEASED; urgency=low
+kdenetwork (4:4.10.5-3) unstable; urgency=low
+
+  * Team upload.
 
   [ Pino Toscano ]
   * Fix build with linphone >= 3.6; patch new_linphone.diff. (Closes: #719371)
   * Bump the libmediastreamer-dev build dependency to >= 3.6, as the above
     patch most probably is not compatible with older versions.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 08 Sep 2013 19:33:41 +0200
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 08 Sep 2013 17:07:42 -0300
 
 kdenetwork (4:4.10.5-2) unstable; urgency=low
 
