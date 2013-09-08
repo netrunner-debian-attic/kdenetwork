@@ -1,3 +1,8 @@
+kdenetwork (4:4.10.5-3) UNRELEASED; urgency=low
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 08 Sep 2013 19:33:41 +0200
+
 kdenetwork (4:4.10.5-2) unstable; urgency=low
 
   [ Pino Toscano ]
