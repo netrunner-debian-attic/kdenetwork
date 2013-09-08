@@ -1,0 +1,48 @@
+Author: Pino Toscano <pino@debian.org>
+Description: Fix build with the libraries of linphone >= 3.6.
+ - in linphonemediaengine.cc, cast audio_stream_ to the "base" MediaStream
+   struct
+ - stun.h: make the header guard a bit more specific, so it is different than
+   the one of the stun.h provided by libortp
+Forwarded: no
+Last-Update: 2013-09-08
+
+--- a/kopete/protocols/jabber/googletalk/libjingle/talk/session/phone/linphonemediaengine.cc
++++ b/kopete/protocols/jabber/googletalk/libjingle/talk/session/phone/linphonemediaengine.cc
+@@ -143,7 +143,7 @@
+       LOG(LS_INFO) << "Using " << i->name << "/" << i->clockrate;
+       pt_ = i->id;
+       audio_stream_ = audio_stream_start(&av_profile, -1, "localhost", port1, i->id, 250, 0); /* -1 means that function will choose some free port */
+-      port2 = rtp_session_get_local_port(audio_stream_->session);
++      port2 = rtp_session_get_local_port(((MediaStream *)audio_stream_)->session);
+       first = false;
+     }
+   }
+@@ -154,7 +154,7 @@
+     // working with a buggy client; let's try PCMU.
+     LOG(LS_WARNING) << "Received empty list of codces; using PCMU/8000";
+     audio_stream_ = audio_stream_start(&av_profile, -1, "localhost", port1, 0, 250, 0); /* -1 means that function will choose some free port */
+-    port2 = rtp_session_get_local_port(audio_stream_->session);
++    port2 = rtp_session_get_local_port(((MediaStream *)audio_stream_)->session);
+   }
+  
+ }
+--- a/kopete/protocols/jabber/googletalk/libjingle/talk/p2p/base/stun.h
++++ b/kopete/protocols/jabber/googletalk/libjingle/talk/p2p/base/stun.h
+@@ -25,8 +25,8 @@
+  * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  */
+ 
+-#ifndef __STUN_H__
+-#define __STUN_H__
++#ifndef __LIBJINGLE_STUN_H__
++#define __LIBJINGLE_STUN_H__
+ 
+ // This file contains classes for dealing with the STUN and TURN protocols.
+ // Both protocols use the same wire format.
+@@ -361,4 +361,4 @@
+ 
+ } // namespace cricket
+ 
+-#endif // __STUN_H__
++#endif // __LIBJINGLE_STUN_H__

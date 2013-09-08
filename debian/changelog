@@ -1,5 +1,7 @@
 kdenetwork (4:4.10.5-3) UNRELEASED; urgency=low
 
+  [ Pino Toscano ]
+  * Fix build with linphone >= 3.6; patch new_linphone.diff. (Closes: #719371)
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 08 Sep 2013 19:33:41 +0200
 
